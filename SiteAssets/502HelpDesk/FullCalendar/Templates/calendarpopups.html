@@ -1,0 +1,1296 @@
+<div class="eventPopup" id="AddCalendarEventPopup">
+    <div class="eventPopupHeader">
+        <h4 class=""><span class="icon-calendar-date"></span> Add Calendar 
+        Event</h4>
+            <a class="icon icon-calendarclose closeEventPopup" href="javascript:void(0)"
+            title="Close"></a>
+    </div>
+    <div class="popup-body calenderfullwidth">
+        <div class="row">
+            <div class="col-sm-2"><label for="title">Title <span>*</span></label></div>
+            <div class="col-sm-8 ">
+                <div class="add-custom-input">
+                    <input type="text" class="formcontrol addEventVal" id="AddEventTitle"
+                        placeholder="Enter Title" />
+                    <p class="errormsg hidden"></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"><label for="title">Location </label></div>
+            <div class="col-sm-8 ">
+                <div class="add-custom-input">
+                    <input type="text" class="formcontrol addEventVal" id="AddEventLocation"
+                        placeholder="Enter Location" />
+                    <p class="errormsg hidden"></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"><label for="title">Start Time <span>*</span></label></div>
+            <div class="col-sm-8 ">
+                <div class="date-time-forms calenderfullwidth">
+                    <div class="item">
+                        <div class="add-date-input">
+                            <input type="text" class="formcontrol addEventVal" placeholder="MM/DD/YYYY"
+                                id="AddEventStartDate" />
+                            <a href="javascript:void(0)" id="AddEventStartDateIcon" class="dateinput"
+                                title="Select Date" aria-label="Select Date">
+                                <i class="icon-calendar-date"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="add-time-input">
+                            <select name="" id="AddEventStartHours">
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="add-min-input">
+                            <select name="" id="AddEventStartMins">
+
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <p class="errormsg hidden"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"><label for="title">End Time <span>*</span></label></div>
+            <div class="col-sm-8 ">
+                <div class="date-time-forms calenderfullwidth">
+                    <div class="item">
+                        <div class="add-date-input">
+                            <input type="text" class="formcontrol addEventVal" placeholder="MM/DD/YYYY"
+                                id="AddEventEndDate" />
+                            <a href="javascript:void(0)" id="AddEventEndDateIcon" class="dateinput"
+                                title="Select Date" aria-label="Select Date">
+                                <i class="icon-calendar-date"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="add-time-input">
+                            <select name="" id="AddEventEndHours">
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="add-min-input">
+                            <select name="" id="AddEventEndMins">
+
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <p class="errormsg hidden"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <label for="All Day Event">All Day Event</label>
+            </div>
+            <div class="col-sm-8">
+                <div class="day-checkbox">
+                    <input type="checkbox" value="" class="addEventProp" id="AddAlldayEvent" />
+                    <label for="AddAlldayEvent">
+                        Make this an all-day event that doesn&#39;t start or 
+                    end at a specific hour
+                    </label>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-2">
+                <label for="Recurrence">Recurrence</label>
+            </div>
+            <div class="col-sm-8">
+                <div class="day-checkbox">
+                    <input type="checkbox" value="recurrence-event" class="addEventProp"
+                        id="AddRecurrenceEvent" />
+                    <label for="AddRecurrenceEvent">
+                        Make this repeating event
+                    </label>
+                </div>
+            </div>
+            <div class="col-sm-12 divrecurrenceevent">
+                <div class="recurrence-event recurrence_div">
+                    <fieldset>
+                        <legend>
+                            <h2>Recurrence Pattern <span class="mandatory">
+                                    *</span></h2>
+                        </legend>
+                        <div class="recurrence-options">
+                            <div class="item">
+                                <ul class="left-side">
+                                    <li><input type="radio" name="recurrence-list" checked="checked"
+                                            value="daily" id="Daily" /><label for="Daily">
+                                            Daily</label>
+                                    </li>
+                                    <li><input type="radio" name="recurrence-list" value="weekly" id="Weekly" />
+                                        <label for="Weekly">
+                                            Weekly</label></li>
+                                    <li><input type="radio" name="recurrence-list" value="monthly"
+                                            id="Monthly" />
+                                        <label for="Monthly">
+                                            Monthly</label></li>
+                                    <li><input type="radio" name="recurrence-list" value="yearly" id="Yearly" />
+                                        <label for="Yearly">
+                                            Yearly</label></li>
+                                </ul>
+
+                            </div>
+                            <div class="item">
+                                <div id="dailyDiv" class="recurrence-info recurrence-options-info dailyDiv">
+
+
+                                    <div class="every-radio-btn">
+                                        <span> <input type="radio" value="Every" name="dailyRecurType"
+                                                id="DailyRecurEvery" checked="checked" />
+                                            <label for="DailyRecurEvery">
+                                                Every
+                                            </label></span>
+                                        <span class="input-text"><input type="number" name="dailyRecurFrequency"
+                                                min="1" max="255" id="dailyRecurFrequency" value=""
+                                                class="addEventVal" />
+                                            day(s)</span>
+                                    </div>
+                                    <div class="every-radio-btn">
+                                        <span>
+                                            <input type="radio" name="dailyRecurType" value="EveryWeekday"
+                                                id="EveryWeekday" />
+                                            <label for="EveryWeekday">
+                                                Every Weekday
+                                            </label>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div id="weeklyDiv" class="recurrence-info recurrence-options-info weeklyDiv">
+                                    <div class="every-radio-btn">
+                                        <span>
+                                            <label for="">Recur every</label>
+                                        </span>
+                                        <span class="input-text"><input type="number"
+                                                name="weeklyRecurFrequency" min="1" max="255"
+                                                id="WeeklyFrequency" value="" />
+                                            week(s) on: </span>
+                                    </div>
+                                    <div class="every-radio-btn weekdays">
+                                        <ul>
+                                            <li>
+                                                <div class="day-checkbox">
+                                                    <input type="checkbox" value="su" key="0" id="Sunday" />
+                                                    <label for="Sunday">
+                                                        Sunday
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="day-checkbox">
+                                                    <input type="checkbox" value="mo" key="1" id="Monday" />
+                                                    <label for="Monday">
+                                                        Monday
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="day-checkbox">
+                                                    <input type="checkbox" value="tu" key="2" id="Tuesday" />
+                                                    <label for="Tuesday">
+                                                        Tuesday
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="day-checkbox">
+                                                    <input type="checkbox" value="we" key="3" id="Wednesday" />
+                                                    <label for="Wednesday">
+                                                        Wednesday
+                                                    </label>
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="day-checkbox">
+                                                    <input type="checkbox" value="th" key="4" id="Thursday" />
+                                                    <label for="Thursday">
+                                                        Thursday
+                                                    </label>
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="day-checkbox">
+                                                    <input type="checkbox" value="fr" key="5" id="Friday" />
+                                                    <label for="Friday">
+                                                        Friday
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="day-checkbox">
+                                                    <input type="checkbox" value="sa" key="6" id="Saturday" />
+                                                    <label for="Saturday">
+                                                        Saturday
+                                                    </label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div id="monthlyDiv" class="recurrence-info recurrence-options-info monthlyDiv">
+                                    <div class="every-radio-btn">
+                                        <span>
+                                            <input type="radio" value="Day" name="monthlyRecurType" id="Day" />
+                                            <label for="Day">
+                                                Day
+                                            </label>
+                                        </span>
+                                        <span class="input-text"><input type="number" min="1" max="31"
+                                                name="monthlyDayOf" value="" />
+                                            of every </span>
+
+                                        <span class="input-text"><input type="number" min="1" max="12"
+                                                name="monthFrequency" value="" />
+                                            month(s)</span>
+                                    </div>
+                                    <div class="every-radio-btn">
+                                        <span>
+                                            <input type="radio" name="monthlyRecurType" value="The" id="The" />
+                                            <label for="The">
+                                                The
+                                            </label>
+                                        </span>
+                                        <span>
+                                            <select name="monthlyByDay_weekOfMonth"
+                                                id="monthlyByDay_weekOfMonth">
+                                                <option value="first">
+                                                    First</option>
+                                                <option value="second">
+                                                    Second</option>
+                                                <option value="third">
+                                                    Third</option>
+                                                <option value="fourth">
+                                                    Fourth</option>
+                                                <option value="last">
+                                                    Last</option>
+                                            </select>
+                                        </span>
+                                        <span>
+                                            <select name="monthlyByDay_day">
+                                                <option value="su">
+                                                    Sunday</option>
+                                                <option value="mo">
+                                                    Monday</option>
+                                                <option value="tu">
+                                                    Tuesday</option>
+                                                <option value="we">
+                                                    Wednesday</option>
+                                                <option value="th">
+                                                    Thursday</option>
+                                                <option value="fr">
+                                                    Friday</option>
+                                                <option value="sa">
+                                                    Saturday</option>
+                                            </select>
+                                        </span>
+                                        <p>of every</p>
+                                        <span class="input-text"><input type="number" min="1" max="12" value=""
+                                                name="monthlyByDay_monthFrequency" />
+                                            month(s)</span>
+                                    </div>
+                                </div>
+                                <div id="YearlyDiv" class="recurrence-info recurrence-options-info yearlyDiv">
+                                    <div class="every-radio-btn">
+                                        <span>
+                                            <label for="">Recur every</label>
+                                        </span>
+                                        <span class="input-text">
+                                            <input type="number" min="1" max="3" name="yearlyFrequency"
+                                                value="" />
+                                            year(s)
+                                        </span>
+                                    </div>
+                                    <div class="every-radio-btn">
+                                        <span>
+                                            <input type="radio" name="yearlyRecurType" value="On" id="On" />
+                                            <label for="On">
+                                                On :
+                                            </label>
+                                        </span>
+                                        <span>
+                                            <select name="yearly_month">
+                                                <option value='1' max-days="31">
+                                                    Janaury</option>
+                                                <option value='2' max-days="29">
+                                                    February</option>
+                                                <option value='3' max-days="31">
+                                                    March</option>
+                                                <option value='4' max-days="30">
+                                                    April</option>
+                                                <option value='5' max-days="31">
+                                                    May</option>
+                                                <option value='6' max-days="30">
+                                                    June</option>
+                                                <option value='7' max-days="31">
+                                                    July</option>
+                                                <option value='8' max-days="31">
+                                                    August</option>
+                                                <option value='9' max-days="30">
+                                                    September</option>
+                                                <option value='10' max-days="31">
+                                                    October</option>
+                                                <option value='11' max-days="30">
+                                                    November</option>
+                                                <option value='12' max-days="31">
+                                                    December</option>
+                                            </select>
+                                        </span>
+                                        <span>
+                                            <input type="number" min="1" max="31" name="yearly_day" value="" />
+                                        </span>
+                                    </div>
+                                    <div class="every-radio-btn">
+                                        <span>
+                                            <input type="radio" name="yearlyRecurType" value="Onthe"
+                                                id="Onthe" />
+                                            <label for="Onthe">
+                                                On the :
+                                            </label>
+                                        </span>
+                                        <span>
+                                            <select name="yearlyByDay_weekOfMonth">
+                                                <option value="first">
+                                                    First</option>
+                                                <option value="second">
+                                                    Second</option>
+                                                <option value="third">
+                                                    Third</option>
+                                                <option value="fourth">
+                                                    Fourth</option>
+                                                <option value="last">
+                                                    Last</option>
+                                            </select>
+                                        </span>
+
+                                        <span>
+                                            <select name="yearlyByDay_day">
+                                                <option value="su">
+                                                    Sunday</option>
+                                                <option value="mo">
+                                                    Monday</option>
+                                                <option value="tu">
+                                                    Tuesday</option>
+                                                <option value="we">
+                                                    Wednesday</option>
+                                                <option value="th">
+                                                    Thursday</option>
+                                                <option value="fr">
+                                                    Friday</option>
+                                                <option value="sa">
+                                                    Saturday</option>
+                                            </select>
+                                        </span>
+                                        <p>of</p>
+
+                                        <span>
+                                            <select name="yearlyByDay_month">
+                                                <option value='1' max-days="31">
+                                                    Janaury</option>
+                                                <option value='2' max-days="29">
+                                                    February</option>
+                                                <option value='3' max-days="31">
+                                                    March</option>
+                                                <option value='4' max-days="30">
+                                                    April</option>
+                                                <option value='5' max-days="31">
+                                                    May</option>
+                                                <option value='6' max-days="30">
+                                                    June</option>
+                                                <option value='7' max-days="31">
+                                                    July</option>
+                                                <option value='8' max-days="31">
+                                                    August</option>
+                                                <option value='9' max-days="30">
+                                                    September</option>
+                                                <option value='10' max-days="31">
+                                                    October</option>
+                                                <option value='11' max-days="30">
+                                                    November</option>
+                                                <option value='12' max-days="31">
+                                                    December</option>
+                                            </select>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <p class="errormsg hidden"></p>
+                </div>
+                <div class="recurrence-event recurrence_div">
+                    <fieldset>
+                        <legend>
+                            <h2>Range of recurrence <span class="mandatory">
+                                    *</span></h2>
+                        </legend>
+                        <div class="range-info">
+                            <div class="item">
+                                <div class="start-date-input">
+                                    <label for="">Start :</label>
+                                    <input type="text" class="formcontrol addEventVal" placeholder="MM/DD/YYYY"
+                                        id="windowStart_windowStartDate" />
+                                    <a href="javascript:void(0)" id="windowStart_windowStartDateIcon"
+                                        class="dateinput" title="Select Date" aria-label="Select Date">
+                                        <i class="icon icon-calendar-date"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="every-radio-btn">
+                                    <span> <input type="radio" name="EndDateRangeType" value="Noenddate"
+                                            id="Noenddate" checked="checked" />
+                                        <label for="Noenddate">
+                                            No end date
+                                        </label>
+                                    </span>
+                                </div>
+                                <div class="every-radio-btn">
+                                    <span> <input type="radio" name="EndDateRangeType" value="Endafter"
+                                            id="Endafter" />
+                                        <label for="Endafter">
+                                            End after :
+                                        </label>
+                                    </span>
+                                    <span class="input-text"><input type="number" id="EndafterInstances" name=""
+                                            class="addEventVal" min="1" max="999" value="" />
+                                        occurrence(s)</span>
+                                </div>
+                                <div class="every-radio-btn">
+                                    <span> <input type="radio" name="EndDateRangeType" value="Endby"
+                                            id="Endby" />
+                                        <label for="Endby">
+                                            End by :
+                                        </label>
+                                    </span>
+                                    <span class="end-date-input">
+                                        <input type="text" class="formcontrol addEventVal"
+                                            placeholder="MM/DD/YYYY" id="windowEnd_windowEndDate" />
+                                        <a href="javascript:void(0)" id="windowEnd_windowEndDateIcon"
+                                            class="dateinput" title="Select Date" aria-label="Select Date">
+                                            <i class="icon icon-calendar-date"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <p class="errormsg hidden"></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <label for="Description">Description</label>
+            </div>
+            <div class="col-sm-8">
+                <div class="description">
+                    <textarea rows="2" class="addEventVal" cols="5" id="AddEventDescription"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <label for="AssignedComponent">Assigned Component<span class="mandatory">*</span></label>
+            </div>
+            <div class="col-sm-8">
+                <div class="AssignedComponent">
+                    <select name="AssignedComponent" id="AddAssignedComponent">
+                    </select>
+                    <p class="errormsg hidden AssignedComponentError">
+                        Please Select Assigned Component </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <label for="Category">Category <span class="mandatory">*</span></label>
+            </div>
+            <div class="col-sm-8">
+                <div class="category-select">
+                    <select name="Category" id="AddCspCategory" multiple="multiple">
+                    </select>
+                    <p class="errormsg hidden CSPCategoryError">
+                        Please Select Category </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <label for="Category">Event Category</label>
+            </div>
+            <div class="col-sm-8 evtCategoryDiv">
+                <div class="day-radio">
+                    <input type="radio" class="addEventProp" value="" id="AddCategorySelecetdChoice" />
+                    <label for="AddCategorySelecetdChoice">
+                        <select name="" id="AddCategorySelectedValue" class="addEventVal">
+                            <option name="" value="" selected disabled>
+                                Select Event Category</option>
+                            <option name="" value="Meeting">Meeting</option>
+                            <option name="" value="Work Hours">Work 
+                            Hours</option>
+                            <option name="" value="Business">Business</option>
+                            <option name="" value="Holiday">Holiday</option>
+                            <option name="" value="Get Together">Get 
+                            Together</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="day-radio divspecify">
+                    <input type="radio" class="addEventProp" value="" id="AddCategoryUserChoice" />
+                    <label for="AddCategoryUserChoice">
+                        Specify your own value
+                    </label>
+                    <input type="text" class="formcontrol addEventVal" id="AddCategoryUsersValue" disabled />
+                    <p class="errormsg hidden"></p>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="display:none;">
+            <div class="col-sm-2">
+                <label for="Archive">Is Archive</label>
+            </div>
+            <div class="col-sm-8">
+                <div class="day-checkbox">
+                    <input type="checkbox" value="" id="AddIsArchiveEvent" class="addEventProp" />
+                    <label for="checkthree">
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <label for="uploadFile">Attachment(s) </label>
+            </div>
+            <div class="col-sm-8">
+                <div class="event-attachment">
+                    <div ondrop="dropHandlerCal(this,event);" ondragover="dragOverHandlerCal(event);"
+                        ondragenter="enterZoneCal(this);" ondragleave="leaveZoneCal(this);"
+                        class="dropzone-attachfile" aria-label="Attachment">
+                        <i class="icon-calendarupload"></i>
+                        <label for="calEvent_attachFile" id="calEvent_attachFile_label" onkeypress="chooseFileOnEnter(event, this);" tabindex="0">
+                            Drag/Choose files </label>
+                        <input type="file" name="attachFile" id="calEvent_attachFile" multiple="multiple"
+                            onchange="fileSelectCal(this,event);"
+                            accept=".xlsx,.xls,.doc, .docx,.ppt, .pptx,.txt,.pdf,.png, .jpg, .jpeg,.gif"
+                            value="Choose files" aria-label="Attach File" class="attUpload hidden" />
+                        <div class="attachmentsdisplay" id="eventAttachements">
+                            <ul class="">
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <span class="eventerrormsg fltl eventAttachementsErrormsg"></span> <span
+                    class="dropzone-hintmg fltl">
+                    Hint: Upload the files which are in the .png, .jpeg, 
+                .xlsx, .doc,.txt, .pdf, .ppt, .pptx, .msg files and 
+                special characters like #$%^&amp;* will not be used in the 
+                document names. </span>
+            </div>
+        </div>
+    </div>
+    <div class="eventPopupBottom">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <div class="popup-btns">
+                    <a href="javascript:addEvent()" class="button savebtn" title="Save">
+                        <i class="icon-calendarchecked"></i>
+                        Save</a>
+                    <a href="javascript:void(0)" class="button cancelbtn cancelEventBtn" title="Cancel">
+                        <i class="icon-calendarclose"></i>
+                        CANCEL</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="eventPopup" id="EditCalendarEventPopup">
+    <div class="eventPopupHeader">
+        <h4 class=""><span class="icon-calendar-date"></span>Calendar Event <a class="icon-calendarpencil" href="javascript:void(0)"
+            id="editEvent" title="Edit"></a>
+    </h4>
+        <a class="icon icon-calendarclose closeEventPopup" href="javascript:void(0)"
+                                            title="Close"></a>
+    </div>
+    <div class="popup-body calenderfullwidth">
+        <div class="row">
+            <div class="col-sm-2"><label for="title">Title <span>*</span></label></div>
+            <div class="col-sm-8 ">
+                <div class="add-custom-input Editmode">
+                    <input type="text" class="formcontrol editEventVal" id="EditEventTitle" />
+                    <p class="errormsg hidden"></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"><label for="title">Location </label></div>
+            <div class="col-sm-8 ">
+                <div class="add-custom-input Editmode">
+                    <input type="text" class="formcontrol editEventVal" id="EditEventLocation" />
+                    <p class="errormsg hidden"></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"><label for="title">Start Time <span>*</span></label></div>
+            <div class="col-sm-8 ">
+                <div class="date-time-forms calenderfullwidth Editmode">
+                    <div class="item">
+                        <div class="add-date-input">
+                            <input type="text" class="formcontrol editEventVal" placeholder="MM/DD/YYYY"
+                                id="EditEventStartDate" />
+                            <a href="javascript:void(0)" id="EditEventStartDateIcon"
+                                class="dateinput editEventVal" title="Select Date" aria-label="Select Date">
+                                <i class="icon-calendar-date"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="add-time-input">
+                            <select name="" id="EditEventStartHours" class="editEventVal">
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="add-min-input">
+                            <select name="" id="EditEventStartMins" class="editEventVal">
+
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <p class="errormsg hidden"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"><label for="title">End Time <span>*</span></label></div>
+            <div class="col-sm-8 ">
+                <div class="date-time-forms calenderfullwidth Editmode">
+                    <div class="item">
+                        <div class="add-date-input">
+                            <input type="text" class="formcontrol editEventVal" placeholder="MM/DD/YYYY"
+                                id="EditEventEndDate" />
+                            <a href="javascript:void(0)" id="EditEventEndDateIcon"
+                                class="dateinput editEventVal" title="Select Date" aria-label="Select Date">
+                                <i class="icon-calendar-date"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="add-time-input">
+                            <select name="" class="editEventVal" id="EditEventEndHours">
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="add-min-input">
+                            <select name="" class="editEventVal" id="EditEventEndMins">
+
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <p class="errormsg hidden"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <label for="All Day Event">All Day Event</label>
+            </div>
+            <div class="col-sm-8">
+                <!--<div class="calenderfullwidth" id="EditAllDayView">
+                    <span></span>
+                </div>-->
+                <div class="day-checkbox Editmode" id="EditAllDayEdit">
+                    <input type="checkbox" value="" class="editEventProp" id="EditAlldayEvent" />
+                    <label for="EditAlldayEvent" class="editEventVal">
+                        Make this an all-day event that doesn&#39;t start or 
+                    end at a specific hour
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <label for="Recurrence">Recurrence</label>
+            </div>
+            <div class="col-sm-8">
+                <div class="calenderfullwidth" id="EditRecurrenceView">
+                    <span></span>
+                </div>
+                <div class="day-checkbox Editmode" id="EditRecurrenceEdit">
+                    <input type="checkbox" value="" class="editEventProp" id="EditRecurrenceEvent" />
+                    <label for="EditRecurrenceEvent" class="editEventVal">
+                        Make this repeating event
+                    </label>
+                </div>
+                
+            </div>
+            <div class="col-sm-12 divrecurrenceevent">
+                <div class="recurrence-event recurrence_div">
+                    <fieldset>
+                        <legend>
+                            <h2>Recurrence Pattern <span class="mandatory">
+                                    *</span></h2>
+                        </legend>
+
+
+                        <div class="recurrence-options">
+                            <div class="item">
+                                <ul class="left-side">
+                                    <li><input type="radio" name="recurrence-list" checked="checked"
+                                            value="daily" id="EditDaily" /><label for="EditDaily">
+                                            Daily</label>
+                                    </li>
+                                    <li><input type="radio" name="recurrence-list" value="weekly"
+                                            id="EditWeekly" />
+                                        <label for="EditWeekly">
+                                            Weekly</label></li>
+                                    <li><input type="radio" name="recurrence-list" value="monthly"
+                                            id="EditMonthly" />
+                                        <label for="EditMonthly">
+                                            Monthly</label></li>
+                                    <li><input type="radio" name="recurrence-list" value="yearly"
+                                            id="EditYearly" />
+                                        <label for="EditYearly">
+                                            Yearly</label></li>
+                                </ul>
+
+                            </div>
+                            <div class="item">
+                                <div id="EditdailyDiv" class="recurrence-info recurrence-options-info dailyDiv">
+
+
+                                    <div class="every-radio-btn">
+                                        <span> <input type="radio" value="Every" name="dailyRecurType"
+                                                id="EditDailyRecurEvery" checked="checked" />
+                                            <label for="EditDailyRecurEvery">
+                                                Every
+                                            </label></span>
+                                        <span class="input-text"><input type="number" name="dailyRecurFrequency"
+                                                min="1" max="255" id="EditDailyRecurFrequency" value=""
+                                                class="editEventVal" />
+                                            day(s)</span>
+                                    </div>
+                                    <div class="every-radio-btn">
+                                        <span>
+                                            <input type="radio" name="dailyRecurType" value="EveryWeekday"
+                                                id="EditEveryWeekday" />
+                                            <label for="EditEveryWeekday">
+                                                Every Weekday
+                                            </label>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div id="EditweeklyDiv"
+                                    class="recurrence-info recurrence-options-info weeklyDiv">
+                                    <div class="every-radio-btn">
+                                        <span>
+                                            <label for="">Recur every</label>
+                                        </span>
+                                        <span class="input-text"><input type="number"
+                                                name="weeklyRecurFrequency" min="1" max="255"
+                                                id="EditWeeklyFrequency" value="" />
+                                            week(s) on: </span>
+                                    </div>
+                                    <div class="every-radio-btn weekdays">
+                                        <ul>
+                                            <li>
+                                                <div class="day-checkbox">
+                                                    <input type="checkbox" value="su" key="0" id="EditSunday" />
+                                                    <label for="EditSunday">
+                                                        Sunday
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="day-checkbox">
+                                                    <input type="checkbox" value="mo" key="1" id="EditMonday" />
+                                                    <label for="EditMonday">
+                                                        Monday
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="day-checkbox">
+                                                    <input type="checkbox" value="tu" key="2"
+                                                        id="EditTuesday" />
+                                                    <label for="EditTuesday">
+                                                        Tuesday
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="day-checkbox">
+                                                    <input type="checkbox" value="we" key="3"
+                                                        id="EditWednesday" />
+                                                    <label for="EditWednesday">
+                                                        Wednesday
+                                                    </label>
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="day-checkbox">
+                                                    <input type="checkbox" value="th" key="4"
+                                                        id="EditThursday" />
+                                                    <label for="EditThursday">
+                                                        Thursday
+                                                    </label>
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="day-checkbox">
+                                                    <input type="checkbox" value="fr" key="5" id="EditFriday" />
+                                                    <label for="EditFriday">
+                                                        Friday
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="day-checkbox">
+                                                    <input type="checkbox" value="sa" key="6"
+                                                        id="EditSaturday" />
+                                                    <label for="EditSaturday">
+                                                        Saturday
+                                                    </label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div id="EditmonthlyDiv"
+                                    class="recurrence-info recurrence-options-info monthlyDiv">
+                                    <div class="every-radio-btn">
+                                        <span>
+                                            <input type="radio" value="Day" name="monthlyRecurType"
+                                                id="EditDay" />
+                                            <label for="EditDay">
+                                                Day
+                                            </label>
+                                        </span>
+                                        <span class="input-text"><input type="number" min="1" max="31"
+                                                name="monthlyDayOf" value="" />
+                                            of every </span>
+
+                                        <span class="input-text"><input type="number" min="1" max="12"
+                                                name="monthFrequency" value="" />
+                                            month(s)</span>
+                                    </div>
+                                    <div class="every-radio-btn">
+                                        <span>
+                                            <input type="radio" name="monthlyRecurType" value="The"
+                                                id="EditThe" />
+                                            <label for="EditThe">
+                                                The
+                                            </label>
+                                        </span>
+                                        <span>
+                                            <select name="monthlyByDay_weekOfMonth">
+                                                <option value="first">
+                                                    First</option>
+                                                <option value="second">
+                                                    Second</option>
+                                                <option value="third">
+                                                    Third</option>
+                                                <option value="fourth">
+                                                    Fourth</option>
+                                                <option value="last">
+                                                    Last</option>
+                                            </select>
+                                        </span>
+                                        <span>
+                                            <select name="monthlyByDay_day">
+                                                <option value="su">
+                                                    Sunday</option>
+                                                <option value="mo">
+                                                    Monday</option>
+                                                <option value="tu">
+                                                    Tuesday</option>
+                                                <option value="we">
+                                                    Wednesday</option>
+                                                <option value="th">
+                                                    Thursday</option>
+                                                <option value="fr">
+                                                    Friday</option>
+                                                <option value="sa">
+                                                    Saturday</option>
+                                            </select>
+                                        </span>
+                                        <p>of every</p>
+                                        <span class="input-text"><input type="number" min="1" max="12" value=""
+                                                name="monthlyByDay_monthFrequency" />
+                                            month(s)</span>
+                                    </div>
+                                </div>
+
+                                <div id="EditYearlyDiv"
+                                    class="recurrence-info recurrence-options-info yearlyDiv">
+                                    <div class="every-radio-btn">
+                                        <span>
+                                            <label for="">Recur every</label>
+                                        </span>
+                                        <span class="input-text">
+                                            <input type="number" min="1" max="3" name="yearlyFrequency"
+                                                value="" />
+                                            year(s)
+                                        </span>
+                                    </div>
+                                    <div class="every-radio-btn">
+                                        <span>
+                                            <input type="radio" name="yearlyRecurType" value="On" id="EditOn" />
+                                            <label for="EditOn">
+                                                On :
+                                            </label>
+                                        </span>
+                                        <span>
+                                            <select name="yearly_month">
+                                                <option value='1' max-days="31">
+                                                    Janaury</option>
+                                                <option value='2' max-days="29">
+                                                    February</option>
+                                                <option value='3' max-days="31">
+                                                    March</option>
+                                                <option value='4' max-days="30">
+                                                    April</option>
+                                                <option value='5' max-days="31">
+                                                    May</option>
+                                                <option value='6' max-days="30">
+                                                    June</option>
+                                                <option value='7' max-days="31">
+                                                    July</option>
+                                                <option value='8' max-days="31">
+                                                    August</option>
+                                                <option value='9' max-days="30">
+                                                    September</option>
+                                                <option value='10' max-days="31">
+                                                    October</option>
+                                                <option value='11' max-days="30">
+                                                    November</option>
+                                                <option value='12' max-days="31">
+                                                    December</option>
+                                            </select>
+                                        </span>
+                                        <span>
+                                            <input type="number" min="1" max="31" name="yearly_day" value="" />
+                                        </span>
+                                    </div>
+                                    <div class="every-radio-btn">
+                                        <span>
+                                            <input type="radio" name="yearlyRecurType" value="Onthe"
+                                                id="EditOnthe" />
+                                            <label for="EditOnthe">
+                                                On the :
+                                            </label>
+                                        </span>
+                                        <span>
+                                            <select name="yearlyByDay_weekOfMonth">
+                                                <option value="first">
+                                                    First</option>
+                                                <option value="second">
+                                                    Second</option>
+                                                <option value="third">
+                                                    Third</option>
+                                                <option value="fourth">
+                                                    Fourth</option>
+                                                <option value="last">
+                                                    Last</option>
+                                            </select>
+                                        </span>
+
+                                        <span>
+                                            <select name="yearlyByDay_day">
+                                                <option value="su">
+                                                    Sunday</option>
+                                                <option value="mo">
+                                                    Monday</option>
+                                                <option value="tu">
+                                                    Tuesday</option>
+                                                <option value="we">
+                                                    Wednesday</option>
+                                                <option value="th">
+                                                    Thursday</option>
+                                                <option value="fr">
+                                                    Friday</option>
+                                                <option value="sa">
+                                                    Saturday</option>
+                                            </select>
+                                        </span>
+                                        <p>of</p>
+
+                                        <span>
+                                            <select name="yearlyByDay_month">
+                                                <option value='1' max-days="31">
+                                                    Janaury</option>
+                                                <option value='2' max-days="29">
+                                                    February</option>
+                                                <option value='3' max-days="31">
+                                                    March</option>
+                                                <option value='4' max-days="30">
+                                                    April</option>
+                                                <option value='5' max-days="31">
+                                                    May</option>
+                                                <option value='6' max-days="30">
+                                                    June</option>
+                                                <option value='7' max-days="31">
+                                                    July</option>
+                                                <option value='8' max-days="31">
+                                                    August</option>
+                                                <option value='9' max-days="30">
+                                                    September</option>
+                                                <option value='10' max-days="31">
+                                                    October</option>
+                                                <option value='11' max-days="30">
+                                                    November</option>
+                                                <option value='12' max-days="31">
+                                                    December</option>
+                                            </select>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <p class="errormsg hidden"></p>
+                </div>
+                <div class="recurrence-event recurrence_div">
+                    <fieldset>
+                        <legend>
+                            <h2>Range of recurrence <span class="mandatory">
+                                    *</span></h2>
+                        </legend>
+                        <div class="range-info">
+                            <div class="item">
+                                <div class="start-date-input">
+                                    <label for="">Start :</label>
+                                    <input type="text" class="formcontrol editEventVal" placeholder="MM/DD/YYYY"
+                                        id="EditwindowStart_windowStartDate" />
+                                    <a href="javascript:void(0)" id="EditwindowStart_windowStartDateIcon"
+                                        class="dateinput" title="Select Date" aria-label="Select Date">
+                                        <i class="icon-calendar-date"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="every-radio-btn">
+                                    <span> <input type="radio" name="EndDateRangeType" value="Noenddate"
+                                            id="EditNoenddate" checked="checked" />
+                                        <label for="EditNoenddate">
+                                            No end date
+                                        </label>
+                                    </span>
+                                </div>
+                                <div class="every-radio-btn">
+                                    <span> <input type="radio" name="EndDateRangeType" value="Endafter"
+                                            id="EditEndafter" />
+                                        <label for="EditEndafter">
+                                            End after :
+                                        </label>
+                                    </span>
+                                    <span class="input-text"><input type="number" id="EditEndafterInstances"
+                                            name="" class="editEventVal" min="1" max="999" value="" />
+                                        occurrence(s)</span>
+                                </div>
+                                <div class="every-radio-btn">
+                                    <span> <input type="radio" name="EndDateRangeType" value="Endby"
+                                            id="EditEndby" />
+                                        <label for="EditEndby">
+                                            End by :
+                                        </label>
+                                    </span>
+                                    <span class="end-date-input">
+                                        <input type="text" class="formcontrol editEventVal"
+                                            placeholder="MM/DD/YYYY" id="EditwindowEnd_windowEndDate" />
+                                        <a href="javascript:void(0)" id="EditwindowEnd_windowEndDateIcon"
+                                            class="dateinput" title="Select Date" aria-label="Select Date">
+                                            <i class="icon-calendar-date"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <p class="errormsg hidden"></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <label for="Description">Description</label>
+
+            </div>
+            <div class="col-sm-8">
+                <div class="description Editmode">
+                    <textarea rows="2" cols="5" class="editEventVal" id="EditEventDescription"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <label for="AssignedComponent">Assigned Component<span class="mandatory">*</span></label>
+            </div>
+            <div class="col-sm-8">
+                <div class="AssignedComponent">
+                    <select name="AssignedComponent" id="EditAssignedComponent">
+                    </select>
+                    <p class="errormsg hidden AssignedComponentError">
+                        Please Select Assigned Component </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <label for="Category">Category <span class="mandatory">*</span></label>
+            </div>
+            <div class="col-sm-8">
+                <div class="category-select Editmode">
+                    <select name="Category" id="EditCspCategory" class="editEventProp" multiple="multiple">
+                    </select>
+                    <p class="errormsg hidden CSPCategoryError">
+                        Please Select Category </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <label for="Category">Event Category</label>
+            </div>
+            <div class="col-sm-8 evtCategoryDiv">
+                <div class="day-radio Editmode">
+                    <input type="radio" value="" class="editEventProp" id="EditCategorySelecetdChoice" />
+                    <label for="radio1">
+                        <select name="" id="EditCategorySelectedValue" class="editEventVal">
+                            <option name="" value="" disabled>Select 
+                            Event Category</option>
+                            <option name="" value="Meeting">Meeting</option>
+                            <option name="" value="Work Hours">Work 
+                            Hours</option>
+                            <option name="" value="Business">Business</option>
+                            <option name="" value="Holiday">Holiday</option>
+                            <option name="" value="Get Together">Get 
+                            Together</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="day-radio divspecify Editmode">
+                    <input type="radio" value="" id="EditCategoryUserChoice" class="editEventProp" />
+                    <label for="EditCategoryUserChoice">
+                        Specify your own value
+                    </label>
+                    <input type="text" class="formcontrol editEventVal" id="EditCategoryUsersValue" disabled />
+                    <p class="errormsg hidden"></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <label for="Archive">Is Archived</label>
+            </div>
+            <div class="col-sm-8">
+                <div class="day-checkbox Editmode">
+                    <input type="checkbox" value="" class="editEventProp" id="EditIsArchiveEvent" />
+                    <label for="checkthree">
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <label for="Attachment">Attachment(s)</label>
+            </div>
+            <div class="col-sm-8">
+                <div class="attachment-list" id="EventAttachmentsView">
+                </div>
+                <div class="event-attachment hidden" id="eventAttachementsEditDiv">
+                    <div ondrop="dropHandlerCal(this,event);" ondragover="dragOverHandlerCal(event);"
+                        ondragenter="enterZoneCal(this);" ondragleave="leaveZoneCal(this);"
+                        class="dropzone-attachfile" aria-label="Attachment">
+                        <i class="icon-calendarupload"></i>
+                        <label for="calEvent_attachFileEdit" id="calEvent_attachFileEdit_label" onkeypress="chooseFileOnEnter(event, this);" tabindex="0">
+                            Drag/Choose files </label>
+                        <input type="file" name="attachFile" id="calEvent_attachFileEdit" multiple="multiple"
+                            onchange="fileSelectCal(this,event);"
+                            accept=".xlsx,.xls,.doc, .docx,.ppt, .pptx,.txt,.pdf,.png, .jpg, .jpeg,.gif"
+                            value="Choose files" aria-label="Attach File" class="attUpload hidden" />
+                        <div class="attachmentsdisplay" id="eventAttachementsEdit">
+                        </div>
+                    </div>
+                    <span class="eventerrormsg fltl eventAttachementsErrormsg"></span> <span
+                        class="dropzone-hintmg fltl">
+                        Hint: Upload the files which are in the .png, 
+                    .jpeg, .xlsx, .doc,.txt, .pdf, .ppt, .pptx, .msg 
+                    files and special characters like #$%^&amp;* will not be 
+                    used in the document names. </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="eventPopupBottom">
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="prev-next-btns">
+
+                    <a href="javascript:void(0)" class="button cancelbtn" id="PreviousEvent" title="Previous">
+                        <span class="prev-icon">
+
+                        </span>
+                    </a>
+                    <a href="javascript:void(0)" class="button cancelbtn" id="NextEvent" title="Next"><span
+                            class="next-icon"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="popup-action-btns">
+                    <a href="javascript:void(0)" class="button updatebtn" id="UpdateEvent"
+                        onclick="updateEvent(this);" title="Update" style="display: none">
+                        <i class="icon-refresh"></i>
+                        Update</a>
+                    <a href="javascript:void(0)" class="button deletebtn" id="DeleteEvent"
+                        onclick="deleteEvent(this);" title="Delete"><i class="icon-calendarbin"></i>
+                        Delete</a>
+                    <a href="javascript:void(0)" class="button cancelbtn cancelEventBtn"><i
+                            class="icon-calendarclose" title="Cancel"></i>
+                        CANCEL</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:Order msdt:dt="string">55600.0000000000</mso:Order>
+<mso:FSObjType msdt:dt="string">0</mso:FSObjType>
+<mso:FileDirRef msdt:dt="string">teams/mpf/MPFHtml/SiteAssets/Mpf/FullCalendar/Templates</mso:FileDirRef>
+<mso:FileLeafRef msdt:dt="string">calendarpopups.html</mso:FileLeafRef>
+<mso:ContentType msdt:dt="string">Document</mso:ContentType>
+<mso:ContentTypeId msdt:dt="string">0x01010089E8DDDEDC586F47A5A0B3D336E93FF6</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>

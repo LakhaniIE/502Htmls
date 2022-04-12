@@ -1,0 +1,82 @@
+/*****************************************/
+/*Archived Search section */
+/*****************************************/
+.divArchivedInquiries{width: 100%; margin: 30px 0px;}
+.inputArchivedSearch{width: 100%;border: 1px solid #dcdfe6; position: relative; border-radius: 7px;box-shadow: 0 0px 3px rgb(0 0 0 / 10%);padding: 15px 40px 15px 40px !important; margin: 15px 0 0 0; }
+.anchorArchivedsearchIcon{position: absolute; left: 0; top: -30px;}
+.divArchivedHeader h1{font-family: 'latobold';font-size: 20px;color: #1a1b1d;text-align: center;}
+.divArchivedHeader h1::after {content: "";display: block;border-bottom: 2px solid #f0c619;width: 60px;margin: 5px auto 0 auto;}
+.hintmgs {font-size: 12px; display: inline-block; color: #6f6d6d;margin: 5px 0 8px 0;width: 100%;font-weight: normal; font-family: 'sourcesansproregular';}
+.anchorArchivedSearch{font-family: 'latobold' !important; position: relative; text-decoration: none !important; font-size: 14px;color: #fff !important; margin:10px auto;padding: 5px 25px;border-radius: 4px;background: #007eaf; display: table;}
+.divArchivedSearchMain{position: relative;}
+.anchorArchivedsearchIcon{position: absolute; left: 16px; top: 30px;}
+
+/*****************************************/
+/*Archived Search Results */
+/*****************************************/
+.divArchivedSearchResultInquiries{display: flex; margin: 10px 0px; border-bottom: 1px solid #e3e3e3; padding-bottom: 20px;}
+.divArchivedSearchResultInquiries .divArchivedSearchResultsMain{ margin: 0 10px; width: 45%; position: relative;} 
+.divArchivedSearchResultInquiries .inputArchivedSearchresult{width: 100%;border: 1px solid #dcdfe6; position: relative; border-radius: 7px;box-shadow: 0 0px 3px rgb(0 0 0 / 10%);padding: 15px !important; margin: 0; }
+.divArchivedSearchResultInquiries .anchorArchivedsearchresultsIcon{ position: absolute; text-decoration: none !important; background: #0081b1;color: #fff;right: 0px; text-align: center; width: 50px; height: 47px; line-height: 47px; top: 1px; border-radius: 0 4px 4px 0;}
+.divArchivedSearchResultInquiries .anchorArchivedRemoveIcon{ position: absolute; text-decoration: none !important;right: 60px; top: 16px; color: #ccc;}
+.divArchivedSearchResultInquiries .anchorArchivedsearchresultsIcon{font-size: 20px;}
+.divArchivedSearchResultInquiries .divArchivedHeader{padding-top: 10px;}
+.divArchivedSearchResultInquiries .divArchivedHeader h1::after{margin: 5px 0px;}
+
+/*****************************************/
+/*Archived Inquiries Header*/
+/*****************************************/
+.divArchivedInquiriesheader{width: 100%; display: flex; position:sticky; z-index: 1; background: #fff; top: 3px; margin: 5px 0px 5px 0px;}
+.divArchivedInquiriesheader h2{font-family: 'latobold', sans-serif;font-size: 14px; color: #000; text-transform: uppercase; margin: 0px; padding:5px 0px;}
+.divheaderactionbtns{margin-left: auto;}
+.divheaderactionbtns > ul, .divheaderactionbtns > ul > li{list-style-type: none; margin: 0px; padding: 0px; position: relative;} 
+.divheaderactionbtns > ul > li{margin-right: 5px; display: inline-block; }
+.divheaderactionbtns > ul > li > a{font-size: 14px; padding: 5px 10px; font-family: "sourcesansprosemibold", sans-serif; text-transform: uppercase; text-align: center; color: #fff; text-decoration: none; display: inline-block;}
+.divheaderactionbtns > ul > li.liExcelbtn{background-color: none; border: 1px solid #3BA204; }
+.divheaderactionbtns > ul > li.liExcelbtn a{ color: #3BA204;}
+.divheaderactionbtns > ul > li.liExcelbtn a span.icon-excel{padding-right: 5px; font-size: 11px;}
+.divheaderactionbtns > ul > li.liExcelbtn:hover{background-color:#3BA204; }
+.divheaderactionbtns > ul > li.liExcelbtn a:hover{color: #fff;}
+.divheaderactionbtns > ul > li:last-child{margin-right: 0px;}
+
+/*****************************************/
+/*Archived Inquiries Table*/
+/*****************************************/
+.divArchivedInquiriesTable{width: 100%;position: relative;display: inline-block; margin: 5px 0 5px 0px; background-color: #fff;
+    box-shadow: 0 0 6px rgb(0 0 0 / 8%);}
+.divArchivedInquiriesTable table {width: 100%;} 
+.divArchivedInquiriesTable thead th:nth-child(1){ padding: 7px 10px;width: 3px;height: 3px;}
+.divArchivedInquiriesTable tbody td:nth-child(1) {padding: 7px 10px;}
+.divArchivedInquiriesTable thead th {background-color: #063A7C; position: sticky; top: 35px; z-index: 1; padding: 7px 5px 7px 0px; text-align: left; font-family: 'sourcesansprosemibold'; font-size: 13px; color: #fff;} 
+.divArchivedInquiriesTable tbody td { font-family: 'sourcesansprosemibold'; font-size: 13px; padding:7px 5px 7px 0px; color: #333;}
+.divArchivedInquiriesTable tbody td a { font-family: 'sourcesansprosemibold'; font-size: 13px; text-decoration: none; color: #073E7E;}
+.divArchivedInquiriesTable tbody td[colspan] {border-bottom: 1px solid #ececec; position: relative; top: -8px; padding-left: 36px; }
+.divArchivedInquiriesTable tbody td[colspan] a{font-family: 'latomedium'; font-size: 13px;text-decoration: none; color: #073E7E; display: inline-block;}
+.divArchivedInquiriesTable tbody td span[name] {font-family: 'latobold';}
+.divArchivedInquiriesTable tbody td span[name="1"]{color:#a79498;}
+.divArchivedInquiriesTable tbody td span[name="2"]{color:#d5b09c;}
+.divArchivedInquiriesTable tbody td span[name="3"]{color:#969608;}
+.divArchivedInquiriesTable tbody td span[name="4"]{color:#B854BC;} 
+.divArchivedInquiriesTable table tr  td[colspan] p { width: auto;display: inline-block;margin: 0px; margin-left: 5px; color: #797979; font-family: 'sourcesansproregular';}
+.divArchivedInquiriesTable table tr  td[colspan] p span[class^="icon-"]{font-size: 11px; width: 18px; height: 18px; display: inline-block; background-color: #5C7296; color: #fff; text-align: center; border-radius: 100px; line-height: 18px; margin: 0px 5px 0px 5px;}
+.divArchivedInquiriesTable tbody tr:last-child td[colspan] { border-bottom: none;}
+
+
+/*****************************************/
+/*All Inquiries Right side*/
+/*****************************************/
+.divrightcontainer header{border-radius: 0; background-color: #063A7C;}
+.divfilters{border: none;box-shadow: 0 0 6px rgb(0 0 0 / 8%);}
+.divrightcontainer header h1{color: #fff; text-transform: none;}
+.divrightcontainer header .anchorclearalllink{margin: 0px; background-color: #728bb1; text-transform: uppercase; padding: 2px 10px; color: #fff; font-family:'sourcesansprosemibold'; font-size: 13px; text-decoration: none;}
+.divrightcontainer header .anchorclearalllink span[class^="icon-"]{padding-right: 3px; font-size: 10px;}
+/*****************************************/
+/*Filters section*/
+/*****************************************/
+.divrightcontainer header{padding:5px 10px;background-color: #063A7C;position: relative;width: 100%; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 1px solid #eee; display: flex; justify-content: space-between;}
+.divrightcontainer header h1{color: #fff;font-size: 15px;font-family: "sourcesansprosemibold";font-weight: normal;margin:3px 0 0px;}
+.divrightcontainer header h1 i{padding-right:5px;}
+.divrightcontainer header .clearall-link{font-family: 'sourcesansproregular', Tahoma, sans-serif; font-size: 13px; color: #fff; margin-top: 2px;}
+.divfilters{padding: 10px;border: 1px solid #eee; background: #fff; border-top: none; box-shadow: 0 2px 0 rgb(0 0 0 / 7%);}
+.divfilters .filterrow{display: flex;display: -ms-flexbox;display: -webkit-flex;flex-wrap: wrap;padding-bottom: 5px;}
+.divfilters .filterrow .filterfield{position: relative;display: inline-block;width: 100%; margin-bottom: 5px;}

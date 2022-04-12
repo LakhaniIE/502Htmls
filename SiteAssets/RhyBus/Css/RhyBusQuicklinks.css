@@ -1,0 +1,8 @@
+/************************************/
+/*RhyBus Quicklinks*/
+/************************************/
+.divquicklinkcontent {margin: 10px 0 0 0; min-height: 285px; max-height: 285px;} 
+.divquicklinkcontent ul, .divquicklinkcontent ul li {list-style-type: none; margin: 0px; padding: 0px;}
+.divquicklinkcontent ul li {padding-left: 15px; position: relative; margin: 0 0 3px 0;}
+.divquicklinkcontent ul li::before {content: "\e957"; color: #003F91; font-family: 'icomoon' !important; font-size: 10px; font-weight: bold; left: 0; top: 5px; position: absolute;}
+.divquicklinkcontent ul li a {font-size: 14px; color: #003F91; font-family: 'sourcesansproregular', sans-serif; text-decoration: none;}

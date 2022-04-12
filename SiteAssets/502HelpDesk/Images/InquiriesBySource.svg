@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="497.502" height="255.933" viewBox="0 0 497.502 255.933">
+  <defs>
+    <filter id="Ellipse_2410" x="262.502" y="45" width="34" height="34" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_2447" x="262.502" y="78" width="34" height="34" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_2718" x="262.502" y="114" width="34" height="34" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_2719" x="262.502" y="150" width="34" height="34" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-4"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_2720" x="262.502" y="183" width="34" height="34" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-5"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_29256" data-name="Group 29256" transform="translate(-161.538 -358.001)">
+    <g id="Group_24011" data-name="Group 24011" transform="translate(433.039 409.264)">
+      <text id="Google_Chrome" data-name="Google Chrome" transform="translate(23.001 12.737)" fill="#43425d" font-size="14" font-family="Lato-Semibold, Lato" font-weight="600"><tspan x="0" y="0">Customer </tspan><tspan y="0" fill="#000">(24)</tspan></text>
+      <text id="Google_Chrome-2" data-name="Google Chrome" transform="translate(23.001 45.737)" fill="#43425d" font-size="14" font-family="Lato-Semibold, Lato" font-weight="600"><tspan x="0" y="0">CSS </tspan><tspan y="0" fill="#000">(05)</tspan></text>
+      <text id="Google_Chrome-3" data-name="Google Chrome" transform="translate(23.001 81.737)" fill="#43425d" font-size="14" font-family="Lato-Semibold, Lato" font-weight="600"><tspan x="0" y="0">Received from other Section </tspan><tspan y="0" fill="#000">(05)</tspan></text>
+      <text id="Google_Chrome-4" data-name="Google Chrome" transform="translate(23.001 117.737)" fill="#43425d" font-size="14" font-family="Lato-Semibold, Lato" font-weight="600"><tspan x="0" y="0">Assigned to other Section </tspan><tspan y="0" fill="#000">(25)</tspan></text>
+      <text id="Google_Chrome-5" data-name="Google Chrome" transform="translate(23.001 150.737)" fill="#43425d" font-size="14" font-family="Lato-Semibold, Lato" font-weight="600"><tspan x="0" y="0">Unassigned </tspan><tspan y="0" fill="#000">(15)</tspan></text>
+      <g transform="matrix(1, 0, 0, 1, -271.5, -51.26)" filter="url(#Ellipse_2410)">
+        <g id="Ellipse_2410-2" data-name="Ellipse 2410" transform="translate(271.5 51)" fill="#3d4479" stroke="#fff" stroke-width="3">
+          <circle cx="8" cy="8" r="8" stroke="none"/>
+          <circle cx="8" cy="8" r="6.5" fill="none"/>
+        </g>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -271.5, -51.26)" filter="url(#Ellipse_2447)">
+        <g id="Ellipse_2447-2" data-name="Ellipse 2447" transform="translate(271.5 84)" fill="#a02e9c" stroke="#fff" stroke-width="3">
+          <circle cx="8" cy="8" r="8" stroke="none"/>
+          <circle cx="8" cy="8" r="6.5" fill="none"/>
+        </g>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -271.5, -51.26)" filter="url(#Ellipse_2718)">
+        <g id="Ellipse_2718-2" data-name="Ellipse 2718" transform="translate(271.5 120)" fill="#0069aa" stroke="#fff" stroke-width="3">
+          <circle cx="8" cy="8" r="8" stroke="none"/>
+          <circle cx="8" cy="8" r="6.5" fill="none"/>
+        </g>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -271.5, -51.26)" filter="url(#Ellipse_2719)">
+        <g id="Ellipse_2719-2" data-name="Ellipse 2719" transform="translate(271.5 156)" fill="#9a6042" stroke="#fff" stroke-width="3">
+          <circle cx="8" cy="8" r="8" stroke="none"/>
+          <circle cx="8" cy="8" r="6.5" fill="none"/>
+        </g>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -271.5, -51.26)" filter="url(#Ellipse_2720)">
+        <g id="Ellipse_2720-2" data-name="Ellipse 2720" transform="translate(271.5 189)" fill="#b49f00" stroke="#fff" stroke-width="3">
+          <circle cx="8" cy="8" r="8" stroke="none"/>
+          <circle cx="8" cy="8" r="6.5" fill="none"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_29255" data-name="Group 29255" transform="translate(161.035 358.371)">
+      <g id="Group_26333" data-name="Group 26333" transform="translate(104.004 88.996)">
+        <text id="_74" data-name="74" transform="translate(24 68.1)" fill="#939393" font-size="42" font-family="Lato-Bold, Lato" font-weight="700"><tspan x="-24.36" y="0">74</tspan></text>
+        <text id="Total" transform="translate(25 22.1)" fill="#555" font-size="22" font-family="Lato-Bold, Lato" font-weight="700"><tspan x="-23.892" y="0">Total</tspan></text>
+      </g>
+      <g id="Ring_Chart0" data-name="Ring Chart0" transform="translate(-162.5 -247.403)">
+        <path id="Path_19166" data-name="Path 19166" d="M4.089-127.935a128,128,0,0,1,98.447,51.317A128,128,0,0,1,123.848,32.336L80.659,19.573A83,83,0,0,0,66.488-49.682,83,83,0,0,0,4.089-82.9Z" transform="translate(291.004 374.967)" fill="#3d4479"/>
+        <path id="Path_19167" data-name="Path 19167" d="M121.53,40.18A128,128,0,0,1,78.507,101.1L52.035,64.663A83,83,0,0,0,78.341,27.416Z" transform="translate(291.004 374.967)" fill="#a02e9c"/>
+        <path id="Path_19168" data-name="Path 19168" d="M71.89,105.905A128,128,0,0,1,.659,128L1.866,82.979A83,83,0,0,0,45.418,69.471Z" transform="translate(291.004 374.967)" fill="#0069aa"/>
+        <path id="Path_19169" data-name="Path 19169" d="M-7.517,127.779a128,128,0,0,1-97.036-53.937A128,128,0,0,1-122.937-35.645l42.831,13.917A83,83,0,0,0-67.8,47.882,83,83,0,0,0-6.31,82.76Z" transform="translate(291.004 374.967)" fill="#9a6042"/>
+        <path id="Path_19170" data-name="Path 19170" d="M-120.409-43.423A128,128,0,0,1-4.089-127.935V-82.9A83,83,0,0,0-77.578-29.507Z" transform="translate(291.004 374.967)" fill="#b49f00"/>
+      </g>
+    </g>
+  </g>
+</svg>

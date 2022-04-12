@@ -1,0 +1,23 @@
+.divcontentarea {width: 100%; position: relative; margin: 10px 0px 0px 0px;}
+.divtopsection{display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin-bottom: 10px;}
+.divtopsection h2{text-transform: uppercase; font-size: 15px; font-family: "sourcesansprosemibold", sans-serif; margin: 0px;}
+.divpasscodeactionitems{margin-left: auto;}
+.divformgroup.divpasscodesearch { margin-bottom: 0px;}
+.divformgroup.divpasscodesearch input { width: 350px;position: relative;}
+.divformgroup.divpasscodesearch a{position: absolute; top: 2px;}
+.divtopsection a.anchoraddbtn{background-color: #0A8489; padding: 5px 10px; color: #fff; font-family: "sourcesansprosemibold", sans-serif; font-size: 14px; margin-left: 10px; text-decoration: none; text-transform: uppercase;}
+.divtopsection a.anchoraddbtn span[class^="icon-pencil"]{padding-right: 5px; position: relative; top: 2px;}
+.divpasscodetable{width: 100%; margin: 0 auto; position: relative; display: inline-block; overflow-y: scroll; height: 250px;}
+.divpasscodetable table { margin-top:0px; width: 100%; border-left: 1px solid #ececec; border-right: 1px solid #ececec;}
+.divpasscodetable table thead th {background:#44527C; padding: 5px 10px; color:#fff; font-family: 'sourcesansprosemibold'; font-size:13px; text-align: left;}
+.divpasscodetable table tbody td { padding: 10px 10px; font-family: 'sourcesansproregular'; color:#000; border-bottom: 1px solid #ececec;} 
+.divpasscodetable table thead th:nth-child(1){width: 48%;}
+.divpasscodetable table thead th:nth-child(2){width: 45%;}
+.divpasscodetable table thead th:nth-child(3){width: 10%;}
+.divpasscodetable .scrollbar{overflow: hidden;overflow-y: auto;}
+.divpasscodetable .scrollbar::-webkit-scrollbar {width: 6px;}
+.divpasscodetable .scrollbar::-webkit-scrollbar-track {background: #ececec;}
+.divpasscodetable .scrollbar::-webkit-scrollbar-thumb {background: #40576C;border-radius: 2px;}
+.divpasscodetable .scrollbar:-webkit-scrollbar-thumb:hover {background: #00529B;}
+.divpasscodetable table tbody td a{color: #007B26; font-size: 13px; font-family: 'sourcesansproregular'; text-decoration: none;}
+.divpasscodetable table tbody td a:hover{text-decoration: underline;}

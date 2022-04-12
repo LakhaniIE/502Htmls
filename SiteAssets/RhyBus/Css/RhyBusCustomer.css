@@ -1,0 +1,115 @@
+﻿/***************************************/
+/*Customer Home Page*/
+/***************************************/
+.divcustomermaincontainer{display: flex; width: 100%; flex-wrap: wrap;}
+.divhomeheader .divfilters { display: flex; margin-left: auto; justify-content: space-between; align-items: center; padding-bottom: 0px;}
+.divhomeheader {display: flex;flex-wrap: wrap; justify-content: space-between; padding: 10px 0; align-items: center; width: 100%;}
+.customersection .divhomeheader .filters {    width: 100%;    margin: 5px 0 0 0;}
+.divcustomermaincontainer .knowledgebase .divfilterby {margin-right: 175px !important;}
+.divcustomermaincontainer .knowledgebase .search {min-width: 173px;}
+.divleftcontainer, .divrightcontainer {display: flex;}
+.divleftcontainer {padding-right: 0px; flex-wrap: wrap; width: 60%;}
+.divrightcontainer {padding-left: 10px; margin-top: 12px; width: 40%;}
+.divdashboardcards {display: flex; justify-content: space-between; margin: 0; width: 100%;}
+.divdashboardcards .placeholder {-ms-flex: 1; flex: 1; padding: 0 10px 0 0; position: relative; display: flex;}
+.divdashboardcards div[class^="placeholder"]:last-child { padding-right: 0px;}
+.divdashboardcards .placeholder .divkpicard {width: 100%; padding: 5px 15px; display: inline-block; margin-bottom: 15px; position: relative; box-shadow: 0 0 6px rgb(0 0 0 / 5%); background-color: #fff; border: 1px solid #e2e2e2;}
+.divdashboardcards .placeholder .divkpicard a {text-decoration: none; width: 100%; display: flex; align-items: center; text-transform: uppercase;}
+.divdashboardcards .placeholder .divkpicard a span {font-family: 'latobold'; font-size: 13px; color: #333;}
+.divdashboardcards .placeholder .divkpicard .spankpicount { margin-left: auto; font-size: 26px;}
+.divdashboardcards .placeholder div[name="1"] .spankpicount {color: #2b72b9;}
+.divdashboardcards .placeholder div[name="2"] .spankpicount {color: #d08724;}
+.divdashboardcards .placeholder div[name="3"] .spankpicount {color: #0a9f54;} 
+.divdashboardcards .placeholder div[name="4"] .spankpicount {color: #A04796;}
+.divdashboardcards .placeholder div[name="5"] .spankpicount {color: #0ea1db;}
+.divdashboardcards .placeholder.active div[name="1"] {border-color: #2b72b9;}
+.divdashboardcards .placeholder.active .divkpicard[name="1"]:before {border-color: #2b72b9 transparent transparent transparent;}
+.divdashboardcards .placeholder.active div[name="2"] {border-color: #d08724;}
+.divdashboardcards .placeholder.active .divkpicard[name="2"]:before {border-color: #d08724 transparent transparent transparent;}
+.divdashboardcards .placeholder.active div[name="3"] {border-color: #0a9f54;}
+.divdashboardcards .placeholder.active .divkpicard[name="3"]:before {border-color: #0a9f54 transparent transparent transparent;}
+.divdashboardcards .placeholder.active div[name="4"] {border-color: #A04796;}
+.divdashboardcards .placeholder.active .divkpicard[name="4"]:before {border-color: #A04796 transparent transparent transparent;}
+.divdashboardcards .placeholder.active div[name="5"] {border-color: #0ea1db;}
+.divdashboardcards .placeholder.active .divkpicard[name="5"]:before {border-color: #0ea1db transparent transparent transparent;}
+.divdashboardcards .placeholder.active .divkpicard:before {bottom: -20px; border-width: 10px;}
+.divdashboardcards .placeholder.active .divkpicard:after, .divdashboardcards .placeholder.active .divkpicard:before {content: ''; display: block; position: absolute; left: 47%; width: 0; height: 0; border-style: solid;}
+.divdashboardcards .placeholder.active .divkpicard:after {bottom: -20px; border-color: #fff transparent transparent transparent ; border-width: 11.5px; left: 46.5%;}
+.divmaincards {width: 100%; position: relative; background-color: #fff; box-shadow: 0 0 6px rgb(0 0 0 / 8%); margin: 0 0 10px 0; }
+.divborderleft {border-left: 1px dashed #adadad; min-height: 49px; margin: 0 10px 0 0; width: 1px; height: 80%;}
+.divmaincards .divarticlecontainer article{border-bottom:1px solid #ececec; padding-bottom: 16px; margin-bottom: 5px !important;}
+article :last-child{border-bottom: none !important; }
+.divmaincards .divarticlecontainer{margin: 0px; padding: 15px;}
+.divmaincards .divarticleitem{border-bottom: 1px solid #ececec; padding-bottom: 15px;}
+.divmaincards .divarticleitem:last-child{border-bottom: none;}
+/*******************************************/
+/*Table*/
+/*******************************************/ 
+.divcardheader {display: flex; width: 100%; padding: 10px 6px 10px 10px;}
+.divcardheader h4 {text-transform: uppercase; color: #000; margin: 0px;}
+.divcardheader h4, .divcardheader h4 span {font-family: 'latobold'; font-size: 14px;}
+.divcardheader ul { margin: 0px; margin-left: auto;}
+.divcardheader ul, .divcardheader ul li { list-style: none; display: inline-block; padding-right: 10px;}
+.divcardheader ul, .divcardheader ul li:nth-child(1){border-right: 1px dashed #adadad;}
+.divcardheader ul, .divcardheader ul li:last-child{padding-right: 0px; border-right: none; padding-left: 10px;}
+.divcardheader ul li .exportto-excel { font-family: 'sourcesansprosemibold'; font-size: 13px; text-transform: uppercase; color: #3ba204; background-color: #fff; border: 1px solid #3ba204; padding: 5px 8px; text-decoration: none;}
+.divcardheader ul li .exportto-excel:before {content: "\e93b"; font-family: 'icomoon' !important; padding-right: 3px;}
+.divcardheader ul li .exportto-excel:hover, .divcardheader ul li .exportto-excel:focus {background: #3ba204; color: #fff;}
+.divtablegrid {width: 100%; position: relative;  overflow-x: hidden; height: 400px; overflow-y: auto;}
+.divtablegrid table {width: 100%; position:relative;} 
+.divtablegrid tbody td input[type="checkbox"]{margin-left: 5px;}
+.divtablegrid thead th {background-color: #5c7296; padding:8px; text-align: left; font-family: 'sourcesansprosemibold'; font-size: 13px; color: #fff;} 
+.divtablegrid tbody td { font-family: 'sourcesansprosemibold'; font-size: 13px; padding:8px; color: #333;}
+.divtablegrid tbody td a { font-family: 'sourcesansprosemibold'; font-size: 13px; text-decoration: none; color: #0260d8;}
+.divtablegrid tbody td[colspan] {border-bottom: 1px solid #ececec; position: relative; top: -15px; padding-left: 47px; }
+.divtablegrid tbody td[colspan] a{font-family: 'sourcesansproregular'; font-size: 13px;text-decoration: none; color: #0260d8;}
+.divtablegrid tbody td span[name] {font-family: 'latobold';}
+.divtablegrid tbody td span[name="1"]{color:#3F3FBF;}
+.divtablegrid tbody td span[name="2"]{color:#969608;}
+.divtablegrid tbody td span[name="3"]{color:#6e9086}
+.divtablegrid tbody td span[name="4"]{color:#5c7296} 
+.divtablegrid tbody td span[name="5"]{color:#bc7f5e} 
+.divtablegrid tbody td span[name="6"]{color:#937c81}
+.divtablegrid tbody td span[name="7"],.divtablegrid tbody td span[name="10"],.divtablegrid tbody td span[name="14"],.divtablegrid tbody td span[name="19"],.divtablegrid tbody td span[name="24"]{color:#1360b4}
+.divtablegrid tbody td span[name="8"],.divtablegrid tbody td span[name="12"],.divtablegrid tbody td span[name="16"],.divtablegrid tbody td span[name="23"],.divtablegrid tbody td span[name="25"]{color:#bf0060}
+.divtablegrid tbody td span[name="9"],.divtablegrid tbody td span[name="13"],.divtablegrid tbody td span[name="17"],.divtablegrid tbody td span[name="20"],.divtablegrid tbody td span[name="26"]{color:#00c695}
+.divtablegrid tbody td span[name="11"],.divtablegrid tbody td span[name="15"]{color:#4e8d17}
+.divtablegrid tbody td span[name="18"]{color:#5492ac}
+.divtablegrid tbody td span[name="27"]{color:#2aaade}
+.divtablegrid tbody td span[name="28"]{color:#a6269c}
+.divtablegrid tbody td span[name="29"]{color:#9ca83e}
+.divtablegrid tbody td span[name="30"]{color:#872ca8}
+.divtablegrid tbody td span[name="31"]{color:#53d818}
+.divtablegrid tbody td span[name="32"]{color:#cead22}
+.divtablegrid tbody td span[name="32"]{color:#cead22}
+.divtablegrid tbody td span[name="21"] {color:#843b62}
+.divtablegrid tbody td span[name="22"] {color:#ab72c0}
+.divtablegrid tbody td span[name="33"]{color:#604e9a}
+.divtablegrid tbody td span[name="33"]{color:#0C79E6}
+.divtablegrid tbody td span[name="34"]{color:#03A0C6}
+.divtablegrid tbody td span[name="35"]{color:#B800C7}
+.divtablegrid tbody td span[name="36"]{color:#1F7423}
+.divtablegrid tbody td span[name="37"]{color:#2C6196}
+.divtablegrid tbody td span[name="38"]{color:#B20D72}
+.divtablegrid tbody td span[name="39"]{color:#C77300}
+.divtablegrid tbody td span[name="40"]{color:#9D5D12}
+.divtablegrid tbody td span[name="41"]{color:#008C91}
+.divtablegrid tbody td span[name="42"]{color:#2400B9}
+.divtablegrid table tr td a span.title-user { color: #797979;}
+.divtablegrid table tr td a span.title-user:before {content: "\e928"; font-family: 'icomoon'!important; font-style: normal; font-size: 9px; padding: 4px;background: #797979; border-radius: 100%; color: #fff; margin: 0px 5px 0 5px;}
+.divtablegrid tbody tr:last-child td[colspan] { border-bottom: none;}
+.divtablegrid .scrollbar{overflow: hidden;overflow-y: auto;}
+.divtablegrid .scrollbar::-webkit-scrollbar {width: 6px;}
+.divtablegrid .scrollbar::-webkit-scrollbar-track {background: #fff;}
+.divtablegrid .scrollbar::-webkit-scrollbar-thumb {background: #40576C;border-radius: 2px;}
+.divtablegrid .scrollbar:-webkit-scrollbar-thumb:hover {background: #0C4A81;}
+.divleftcontainer .customrow div[class^="col-"]:first-child { padding-right: 15px;}
+.twocols, .divcalendarcontainer, .divannouncementcontainer, .divkbcontainer  {width: 100%; display: flex;}
+.divcalendarcontainer, .divannouncementcontainer { min-height: 375px;}
+.twocols div[class^="divcalendarcontainer"]:first-child {padding-right: 5px;}
+.twocols div[class^="divannouncementcontainer"]:last-child {padding-left: 5px;}
+.divmaincards .anchorviewmore {font-family: 'sourcesansproregular', Tahoma, sans-serif;font-size: 13px; text-decoration: none !important; color: #1b90b4;text-decoration: underline;right: 15px; position: absolute;}
+.divcalendarcontainer .divheader, .divannouncementcontainer .divheader, .divkbcontainer .divheader  {width: 100%; position: relative; display: flex; justify-content: space-between; border-bottom: 2px solid #f7f7f7; padding: 10px 10px 10px 15px;}
+.divcalendarcontainer .divheader h2, .divannouncementcontainer .divheader h2, .divkbcontainer .divheader h2 { font-family: 'latobold'; font-size: 14px; text-transform: uppercase; color: #000; margin: 0px;}
+.divcalendarcontainer .divheader h2 span[class^="icon-"], .divannouncementcontainer .divheader h2 span[class^="icon-"], .divkbcontainer .divheader h2 span[class^="icon-"] { padding-right: 5px;}
+.divcalendarcontainer .divheader h2:after, .divannouncementcontainer .divheader h2::after, .divkbcontainer .divheader h2::after { content: ""; border-bottom: 2px #FFC141 solid; width: 97px; position: absolute; bottom: -2px; display: block; padding: 5px 0 0 0;}

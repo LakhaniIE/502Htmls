@@ -1,0 +1,17 @@
+/***************************************/
+/*RhyBuus Policy Memo & Guidelines*/
+/***************************************/
+.divpolicymemo { margin: 10px 0 0 0; min-height: 285px; max-height: 285px;}
+.divpolicymemo .ulpolicymemo {list-style: none; margin: 0; padding: 0;}
+.ulpolicymemo .divpolicymemocontent { width: 100%; padding: 10px; display: none;}
+.ulpolicymemo > li:nth-child(1) .divpolicymemocontent {display: block;}
+.ulpolicymemo > li {width: 100%; position: relative;}
+.ulpolicymemo > li > a {width: 100%; font-family: 'latomedium', sans-serif; font-size: 14px; color: #000; text-decoration: none; border-bottom: 1px solid #dbdbdb; display: inline-block; padding: 0 0 4px 25px; position: relative;}
+.ulpolicymemo > li > a span[class^="icon-"] {width: 20px; position: absolute; left: 0; top: 3px;}
+.ulpolicymemo > li > a[aria-expanded="true"] .icon-closefolder, .ulpolicymemo > li > a[aria-expanded="false"] .icon-openfolder {display: none;}
+.divpolicymemocontent ul {margin: 0px; padding: 0; list-style: none;}
+.divpolicymemocontent ul li { padding: 0 0 0 20px; position: relative;}
+.divpolicymemocontent ul li::before {content: "\e957"; color: #003F91; font-family: 'icomoon' !important; position: absolute; left: 5px; top: 7px; font-size: 10px; font-weight: bold;}
+.divpolicymemocontent ul li a {font-size: 14px; color: #003F91; text-decoration: none; font-family: 'sourcesansproregular', sans-serif;  -ms-word-break: break-all; word-break: break-all; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto;}
+.divheadquartespolicymemo {min-height: 425px;}
+.divheadquartespolicymemo ul li a {border-bottom: 0px;}

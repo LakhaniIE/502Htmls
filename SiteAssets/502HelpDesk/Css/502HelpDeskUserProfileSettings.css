@@ -1,0 +1,44 @@
+.divhomeheader{display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; border-bottom: 1px solid #c1c1c1;
+    padding: 10px 0 !important;}
+.divhomeheader h1 span[class="icon-adduser"]{font-size: 14px; padding-right: 5px;}
+.divhomeheader h1 span.spanprofilecount { background: #F0C619; padding: 3px 6px; border-radius: 4px;  margin: 0 0 0 3px; font-family: 'sourcesansprosemibold';font-size: 14px;}
+.divhomeheader h1{text-transform: uppercase; font-family: 'latobold'; font-size: 13px; color: #333;}
+.divhomeheader h1::after{content: none;}
+.divactionitems{margin-left: auto;}
+.divProfilecontainer{ width: 100%;height: auto;position: relative;background: #fff; border-radius: 8px;box-shadow: 0px 0px 5px rgb(0 0 0 / 7%);padding: 15px 10px;margin: 10px 0 15px 0;}
+.divprofilehead{width: 100%; position: relative; display: flex;justify-content: space-between;align-items: center; margin-bottom:15px;}
+.divprofileheader{position: relative;}
+.divprofileheader h2{color: #000; font-size: 13px; font-family: 'latobold'; margin: 0px; padding: 0px 0px 10px 0px; text-transform: uppercase;}
+.divprofileheader ul{margin: 0; padding: 0px;}
+.divprofileheader ul li{list-style-type: none; display: inline-block; color: #2C2C2C; font-size: 13px;  font-family: 'sourcesansproregular'; padding-right: 10px;}
+.divprofileheader ul li span.spancricle{width:6px; height: 6px; border-radius: 100px; background-color: #707070; display: inline-block; position: relative; top: -1px; margin-right: 5px; }
+.anchorupdatebtn{margin-left:auto; padding:5px 10px; background:#FFC400; color:#000; font-size:14px; font-family:'sourcesansprosemibold'; text-decoration:none; text-transform:uppercase;} 
+.anchorupdatebtn i{font-size:14px; padding-right:2px;} 
+.anchorupdatebtn:hover, .anchorupdatebtn:focus, .anchorupdatebtn:visited {background:#FFC400; text-decoration:none;}
+.divformbody{width:100%; position:relative; border-bottom:1px solid #DDDEE0; display:inline-block; padding-bottom:5px;}
+.divformbody h2{color:#00529B; font-size:14px; font-family:'latomedium'; margin:0px; text-transform:uppercase; font-weight: normal;}
+.divflexcontainer{display: flex;display: -ms-flexbox;display: -webkit-flex;flex-wrap: wrap;width: 100%; padding:10px 0 0 0;}
+.divflexcontainer .divflexitem{padding:0 10px 0 0; max-width:20%; min-width:20%;}
+.divformgroup input{width: 100%; height: 30px; border: 1px solid #cecece !important; padding: 3px 6px!important;font-family: 'sourcesansproregular'; font-size: 14px;color:#333}
+.divradiobutns {margin:10px 0 0 0; position:relative;}
+.divradiobutns label {margin-right: 10px;}
+.divradiobutns input[type="radio"] { position: relative; top: 2px; margin: 0 2px 0 0; width:auto; height:auto;}
+.divorgflexcontainer .divflexitem{padding:0 10px 0 0; max-width:18%; min-width:16.25%;}
+.divorgflexcontainer .divflexitem:nth-child(1){max-width:16%; min-width:13%;}
+.anchorsearchicon{line-height:30px; color:#cecece;}
+.divorgflexcontainer .divflexitem:last-child{padding-right:0px;}
+.divorgflexcontainer .divflexitem:nth-child(2){max-width:18%; min-width:18%;}
+.divUpdatebtn{padding: 10px 0px 0px 0px ;margin-left: auto;display: flex;border-top: 1px solid #DDDEE0; margin:5px 0px 5px 0px;}
+
+.divsearch{margin:0px; position: relative; display: inline-block;}
+.divsearch input{width: 600px !important; font-size: 12px !important;}
+.divactionitems a{text-decoration: none;}
+.divactionitems a.anchoraddbtn{background-color: #0A8489; padding: 5px 10px; color: #fff; font-family: "sourcesansprosemibold", sans-serif; font-size: 14px; position: relative; top: 2px; text-decoration: none;}
+.divactionitems a.anchoraddbtn span[class^="icon-add"]{padding-right: 5px; position: relative; top: 2px;}
+
+
+.divhintmsg{width: 100%; margin: 0 auto; text-align: center; position: relative; display: inline-block;}
+.divhintmsg p{padding: 5px 0px 5px 0px; font-size: 13px; color: #8B8B8B; margin: 0px;font-family: 'sourcesansproregular'; text-align: center;}
+
+.divKAcontent .divcard div[class^="divitem"]:nth-child(1){min-width:42% !important;max-width: 42% !important;}
+.divsearch .anchorsearchbtn span.icon-searchleft:before{font-size: 11px; position: relative; right: 5px;}

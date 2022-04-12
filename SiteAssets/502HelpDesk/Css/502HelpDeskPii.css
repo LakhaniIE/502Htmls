@@ -1,0 +1,35 @@
+﻿/*****************************************/
+/*Scan Section*/
+/*****************************************/
+.piiScanInfo div{border-right:1px dashed #ccc;}
+.divScanAction a span.icon-createinqarrow{background: none;}
+.divaccordioncontrols .divaccordianplaceholder{height: 250px; padding: 0px;}
+.divaccordioncontrols > li > a[aria-expanded="true"]{background: #efefef; color: #333;}
+.divaccordioncontrols, .divaccordioncontrols > li{background: #fff;}
+.pii-tablegrid table td, .piiformats-content table td{border-bottom: 1px solid #ebebeb;}
+.pii-tablegrid{padding: 0px;}
+.spanDataPii{background: #e2e26c;}
+.divScanId{width: 20%;}
+.piiScanInfo div:first-child span.icon-createinqarrow{font-size: 18px; margin-left: 10px;}
+.divScanAction.active span.icon-createinqarrow {-webkit-transform: rotate( 90deg );  transform: rotate( 90deg ); }
+.divScanAction a span.icon-createinqarrow{font-weight: 800;font-size: 10px;width: 25px;height: 25px;line-height: 27px;text-align: center;background-color: #D8E6F2;border-radius: 30px;color: #000;}
+
+.piiScanInfo{border-bottom: 1px solid #e8e8e8; border-radius: 5px; font-family: 'sourcesansproregular', sans-serif;}
+.piiScanInfo div:first-child{padding-right: 0px; border-right: none !important;}
+.piiScanInfo div:nth-child(2){width: 325px;}
+.pIIList li > .divScanAction{border-bottom: none !important;}
+.pIIList li .divScanAction{width: 100%; position: relative;background-color: #fff; box-shadow: 0 0 6px rgb(0 0 0 / 4%);border-radius: 5px;padding:0px;cursor: pointer;}
+.anchoeExporttoExcel{padding: 4px 8px; text-decoration: none; color: #fff !important; font-family: 'latobold', sans-serif; font-size: 13px; text-decoration: none; background: #14519a; width: auto;}
+.divaccordioncontrols h2{font-family: 'latobold', sans-serif; color: #333; font-size: 14px; margin-bottom: 10px;}
+.piiScanInfo div p{margin-bottom: 5px;}
+.scaninfo small{display: block;}
+.scaninfo p{display:inline-block; }
+@media (min-width: 768px) and (max-width: 1024px){
+    .scaninfo p{display:block;} 
+}
+@media (min-width: 1024px) and (max-width: 1366px){
+    .scaninfo p{display:block;} 
+}
+@media (max-width: 850px) {
+    .anchoeExporttoExcel{font-size: 10px !important; padding: 4px 1px !important;}
+}

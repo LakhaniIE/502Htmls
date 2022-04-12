@@ -1,0 +1,12 @@
+
+/*RhyBus Point of Contact*/
+/***************************************/
+.divpoccontent {height: 291px;}
+.divpoccontent ul {width: 100%; margin: 10px 0 0 0; display: flex; list-style-type: none; padding: 0px; flex-wrap: wrap;}
+.divpoccontent ul li {width: 100%; margin: 0 0 10px 0; display: flex; font-family: 'sourcesansproregular', sans-serif; font-size: 13px;}
+.divpoccontent ul li .divavator {padding-right: 10px; display: flex; align-items: center;}
+.divpoccontent ul li .divavator span {width: 30px; height: 30px; background-color: #e2e2e2; color: #195959; border-radius: 100%; display: inline-block; font-family: 'sourcesansprosemibold'; font-size: 14px; text-align: center; padding-top: 5px;}
+.divpoccontent ul li h3 {color: #000; font-family: 'sourcesansproregular', sans-serif; font-size: 15px;}
+.divpoccontent ul li p {margin: 0px; font-size: 12px; font-family: 'sourcesansprosemibold', sans-serif; color: #666;}
+.divpoccontent ul li .anchormailto {display: block; color: #003F91; padding-left: 16px; position: relative; -ms-word-break: break-all; word-break: break-all; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; font-size: 12px; font-family: 'sourcesansproregular', sans-serif;}
+.divpoccontent ul li .anchormailto::before {content: "\e95b"; font-family: 'icomoon' !important; position: absolute; left: 0; top: 6px; font-size: 7px; font-weight: bold;}

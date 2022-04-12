@@ -1,0 +1,54 @@
+/*RhyBus Home*/
+
+#s4-workspace {background-color: #fafafa;}
+.divhomeheader {width: 100%; display: flex; justify-content: space-between; padding: 10px 0; align-items: center;}
+.divhomeheader h1 {font-family: 'latobold', sans-serif;  font-size: 14px; color: #333; position: relative; padding-bottom: 2px; margin:0px; padding:0px;}
+.divhomeheader h1:after {content: ""; border-bottom: 2px #FFC141 solid; width: 80%; display: block; padding: 5px 0 0;}
+.divhomeheader .divfilters { display: flex; margin-left: auto;}
+.divhomeheader .divfilters label { font-family: 'latomedium', sans-serif; font-size: 12px; color: #000; padding-right: 5px;}
+.divforminline {margin-left: 10px;}
+.divforminline label {font-family: 'latomedium', sans-serif; font-size: 13px; color: #000; padding-right: 5px;}
+.divforminline select, input {font-family: 'sourcesansproregular', Tahoma, sans-serif; font-size: 14px; color: #575757; border: 1px solid #d7dae2 !important; border-radius: 3px; box-shadow: 0 2px 3px rgba(0,0,0,0.06); padding: 2px 5px;}
+/************************************/
+/*Dashboard KPI Cards*/
+/************************************/
+.anchorcard {width: 100%; display: flex; justify-content: space-between; align-items: center; background-color: #fff; margin-bottom: 15px; padding: 10px; box-shadow: 0px 0px 5px rgb(0 0 0 / 7%); border-left: 3px solid transparent; font-family: 'latobold', sans-serif; color: #3b3b3b;}
+.anchorcard:hover {text-decoration: none;}
+.anchorcard p {margin: 0px; text-transform: uppercase; font-size: 12px; }
+.anchorcard span {font-size: 18px;}
+.anchorcard .divcardcount {font-size: 22px;}
+.anchorcard.statuscolor1 {border-color: #254990;}
+.anchorcard.statuscolor1 span {color: #254990;}
+.anchorcard.statuscolor2 {border-color: #0c80be;}
+.anchorcard.statuscolor2 span {color: #0c80be;}
+.anchorcard.statuscolor3 {border-color: #98730e;}
+.anchorcard.statuscolor3 span {color: #98730e;}
+.anchorcard.statuscolor4 {border-color: #3b860d;}
+.anchorcard.statuscolor4 span {color: #3b860d;}
+.anchorcard.statuscolor5 {border-color: #c73d00;}
+.anchorcard.statuscolor5 span {color: #c73d00;}
+/************************************/
+/*Placeholder*/
+/************************************/
+.divplaceholder {width: 100%; height: auto; position: relative; background: #fff; border-radius: 5px; box-shadow: 0px 0px 5px rgb(0 0 0 / 7%); padding: 15px; margin: 10px 0 15px 0;}
+.divplaceholder header{width: 100%; position: relative; display: flex; justify-content:space-between; align-items: center;}
+.divplaceholder header > h1{font-size: 14px; color: #000; margin: 0px; font-family: 'latobold', sans-serif;}
+.divplaceholder header > h1:after { content: ""; border-bottom: 3px #FFC141 solid; width: 80%; display: block; padding: 5px 0 0 0;}
+.divplaceholder header > h1 span[class^="icon-"] {padding: 0 3px 0 0;}
+
+.divrow {display: flex; flex-wrap: wrap; margin: 0px -8px;}
+.divrow .divchart {flex-basis: 0; webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; margin: 0px 8px;}
+.divrow .divchartComponent:nth-child(1) {flex-basis: 0; webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; margin: 0px 8px;}
+.divrow .divchartComponent:nth-child(2) {flex-basis: 0; -webkit-box-flex: 1; -ms-flex-positive: 1; flex: 0 0 65.5%; max-width: 65.5%; margin: 0px 8px;}
+
+
+/***************************************/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .divhomeheader h1{min-width:12%;}
+    .divhomeheader{align-items: baseline;}
+    .divfilters .divforminline{margin:0px 3px 5px;}
+    
+}
+
+

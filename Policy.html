@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="SiteAssets/Mpf/Images/favicon.png" type="image/x-icon" />
+    <link href="SiteAssets/RhyBus/Css/RhyBusMaster.css" rel="stylesheet" type="text/css" />
+    <link href="SiteAssets/RhyBus/Css/RhyBusComele.css" rel="stylesheet" type="text/css" />
+    <link href="SiteAssets/RhyBus/Css/RhyBusCustom.css" rel="stylesheet" type="text/css" />
+    <link href="SiteAssets/RhyBus/Css/RhyBusResponsive.css" rel="stylesheet" type="text/css" />
+    <link href="SiteAssets/RhyBus/Css/RhyBusCustomfonts.css" rel="stylesheet" type="text/css" />
+    <link href="SiteAssets/RhyBus/Css/RhyBusCustomer.css" rel="stylesheet" type="text/css" />
+    <link href="siteAssets/RhyBus/Css/RhyBusHome.css" rel="stylesheet" type="text/css"/>
+    <link href="SiteAssets/RhyBus/Css/RhyBusAnncmnt.css" rel="stylesheet" type="text/css" />
+    <link href="SiteAssets/RhyBus/Css/RhyBusCalndrCustomer.css" rel="stylesheet" type="text/css" />
+    <link href="SiteAssets/502HelpDesk/Css/502HelpDeskHome.css" rel="stylesheet" type="text/css" />
+    <link href="SiteAssets/502HelpDesk/Css/502HelpDeskCustomer.css" rel="stylesheet" type="text/css" />
+    <link href="SiteAssets/RhyBus/Icons/Style.css" rel="stylesheet" type="text/css" />
+    <title>Policy Memos &amp; Guidelines</title>
+</head>
+<body>
+    <div class="divtopribbonrow">
+        <div class="divcontainer">
+            <div class="divtopmenu">
+                <ul>
+                    <li class="philipGriffin">
+                        <a href="javascript:void(0)" class="anchorglobalbtn" title="Philip Griffin">Philip Griffin <span class="icon-portal"></span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="anchorglobalbtn" title="Help Desk"><span class="icon-HelpDesk"></span> Help desk <span class="icon-portal"></span></a>
+                        <div id="divhelpdeskpopup" class="divhelpdeskpopup divglobalpopup">
+
+                            <a href="javascript:void(0)" id="helpdesk-closebtn" class="anchorclosebtn globalcancelbtn" title="Close"> <i class="icon-close"></i> </a>
+
+                            <ul>
+
+                                <li>
+
+                                   <h1>System Help Desk</h1>
+
+                                   <p class="helpdesk-timing "><i class="icon-timing"></i> <span class="ofctimeing">Hours of operation:</span><span>8 AM - 6 PM EST Mon - Fri (excluding holidays)</span></p>
+
+                                   <p class="helpdesk-email"><i class="icon-mail"></i><a href="mailto:sys@gm.com">sys@gm.com</a></p>
+
+                                   <p class="helpdesk-phone"><i class="icon-call"></i><a href="tel:1933381999991">1933381999991</a></p>
+
+                                </li>
+
+                             </ul>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="anchorsitefeedbackbtn anchorglobalbtn" title="Site Feedback"
+                            role="button" aria-haspopup="true" aria-label="Site Feedback" id="anchorsitefeedbackbtn">
+                            <span class="icon-chat"></span> Site Feedback</a>
+                        <div id="divsitefeedbackpopup" class="divsitefeedback divglobalpopup">
+                            <h3>Site Feedback</h3>
+                            <span class="hint">Please let us know how we can make this site more useful to you.</span>
+                            <div class="divformgroup">
+                                <label for="InputFeedbackSubject">Subject <span class="mandatory">*</span> </label>
+                                <input type="text" placeholder="Enter your subject" name="Subject"
+                                    id="InputFeedbackSubject" aria-required="true"
+                                    aria-label="Subject Required Field, empty, field editor." />
+                                <span class="errormsg hidecomponent">This field is required</span>
+                            </div>
+                            <div class="divformgroup">
+                                <label for="SelectDropdownFeedbackAbout">Feedback About <span class="mandatory">*</span>
+                                </label>
+                                <select id="SelectDropdownFeedbackAbout" name="Feedback About">
+                                    <option value="Select">Select</option>
+                                    <option value="Home">Home</option>
+
+
+                                </select>
+                                <span class="errormsg hidecomponent">This field is required</span>
+                            </div>
+                            <div class="divformgroup">
+                                <label>Attachment (<span class="attachmentcount">0</span>)</label>
+                                <div id="dropzone" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);"
+                                    ondragenter="enterZone(this)" ondragleave="leaveZone(this)"
+                                    class="divattachfile dropzonecontrol" tabindex="0" aria-label="Attachment">
+                                    <span class="icon-upload"></span>
+                                    <label for="InputAttachFile" title="Choose/Drag files" tabindex="0"
+                                        class="choosebtn">
+                                        Choose/Drag files</label>
+                                    <input type="file" name="attachFile" id="InputAttachFile" multiple="multiple"
+                                        accept=".xlsx,.xls,.doc, .docx,.ppt, .pptx,.txt,.pdf,.png, .jpg, .jpeg,.gif, .msg"
+                                        value="Choose files" aria-label="Attach File" class="hidecomponent" />
+                                    <div class="divattachmentsdisplay hidecomponent">
+                                        <ul id="attachments" class="formattach">
+                                            <li>
+                                                <a href="javascript:void(0)" class="hidecomponent">Document.docx <i
+                                                        class="icon-close"></i> </a>
+                                            </li>
+                                        </ul>
+                                        <span class="errormsgs hide-component" id="docerrormsg"></span>
+                                    </div>
+                                </div>
+                                <span class="hint">Hint: Upload the files which are in the .png, .jpeg, .xlsx, .doc,
+                                    .pdf, .txt, .ppt, .pptx files and special characters will not be used in the
+                                    document names</span>
+                            </div>
+                            <div class="divformgroup">
+                                <label for="TextareaFeedbackMessage">Message <span class="mandatory">*</span></label>
+                                <textarea name="Message" placeholder="Enter Message" id="TextareaFeedbackMessage"
+                                    aria-required="true"
+                                    aria-label="Message Required Field, empty, field editor."></textarea>
+                                <span class="errormsg hidecomponent">This field is required</span>
+                            </div>
+                            <div class="divpopupbtns">
+                                <ul>
+                                    <li><a href="javascript:void(0)" title="Submit"> <span class="icon-checked"></span>
+                                            Submit</a></li>
+                                    <li><a href="javascript:void(0)" title="Cancel"
+                                            class="anchorcancelbtn globalcancelbtn"> <span class="icon-close"></span>
+                                            Cancel</a></li>
+                                </ul>
+                            </div>
+                            </div>
+                        
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="divtopheader">
+        <div class="divcontainer">
+            <div class="divheader">
+                <div class="divheaderleftside">
+                    <div class="divlogo">
+                        <a href="home.html" class="anchorlogo" title="502 Help Desk">
+                            <img src="SiteAssets/RhyBus/Images/502Logo.png" alt="502 Help Desk"
+                                aria-label="502 Help Desk">
+                    </div>
+                    <div class="divuserrole">
+                        <a href="CreateInquiry.html" title="Create Inquiry" class="anchorcreateInqbtn">Create  Ticket</a>
+                      
+                    </div>
+                </div>
+                <div class="divheaderrightside">
+                    <div class="divuserdetails">
+
+                        <ul>
+                           
+                            <li class="liProfileBtn"><a href="UserProfile.html" title="Profile"> <i
+                                        class="icon-user"></i> <span class="nav-text">Profile</span></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                </a>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div class="divnavigation">
+        <div class="divcontainer">
+            <div class="divnavmenus">
+                <div class="divnavleft">
+                    <input class="menu-btn" type="checkbox" id="menu-btn" />
+                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                    <ul class="menu" role="Navigation"
+                        aria-label="Entering navigation control. Use arrow keys to navigate" id="menuTab">
+                        <li><a href="Home.html" title="Home" class="homenavigation anchoractive">Home</a></li>
+                       
+                        <li><a href="PointOfContact.html" title="Point of Contact"
+                                class="pointofcontactnavigation" id="pointofcontact">Point of Contact</a></li>
+                        <li><a href="PolicyMemoGuidelines.html"
+                                title="Policy Memos &amp; Guidelines" class="policymemosguidelinesnavigation"
+                                id="Policymemosguidelines">Policy Memos &amp; Guidelines</a></li>
+                        <li><a href="Quicklinks.html" title="Quick Links"
+                                class="quicklinksinnernavigation" id="QuicklinksInner"> Quick Links</a></li>
+                        <li><a href="QandA.html" title="Q&amp;A" class="qandanavigation"
+                                id="QandA">Q&amp;A</a></li>
+                    </ul>
+                </div>
+                <div class="divnavright">
+                    <ul>
+                        <li>
+                            <a href="Pii.html" title="Pii">PII</a>
+                        </li>
+                        <li class="notification">
+                            <a href="javascript:void(0)" title="Notifications" class="anchorglobalbtn" id="notify">
+                                <span class="icon-notification"></span>
+                                <i class="notify-count">0</i>
+                            </a>
+                            <div class="notificationpopup divglobalpopup" id="notificationpopup" style="display: none;">
+                                <div class="arrow-up"></div>
+                                <div class="header">
+                                    <h1>
+                                        <span class="icon-notifications"></span> Alerts
+                                    </h1>
+                                    <div class="custom-filter-notifications">
+                                        <div class="filters-notifications">
+                                            <label for="Filter By">Filter By</label>
+                                            <select name="notification-filter" id="notification-filter">
+                                                <option value="None">None</option>
+                                            </select>
+                                        </div>
+                                        <div class="Date-notifications">
+                                            <label for="date">Date</label>
+                                            <select name="notification-date" id="notification-date">
+                                                <option value="None">None</option>
+                                            </select>
+                                            <span class="days">days</span>
+                                        </div>
+                                        <a href="javascript:void(0)" id="notify-closebtn"
+                                            class="anchorpopclosebtn globalcancelbtn" title="Close"> </a>
+                                    </div>
+                                </div>
+                                <div class="tabbed-content">
+                                    <div class="tabs-header">
+                                        <ul class="tabs-list" role="tablist">
+                                            <li class="current">
+                                                <a aria-controls="All" aria-selected="true" href="#All" id="tab-All"
+                                                    role="tab" class="notification-tab selected">
+                                                    ALL (<span class="allnotifycount">5</span>)
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-controls="Actions" href="#Actions" aria-selected="false"
+                                                    id="tab-Actions" role="tab" tabindex="-1" class="notification-tab">
+                                                    <span class="cricle-action"></span> Actions (<span
+                                                        class="actionscount">2</span>)
+                                                </a>
+                                            </li>
+                                            <li class="last">
+                                                <a aria-controls="Notifications" aria-selected="false"
+                                                    href="#Notifications" id="tab-Notifications" role="tab"
+                                                    tabindex="-1" class="notification-tab">
+                                                    <span class="cricle-notifications"></span> Notifications (<span
+                                                        class="notificationscount">3</span>)
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <span class="mark hidecomponent">
+                                            <a href="javascript:markasread()" title="Mark All as Read">Mark All as
+                                                Read</a>
+                                        </span>
+                                    </div>
+                                    <div aria-labelledby="tab-All" class="notification-panel current" id="All"
+                                        role="tabpanel">
+                                        <div class="tab-info scrollbar">
+                                            <div class="tab-info-loader hidecomponent">
+                                                <div class="loader">
+                                                    <p>Please wait</p>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <ul>
+                                                <li class="unread" tabindex="0" href="javascript:void(0)">
+                                                    <span class="cricle-notifications"></span>
+                                                    <div>Inquiry <span class="spanInqid">1234567892 - 0000009</span> is
+                                                        submitted on 10/21/2021
+                                                        by Michelle Hudson</div>
+                                                    <span class="notification-date">10/21/2021 | 11:00 AM</span>
+                                                </li>
+                                                <li class="unread" tabindex="0" href="javascript:void(0)">
+                                                    <span class="cricle-action"></span>
+                                                    <div>Review complete on Inquiry <span class="spanInqid">1234567892 -
+                                                            0000011</span> by
+                                                        John Doe on 10/18/2021</div>
+                                                    <span class="notification-date">10/18/2021 | 01:10 PM</span>
+                                                </li>
+                                                <li class="unread" tabindex="0" href="javascript:void(0)">
+                                                    <span class="cricle-action"></span>
+                                                    <div>Inquiry <span class="spanInqid">1234567892 - 0000005</span> is
+                                                        closed by Michael Mark
+                                                        on 10/12/2021</div>
+                                                    <span class="notification-date">10/12/2021 | 04:00 PM</span>
+                                                </li>
+
+
+                                                <li class="unread" tabindex="0" href="javascript:void(0)">
+                                                    <span class="cricle-notifications"></span>
+                                                    <div>Inquiry <span class="spanInqid">1234567892 - 00000010</span> is
+                                                        submitted on 10/22/2021
+                                                        by Michelle Hudson</div>
+                                                    <span class="notification-date">10/22/2021 | 12:00 AM</span>
+                                                </li>
+                                                <li class="unread" tabindex="0" href="javascript:void(0)">
+                                                    <span class="cricle-notifications"></span>
+                                                    <div>Inquiry <span class="spanInqid">1234567892 - 00000011</span> is
+                                                        submitted on 10/23/2021
+                                                        by Michelle Hudson</div>
+                                                    <span class="notification-date">10/23/2021 | 10:00 AM</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div aria-labelledby="tab-Actions" class="notification-panel" role="tabpanel"
+                                        id="Actions">
+                                        <div class="tab-info scrollbar">
+                                            <ul>
+                                                <li class="unread" tabindex="0" href="javascript:void(0)">
+                                                    <span class="cricle-action"></span>
+                                                    <div>Review complete on Inquiry <span class="spanInqid">1234567892 -
+                                                            0000011</span> by
+                                                        John Doe on 10/18/2021</div>
+                                                    <span class="notification-date">10/18/2021 | 01:10 PM</span>
+                                                </li>
+                                                <li class="unread" tabindex="0" href="javascript:void(0)">
+                                                    <span class="cricle-action"></span>
+                                                    <div>Inquiry <span class="spanInqid">1234567892 - 0000005</span> is
+                                                        closed by Michael Mark
+                                                        on 10/12/2021</div>
+                                                    <span class="notification-date">10/12/2021 | 04:00 PM</span>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div aria-labelledby="tab-Notifications" class="notification-panel "
+                                        id="Notifications" role="tabpanel">
+                                        <div class="tab-info scrollbar">
+
+                                            <ul>
+                                                <li class="unread" tabindex="0" href="javascript:void(0)">
+                                                    <span class="cricle-notifications"></span>
+                                                    <div>Inquiry <span class="spanInqid">1234567892 - 0000009</span> is
+                                                        submitted on 10/21/2021
+                                                        by Michelle Hudson</div>
+                                                    <span class="notification-date">10/21/2021 | 11:00 AM</span>
+                                                </li>
+                                                <li class="unread" tabindex="0" href="javascript:void(0)">
+                                                    <span class="cricle-notifications"></span>
+                                                    <div>Inquiry <span class="spanInqid">1234567892 - 00000010</span> is
+                                                        submitted on 10/22/2021
+                                                        by Michelle Hudson</div>
+                                                    <span class="notification-date">10/22/2021 | 12:00 AM</span>
+                                                </li>
+                                                <li class="unread" tabindex="0" href="javascript:void(0)">
+                                                    <span class="cricle-notifications"></span>
+                                                    <div>Inquiry <span class="spanInqid">1234567892 - 00000011</span> is
+                                                        submitted on 10/23/2021
+                                                        by Michelle Hudson</div>
+                                                    <span class="notification-date">10/23/2021 | 10:00 AM</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="notifooter">
+                                    <a href="javascript:void(0)" class="" title="See all Notifications">See all
+                                        Notifications</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li> <a href="Settings.html" title="Settings"> <span class="icon-settings"></span> Settings</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Policy Starts Here-->
+    <section class="divcontainer boxsizing">
+        <div class="divheadercontainer">
+            <div class="divheader">
+                <h1><span class="icon-policymemosnew"></span>Policy Memos &amp; Guidelines <span></span></h1> 
+                <label for="SelectDropdownCategory">Category</label>
+                <select name="Section" id="SelectDropdownCategory" aria-label="Section">
+                    
+                    <option value="All">All</option>
+                    
+                </select>
+            </div>
+        </div>
+        <div class="divcustomermaincontainer">
+            <div class="divlistcol">
+                <div><span class="icon-worddoc"></span>AF Organization.docx</div>
+                <div><span class="icon-worddoc"></span>Air Force Housing Office.docx</div>
+                <div><span class="icon-worddoc"></span>Area Defense Counsel.docx</div>
+                <div><span class="icon-pptdoc"></span>Military Services.ppt</div>
+                <div><span class="icon-worddoc"></span>Voting Assistance.docx</div>
+            </div>
+            <div class="divlistcol">
+                <div><span class="icon-pdfdoc"></span>Army Budget Documentation.pdf</div>
+                <div><span class="icon-worddoc"></span>Defense-wide Budget Documentation.docx</div>
+                <div><span class="icon-pptdoc"></span>Navy Budget Documentation.ppt</div>
+                <div><span class="icon-worddoc"></span>OMB Budget Documentation.docx</div>
+                <div><span class="icon-worddoc"></span>Supporting Documents.docx</div>
+            </div>
+            <div class="divlistcol">
+                <div><span class="icon-worddoc"></span>Assistant Secretary of the Air Force.docx</div>
+                <div><span class="icon-pdfdoc"></span> Appropriation Summary of Price.pdf</div>
+                <div><span class="icon-worddoc"></span>Appropriation Summary of Price.docx</div>
+                <div><span class="icon-pptdoc"></span>Finding and Our Response.ppt</div>
+                <div><span class="icon-pdfdoc"></span>Operation and Maintenance.pdf</div>
+            </div>
+            <div class="divlistcol">
+                <div><span class="icon-worddoc"></span>Military Employment Verification.docx</div>
+                <div><span class="icon-pdfdoc"></span>Pay & Allowances.pdf</div>
+                <div><span class="icon-worddoc"></span>Secondary Dependency.docx</div>
+                <div><span class="icon-pdfdoc"></span>TSP for Military.pdf</div>
+                <div><span class="icon-pdfdoc"></span>Wounded Warrior Pay Support.pdf</div>
+            </div>
+            <div class="divlistcol">
+                <div><span class="icon-worddoc"></span>Armed Forces Health Professions.docx</div>
+                <div><span class="icon-pdfdoc"></span>Critically Short Wartime Accession Bonus.ppt</div>
+                <div><span class="icon-worddoc"></span>Dental Corps Incentive Pay.docx</div>
+                <div><span class="icon-pdfdoc"></span>Finding and Our Response.pdf</div>
+                <div><span class="icon-pdfdoc"></span>Supporting Documents.docx</div>
+            </div>
+        </div>
+   
+       
+    </section>
+
+     <!--Footer Start-->
+    <div class="divFooter">
+        <p>©2022 Idea Entity Corporation | All Rights Reserved.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+/**********************************************/
+/*Calendar with out tabs*/
+/**********************************************/   
+.divcalendarcontainer ul { padding: 10px 15px;}
+.divcalendarcontainer ul, .divcalendarcontainer ul li {list-style-type: none; margin: 0px;}
+.divcalendarcontainer ul li { margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #ececec; position: relative;} 
+.divcalendarcontainer ul li .eventitem { width: 100%; position: relative; border-left: 5px solid transparent; padding: 5px 5px 5px 10px; }
+.divcalendarcontainer ul li:nth-of-type(odd) .eventitem {border-left-color: #6d7d9d;}
+.divcalendarcontainer ul li:nth-of-type(even) .eventitem {border-left-color: #4a9bd6;}
+.divcalendarcontainer ul li:last-child {border-bottom: none; padding-bottom: 0;}
+.divcalendarcontainer ul li .timedate {display: flex;}
+.divcalendarcontainer ul li .timedate p { font-size: 14px; margin: 0px; padding: 0px;}
+.divcalendarcontainer ul li .timedate p:first-child {font-family: 'sourcesansprosemibold', Tahoma, sans-serif; color: #5c7296;}
+.divcalendarcontainer ul li .timedate p:last-child {margin-left: auto; font-family: 'sourcesansproregular', Tahoma, sans-serif; color: #505658;}
+.divcalendarcontainer ul li .eventtitle { font-family: 'sourcesansprosemibold', Tahoma, sans-serif; font-size: 14px; color: #0050b9; text-decoration: none;}
+.divcalendarcontainer ul li .location { font-family: 'sourcesansproregular', Tahoma, sans-serif; font-size: 14px; color: #656565; margin: 0px; padding: 0px;}
+.divcalendarcontainer ul li:hover .eventitem {background: #ebf3ff;}
+.divcalendarcontainer .divcalendarpopup { width:535px; min-height: 130px; /*245px;*/ position:absolute; border-radius: 5px; box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.12); box-sizing: border-box; z-index:1; padding:15px;
+    left:-webkit-calc(100% - -10px); left:-moz-calc(100% - -10px); left:calc(100% - -10px); bottom: 0px;/*top:-185px;*/ display: none; background: rgb(237,237,237);
+    background: -moz-linear-gradient(0deg, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 94%);
+    background: -webkit-linear-gradient(0deg, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 94%);
+    background: linear-gradient(0deg, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 94%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ededed",endColorstr="#ffffff",GradientType=1);}
+.divcalendarcontainer ul li:hover > .divcalendarpopup{ display:block !important;}
+.divcalendarpopup:before {content: ""; position: absolute; width: 0; height: 0; bottom: 23px; left: 0; box-sizing: border-box; border: 0.8em solid #ededed; border-color: transparent transparent #eee #ededed;
+    transform-origin: 0 0; box-shadow: -3px 3px 3px 0 rgba(0, 0, 0, 0.1);  -ms-transform: rotate(43deg); -webkit-transform: rotate(43deg); transform: rotate(43deg);}
+.divcalendarcontainer .divcalendarpopup h2 {font-family: 'sourcesansprosemibold', Tahoma, sans-serif; font-size:14px; color:#008dee;}
+.divcalendarcontainer .divcalendarinfo {max-height:200px; overflow: auto;}
+.divcalendarcontainer .divcalendarinfo ul, .divcalendarcontainer .divcalendarinfo ul li {width:100%; float:left; position:relative;list-style-type:none;margin:0;padding:0;}
+.divcalendarcontainer .divcalendarinfo ul li { margin:0 0 5px 0; padding:0px; border-bottom: none;}
+.divcalendarcontainer .divcalendarinfo ul li p { float:left; font-family: 'latomedium', sans-serif; font-size:12px; color:#000; min-width:80px;width:auto; margin: 0px; padding: 0px;}
+.divcalendarcontainer .divcalendarinfo ul li span, .divcalendarcontainer .divcalendarinfo ul li i { float:left; font-family: 'sourcesansproregular', Tahoma, sans-serif; font-size:14px; color:#333;}
+.divcalendarcontainer .divcalendarinfo ul li span { margin:0 15px 0 0;}
+.divcalendarcontainer .divcalendarinfo ul li i { font-style: normal;}
+.divcalendarcontainer .divcalendarinfo h3{font-family: 'latomedium', sans-serif; font-size:13px; color:#000; max-width:100%; font-weight: normal; display: inline-block;}
+.divcalendarcontainer .divcalendarinfo p {font-family: 'sourcesansproregular', Tahoma, sans-serif; font-size:14px !important; color:#333; max-width:100%; overflow: inherit; white-space:normal; }
+.anchormorelink {float: right; font-family: 'sourcesansproregular', Tahoma, sans-serif; font-size: 13px; color: #1b90b4; text-decoration: none; right: 15px; position: absolute; bottom: 15px;} 
+.divrightcontainer div[class^="col-"] {padding-right: 0px; padding-left: 0px;}
+.divrightcontainer .knowledgebase {height: 100%; min-height: inherit; max-height: inherit;}
+.divrightcontainer .knowledgebase .tabcontainer .article { min-height: 738px; max-height: 738px; overflow-y: auto;}
+.divfilterby {float: right;}
+.divfilterby select {max-height: 32px; padding: 5px 4px;}
+.knowledgebase .divfilterby { margin-right: 255px;}
+.knowledgearticles .item span.highlight, span.highlight {    background: #ff6;    font-weight: bold;    font-style: normal;}
+.customerstatus{position:relative}
+.customerstatus:after{content: "\e96f";font-family: 'icomoon' !important;position:absolute;right:8px;color: #811F6B;font-size: 19px;top:0}

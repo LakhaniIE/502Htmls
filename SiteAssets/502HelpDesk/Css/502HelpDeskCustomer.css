@@ -1,0 +1,54 @@
+﻿/***************************************/
+/*Customer Home Page*/
+/***************************************/
+.divhomeheader , .divfilters { display: flex; align-items: center; padding-bottom: 0px;}
+.divfilters{margin:10px 0px 10px 0px}
+.divfilters .divforminline:nth-child(1){margin-left:0px;}
+.divleftcontainer{width: 58%;}
+.divrightcontainer{padding-left: 15px; width: 42%;}
+.divfiltersection.divannouncementsfilters select {width: 95px;}
+
+/***************************************/
+/*Tabs*/
+/***************************************/
+
+.divcustomertabs {width: 100%; position: relative; display: inline-block; max-height:inherit; min-height:inherit }
+.divcustomertabs .ulnav {padding-left: 0; margin: 0; list-style: none; border-bottom: 3px solid #efefef; width:100%; display: flex;}
+.divcustomertabs .ulnav > li { margin-bottom: -3px;  border-left: 0px;}
+.divcustomertabs .ulnav > li {position: relative;display: block;}
+.divcustomertabs .ulnav > li > a {color:rgba(0,0,0,0.5); font-size: 13px; font-family: 'latobold'; text-transform:uppercase;}
+.divcustomertabs .ulnav > li.active > a, .divcustomertabs .ulnav > li.active > a:hover, .divcustomertabs .ulnav > li.active > a:focus, 
+.divcustomertabs .ulnav > li > a:focus { color: #000; cursor: default; border-bottom: 3px solid #F0C619;}
+.divcustomertabs .ulnav > li > a { line-height: 1.428571429;border: 1px solid transparent; text-decoration: none;}
+.divcustomertabs .ulnav > li > a { position: relative; display: block; padding: 6px 4px 6px 6px;}
+.divcustomertabs .tab-pane {width:100%; position:relative;}
+.divcustomertabs .tab-content > .tab-pane { display: none;}
+.divcustomertabs .tab-content > .active {display: block;}
+.divcustomertabs ul li.active a .spancount {background-color: #F0C619;}
+.divcustomertabs ul li a .spancount {padding: 2px 8px;background-color: #e6e6e6;border-radius: 3px; margin-left: 3px;}
+.divdashboardcards .placeholder div[name="6"] .spankpicount {color: #2B72B9;}
+.divdashboardcards .placeholder.active div[name="6"] {border-color: #2B72B9;}
+.divdashboardcards .placeholder.active .divkpicard[name="6"]:before {border-color: #2B72B9 transparent transparent transparent;}
+.divdashboardcards .placeholder div[name="7"] .spankpicount {color: #0C909A;}
+.divdashboardcards .placeholder.active div[name="7"] {border-color: #0C909A;}
+.divdashboardcards .placeholder.active .divkpicard[name="7"]:before {border-color: #0C909A transparent transparent transparent;}
+.divdashboardcards .placeholder div[name="8"] .spankpicount {color: #966E01;}
+.divdashboardcards .placeholder.active div[name="8"] {border-color: #966E01;}
+.divdashboardcards .placeholder.active .divkpicard[name="8"]:before {border-color: #966E01 transparent transparent transparent;}
+.divdashboardcards .placeholder div[name="9"] .spankpicount {color: #019607;}
+.divdashboardcards .placeholder.active div[name="9"] {border-color: #019607;}
+.divdashboardcards .placeholder.active .divkpicard[name="9"]:before {border-color: #019607 transparent transparent transparent;}
+.divdashboardcards .placeholder div[name="10"] .spankpicount {color: #961201;}
+.divdashboardcards .placeholder.active div[name="10"] {border-color: #961201;}
+.divdashboardcards .placeholder.active .divkpicard[name="10"]:before {border-color: #961201 transparent transparent transparent;}
+/***************************************/
+/*Table*/
+/***************************************/
+
+.divtablegrid.divdueoutstable tbody td span[name="1"]{color:#018B96;}
+.divtablegrid.divdueoutstable tbody td span[name="2"]{color:#966E01;}
+.divtablegrid.divdueoutstable tbody td span[name="3"]{color:#019607;}
+.divtablegrid.divdueoutstable  tbody td span[name="4"]{color:#961201} 
+.divtablegrid.divdueoutstable tbody td span.spancustomerEmil, .divtablegrid.divdueoutstable tbody td span.spancustomerPhonenum{color: #00749F;}
+.divtablegrid.divdueoutstable tbody td span.spancustomerEmil:hover, .divtablegrid.divdueoutstable tbody td span.spancustomerPhonenum:hover{text-decoration: underline;}
+.divtablegrid tbody td[colspan]{padding-left: 8px;}

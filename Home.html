@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="SiteAssets/Mpf/Images/favicon.png" type="image/x-icon" />
+    <link href="SiteAssets/RhyBus/Css/RhyBusMaster.css" rel="stylesheet" type="text/css" />
+    <link href="SiteAssets/RhyBus/Css/RhyBusComele.css" rel="stylesheet" type="text/css" />
+    <link href="SiteAssets/RhyBus/Css/RhyBusResponsive.css" rel="stylesheet" type="text/css" />
+    <link href="SiteAssets/RhyBus/Css/RhyBusCustomfonts.css" rel="stylesheet" type="text/css" />
+    <link href="SiteAssets/RhyBus/Css/RhyBusCustomer.css" rel="stylesheet" type="text/css" />
+    <link href="siteAssets/RhyBus/Css/RhyBusHome.css" rel="stylesheet" type="text/css"/>
+    <link href="SiteAssets/RhyBus/Css/RhyBusAnncmnt.css" rel="stylesheet" type="text/css" />
+    <link href="SiteAssets/RhyBus/Css/RhyBusCalndrCustomer.css" rel="stylesheet" type="text/css" />
+    <link href="SiteAssets/502HelpDesk/Css/502HelpDeskHome.css" rel="stylesheet" type="text/css" />
+    <link href="SiteAssets/502HelpDesk/Css/502HelpDeskCustomer.css" rel="stylesheet" type="text/css" />
+    <link href="SiteAssets/RhyBus/Icons/Style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="divtopribbonrow">
+        <div class="divcontainer">
+            <div class="divtopmenu">
+                <ul>
+                    <li class="philipGriffin">
+                        <a href="javascript:void(0)" class="anchorglobalbtn" title="Philip Griffin">Philip Griffin <span class="icon-portal"></span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="anchorglobalbtn" title="Help Desk"><span class="icon-HelpDesk"></span> Help desk <span class="icon-portal"></span></a>
+                        <div id="divhelpdeskpopup" class="divhelpdeskpopup divglobalpopup">
+
+                            <a href="javascript:void(0)" id="helpdesk-closebtn" class="anchorclosebtn globalcancelbtn" title="Close"> <i class="icon-close"></i> </a>
+
+                            <ul>
+
+                                <li>
+
+                                   <h1>System Help Desk</h1>
+
+                                   <p class="helpdesk-timing "><i class="icon-timing"></i> <span class="ofctimeing">Hours of operation:</span><span>8 AM - 6 PM EST Mon - Fri (excluding holidays)</span></p>
+
+                                   <p class="helpdesk-email"><i class="icon-mail"></i><a href="mailto:sys@gm.com">sys@gm.com</a></p>
+
+                                   <p class="helpdesk-phone"><i class="icon-call"></i><a href="tel:1933381999991">1933381999991</a></p>
+
+                                </li>
+
+                             </ul>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="anchorsitefeedbackbtn anchorglobalbtn" title="Site Feedback"
+                            role="button" aria-haspopup="true" aria-label="Site Feedback" id="anchorsitefeedbackbtn">
+                            <span class="icon-chat"></span> Site Feedback</a>
+                        <div id="divsitefeedbackpopup" class="divsitefeedback divglobalpopup">
+                            <h3>Site Feedback</h3>
+                            <span class="hint">Please let us know how we can make this site more useful to you.</span>
+                            <div class="divformgroup">
+                                <label for="InputFeedbackSubject">Subject <span class="mandatory">*</span> </label>
+                                <input type="text" placeholder="Enter your subject" name="Subject"
+                                    id="InputFeedbackSubject" aria-required="true"
+                                    aria-label="Subject Required Field, empty, field editor." />
+                                <span class="errormsg hidecomponent">This field is required</span>
+                            </div>
+                            <div class="divformgroup">
+                                <label for="SelectDropdownFeedbackAbout">Feedback About <span class="mandatory">*</span>
+                                </label>
+                                <select id="SelectDropdownFeedbackAbout" name="Feedback About">
+                                    <option value="Select">Select</option>
+                                    <option value="Home">Home</option>
+
+
+                                </select>
+                                <span class="errormsg hidecomponent">This field is required</span>
+                            </div>
+                            <div class="divformgroup">
+                                <label>Attachment (<span class="attachmentcount">0</span>)</label>
+                                <div id="dropzone" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);"
+                                    ondragenter="enterZone(this)" ondragleave="leaveZone(this)"
+                                    class="divattachfile dropzonecontrol" tabindex="0" aria-label="Attachment">
+                                    <span class="icon-upload"></span>
+                                    <label for="InputAttachFile" title="Choose/Drag files" tabindex="0"
+                                        class="choosebtn">
+                                        Choose/Drag files</label>
+                                    <input type="file" name="attachFile" id="InputAttachFile" multiple="multiple"
+                                        accept=".xlsx,.xls,.doc, .docx,.ppt, .pptx,.txt,.pdf,.png, .jpg, .jpeg,.gif, .msg"
+                                        value="Choose files" aria-label="Attach File" class="hidecomponent" />
+                                    <div class="divattachmentsdisplay hidecomponent">
+                                        <ul id="attachments" class="formattach">
+                                            <li>
+                                                <a href="javascript:void(0)" class="hidecomponent">Document.docx <i
+                                                        class="icon-close"></i> </a>
+                                            </li>
+                                        </ul>
+                                        <span class="errormsgs hide-component" id="docerrormsg"></span>
+                                    </div>
+                                </div>
+                                <span class="hint">Hint: Upload the files which are in the .png, .jpeg, .xlsx, .doc,
+                                    .pdf, .txt, .ppt, .pptx files and special characters will not be used in the
+                                    document names</span>
+                            </div>
+                            <div class="divformgroup">
+                                <label for="TextareaFeedbackMessage">Message <span class="mandatory">*</span></label>
+                                <textarea name="Message" placeholder="Enter Message" id="TextareaFeedbackMessage"
+                                    aria-required="true"
+                                    aria-label="Message Required Field, empty, field editor."></textarea>
+                                <span class="errormsg hidecomponent">This field is required</span>
+                            </div>
+                            <div class="divpopupbtns">
+                                <ul>
+                                    <li><a href="javascript:void(0)" title="Submit"> <span class="icon-checked"></span>
+                                            Submit</a></li>
+                                    <li><a href="javascript:void(0)" title="Cancel"
+                                            class="anchorcancelbtn globalcancelbtn"> <span class="icon-close"></span>
+                                            Cancel</a></li>
+                                </ul>
+                            </div>
+                            </div>
+                        
+
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="divtopheader">
+        <div class="divcontainer">
+            <div class="divheader">
+                <div class="divheaderleftside">
+                    <div class="divlogo">
+                        <a href="home.html" class="anchorlogo" title="502 Help Desk">
+                            <img src="SiteAssets/RhyBus/Images/502Logo.png" alt="502 Help Desk"
+                                aria-label="502 Help Desk">
+                    </div>
+                    <div class="divuserrole">
+                        <a href="CreateInquiry.html" title="Create Inquiry" class="anchorcreateInqbtn">Create  Ticket</a>
+                      
+                    </div>
+                </div>
+                <div class="divheaderrightside">
+                    <div class="divuserdetails">
+
+                        <ul>
+                           
+                            <li class="liProfileBtn"><a href="UserProfile.html" title="Profile"> <i
+                                        class="icon-user"></i> <span class="nav-text">Profile</span></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                </a>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div class="divnavigation">
+        <div class="divcontainer">
+            <div class="divnavmenus">
+                <div class="divnavleft">
+                    <input class="menu-btn" type="checkbox" id="menu-btn" />
+                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                    <ul class="menu" role="Navigation"
+                        aria-label="Entering navigation control. Use arrow keys to navigate" id="menuTab">
+                        <li><a href="Home.html" title="Home" class="homenavigation anchoractive">Home</a></li>
+                       
+                        <li><a href="PointOfContact.html" title="Point of Contact"
+                                class="pointofcontactnavigation" id="pointofcontact">Point of Contact</a></li>
+                        <li><a href="PolicyMemoGuidelines.html"
+                                title="Policy Memos &amp; Guidelines" class="policymemosguidelinesnavigation"
+                                id="Policymemosguidelines">Policy Memos &amp; Guidelines</a></li>
+                        <li><a href="Quicklinks.html" title="Quick Links"
+                                class="quicklinksinnernavigation" id="QuicklinksInner"> Quick Links</a></li>
+                        <li><a href="QandA.html" title="Q&amp;A" class="qandanavigation"
+                                id="QandA">Q&amp;A</a></li>
+                    </ul>
+                </div>
+                <div class="divnavright">
+                    <ul>
+                        <li>
+                            <a href="Pii.html" title="Pii">PII</a>
+                        </li>
+                        <li class="notification">
+                            <a href="javascript:void(0)" title="Notifications" class="anchorglobalbtn" id="notify">
+                                <span class="icon-notification"></span>
+                                <i class="notify-count">0</i>
+                            </a>
+                            <div class="notificationpopup divglobalpopup" id="notificationpopup" style="display: none;">
+                                <div class="arrow-up"></div>
+                                <div class="header">
+                                    <h1>
+                                        <span class="icon-notifications"></span> Alerts
+                                    </h1>
+                                    <div class="custom-filter-notifications">
+                                        <div class="filters-notifications">
+                                            <label for="Filter By">Filter By</label>
+                                            <select name="notification-filter" id="notification-filter">
+                                                <option value="None">None</option>
+                                            </select>
+                                        </div>
+                                        <div class="Date-notifications">
+                                            <label for="date">Date</label>
+                                            <select name="notification-date" id="notification-date">
+                                                <option value="None">None</option>
+                                            </select>
+                                            <span class="days">days</span>
+                                        </div>
+                                        <a href="javascript:void(0)" id="notify-closebtn"
+                                            class="anchorpopclosebtn globalcancelbtn" title="Close"> </a>
+                                    </div>
+                                </div>
+                                <div class="tabbed-content">
+                                    <div class="tabs-header">
+                                        <ul class="tabs-list" role="tablist">
+                                            <li class="current">
+                                                <a aria-controls="All" aria-selected="true" href="#All" id="tab-All"
+                                                    role="tab" class="notification-tab selected">
+                                                    ALL (<span class="allnotifycount">5</span>)
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a aria-controls="Actions" href="#Actions" aria-selected="false"
+                                                    id="tab-Actions" role="tab" tabindex="-1" class="notification-tab">
+                                                    <span class="cricle-action"></span> Actions (<span
+                                                        class="actionscount">2</span>)
+                                                </a>
+                                            </li>
+                                            <li class="last">
+                                                <a aria-controls="Notifications" aria-selected="false"
+                                                    href="#Notifications" id="tab-Notifications" role="tab"
+                                                    tabindex="-1" class="notification-tab">
+                                                    <span class="cricle-notifications"></span> Notifications (<span
+                                                        class="notificationscount">3</span>)
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <span class="mark hidecomponent">
+                                            <a href="javascript:markasread()" title="Mark All as Read">Mark All as
+                                                Read</a>
+                                        </span>
+                                    </div>
+                                    <div aria-labelledby="tab-All" class="notification-panel current" id="All"
+                                        role="tabpanel">
+                                        <div class="tab-info scrollbar">
+                                            <div class="tab-info-loader hidecomponent">
+                                                <div class="loader">
+                                                    <p>Please wait</p>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <ul>
+                                                <li class="unread" tabindex="0" href="javascript:void(0)">
+                                                    <span class="cricle-notifications"></span>
+                                                    <div>Inquiry <span class="spanInqid">1234567892 - 0000009</span> is
+                                                        submitted on 10/21/2021
+                                                        by Michelle Hudson</div>
+                                                    <span class="notification-date">10/21/2021 | 11:00 AM</span>
+                                                </li>
+                                                <li class="unread" tabindex="0" href="javascript:void(0)">
+                                                    <span class="cricle-action"></span>
+                                                    <div>Review complete on Inquiry <span class="spanInqid">1234567892 -
+                                                            0000011</span> by
+                                                        John Doe on 10/18/2021</div>
+                                                    <span class="notification-date">10/18/2021 | 01:10 PM</span>
+                                                </li>
+                                                <li class="unread" tabindex="0" href="javascript:void(0)">
+                                                    <span class="cricle-action"></span>
+                                                    <div>Inquiry <span class="spanInqid">1234567892 - 0000005</span> is
+                                                        closed by Michael Mark
+                                                        on 10/12/2021</div>
+                                                    <span class="notification-date">10/12/2021 | 04:00 PM</span>
+                                                </li>
+
+
+                                                <li class="unread" tabindex="0" href="javascript:void(0)">
+                                                    <span class="cricle-notifications"></span>
+                                                    <div>Inquiry <span class="spanInqid">1234567892 - 00000010</span> is
+                                                        submitted on 10/22/2021
+                                                        by Michelle Hudson</div>
+                                                    <span class="notification-date">10/22/2021 | 12:00 AM</span>
+                                                </li>
+                                                <li class="unread" tabindex="0" href="javascript:void(0)">
+                                                    <span class="cricle-notifications"></span>
+                                                    <div>Inquiry <span class="spanInqid">1234567892 - 00000011</span> is
+                                                        submitted on 10/23/2021
+                                                        by Michelle Hudson</div>
+                                                    <span class="notification-date">10/23/2021 | 10:00 AM</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div aria-labelledby="tab-Actions" class="notification-panel" role="tabpanel"
+                                        id="Actions">
+                                        <div class="tab-info scrollbar">
+                                            <ul>
+                                                <li class="unread" tabindex="0" href="javascript:void(0)">
+                                                    <span class="cricle-action"></span>
+                                                    <div>Review complete on Inquiry <span class="spanInqid">1234567892 -
+                                                            0000011</span> by
+                                                        John Doe on 10/18/2021</div>
+                                                    <span class="notification-date">10/18/2021 | 01:10 PM</span>
+                                                </li>
+                                                <li class="unread" tabindex="0" href="javascript:void(0)">
+                                                    <span class="cricle-action"></span>
+                                                    <div>Inquiry <span class="spanInqid">1234567892 - 0000005</span> is
+                                                        closed by Michael Mark
+                                                        on 10/12/2021</div>
+                                                    <span class="notification-date">10/12/2021 | 04:00 PM</span>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div aria-labelledby="tab-Notifications" class="notification-panel "
+                                        id="Notifications" role="tabpanel">
+                                        <div class="tab-info scrollbar">
+
+                                            <ul>
+                                                <li class="unread" tabindex="0" href="javascript:void(0)">
+                                                    <span class="cricle-notifications"></span>
+                                                    <div>Inquiry <span class="spanInqid">1234567892 - 0000009</span> is
+                                                        submitted on 10/21/2021
+                                                        by Michelle Hudson</div>
+                                                    <span class="notification-date">10/21/2021 | 11:00 AM</span>
+                                                </li>
+                                                <li class="unread" tabindex="0" href="javascript:void(0)">
+                                                    <span class="cricle-notifications"></span>
+                                                    <div>Inquiry <span class="spanInqid">1234567892 - 00000010</span> is
+                                                        submitted on 10/22/2021
+                                                        by Michelle Hudson</div>
+                                                    <span class="notification-date">10/22/2021 | 12:00 AM</span>
+                                                </li>
+                                                <li class="unread" tabindex="0" href="javascript:void(0)">
+                                                    <span class="cricle-notifications"></span>
+                                                    <div>Inquiry <span class="spanInqid">1234567892 - 00000011</span> is
+                                                        submitted on 10/23/2021
+                                                        by Michelle Hudson</div>
+                                                    <span class="notification-date">10/23/2021 | 10:00 AM</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="notifooter">
+                                    <a href="javascript:void(0)" class="" title="See all Notifications">See all
+                                        Notifications</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li> <a href="Settings.html" title="Settings"> <span class="icon-settings"></span> Settings</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!--Customer code start -->
+	<section class="divcontainer boxsizing">
+		<div class="divcustomermaincontainer">
+			<div class="divleftcontainer">
+				<div id="divlistviewtabs">
+                    <div class="divhomeheader">
+                        <h1><span class="icon-graph"></span> Dashboard</h1>
+                        <div class="divfilters">
+                            <div class="divforminline">
+                                <label for="SelectDropdownYear">Year</label>
+                                <select name="Year" id="SelectDropdownYear" aria-label="Year">
+                                    <option value="Select">Select</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2021">2022</option>
+                                    
+                                </select>
+                            </div>
+                            <div class="divforminline">
+                                <label for="SelectDropdownSection">Section</label>
+                                <select name="Section" id="SelectDropdownSection" aria-label="Section">
+                                    
+                                    <option value="All">All</option>
+                                    
+                                </select>
+                            </div>
+                            <a href="javascript:void(0)" title="Clear All" class="anchorclearall">
+                                Clear All</a>
+                        </div>
+                    </div>
+            
+                    <div class="divdashboardcards">
+                        <div class="placeholder tab active" data-card="Total">
+                            <div class="divkpicard" name="1">
+                                <a href="javascript:void(0)">
+                                <span>Total Inquiries 
+                                    
+                                </span>
+                                
+                                <span class="spankpicount">17</span>
+                                    
+                                </a>
+                            </div>
+                        </div>
+                        <div class="placeholder tab" data-card="In Progress">
+                            <div class="divkpicard" name="2">
+                                <a href="javascript:void(0)">
+                                <span>In Progress
+                                    
+                                </span>
+                                <span class="spankpicount">14</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="placeholder tab" id=myInquiriesCompleted data-card="Completed">
+                            <div class="divkpicard" name="3">
+                                <a href="javascript:void(0)">
+                                <span>Completed 
+                                    
+                                </span>
+                                <span class="spankpicount">03</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="placeholder tab" id="myInquiriesActionRequired" data-card="ActionRequired">
+                            <hr class="divborderleft"/>
+                            <div class="divkpicard" name="4">
+                                <a href="javascript:void(0)">
+                                <span>Action Required 
+                                    
+                                </span>
+                                <span class="spankpicount">06</span>
+                                </a>
+                            </div>
+                        </div>
+            
+                        <div class="placeholder tab" id="myInquiriesSaved" data-card="Saved">
+                            <div class="divkpicard" name="5">
+                                <a href="javascript:void(0)">
+                                <span>Saved 
+                                    
+                                </span>
+                                <span class="spankpicount">01</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divmaincards">
+                        <div class="divcardheader">
+                            <h4>Total Inquiries (<span>17</span>) </h4>
+                            <ul>
+                                <li>
+                                    <div class="divforminline">
+                                        <label for="SelectDropdownFitler">Fitler by Status</label>
+                                        <select name="Fitler by Status" id="SelectDropdownFitler" aria-label="Fitler by Status">
+                                            <option value="All">All</option>
+                                        
+                                            
+                                        </select>
+                                    </div>
+                                </li>
+                                <li><a href="javascript:void(0)" title="Export To CSV" aria-label="Export To CSV" class="exportto-excel"> Export To CSV</a></li>
+                            </ul>
+                        </div>
+                        <div class="divtablegrid scrollbar">
+                            <table border="0" cellpadding="0" cellspacing="0">
+                                <thead role="presentation">
+                                    <tr role="row">
+                                        <th scope="col">ID</th>
+                                        <th scope="col">Category</th>
+                                        <th scope="col">Inquiry For</th>
+                                        <th scope="col">Submitted Date</th>
+                                        <th scope="col">Status Modified</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col"># Of Days</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>   
+                                        <td><a href="javascript:void(0)" title="1018188000-001">1018188000-001</a></td>
+                                        <td>SharePoint Access </td>
+                                        <td>Self</td>
+                                        <td>09/28/2022</td>
+                                        <td>10/01/2022</td>
+                                        <td><span name="1">Technician</span></td>
+                                        <td>3</td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td colspan="8"> <a href="javascript:void(0)" title="SharePoint Access">SharePoint Access</a> 
+                                        </td>
+                                    </tr>
+                            
+                                    <tr>
+                                        
+                                        <td><a href="javascript:void(0)" title="1018188000-002">1018188000-002</a></td>
+                                        <td>Software</td>
+                                        <td>Other</td>
+                                        <td>09/22/2022</td>
+                                        <td>09/30/2022</td>
+                                        <td><span name="2">Supervisor</span></td>
+                                        <td>8</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td colspan="8"> <a href="javascript:void(0)" title="TEAMS Not Loading">TEAMS Not Loading </a> </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><a href="javascript:void(0)" title="1018188000-003">1018188000-003</a></td>
+                                        <td>Other </td>
+                                        <td>Self</td>
+                                        <td>09/19/2022</td>
+                                        <td>09/21/2022</td>
+                                        <td><span name="1">Technician</span></td>
+                                        <td>3</td>
+                                    </tr>       
+                                        
+                                    <tr>
+                                        <td colspan="8"> <a href="javascript:void(0)" title="Requesting Laptop Upgrade">Requesting Laptop Upgrade</a> </td>
+                                    </tr>
+
+                                    <tr>
+                                        
+                                        <td><a href="javascript:void(0)" title="1018188000-004">1018188000-004</a></td>
+                                        <td> Other </td>
+                                        <td>Other</td>
+                                        <td>09/11/2022</td>
+                                        <td>09/13/2022</td>
+                                        <td><span name="2">Supervisor</span></td>
+                                        <td>2</td>
+                                    </tr>       
+                                            
+                                    <tr>
+                                        <td colspan="8"> <a href="javascript:void(0)" title="Requesting New Laptop Upgrade">Requesting New Laptop Upgrade</a> </td>
+                                    </tr>
+                    
+                    
+                                    <tr>
+                                                
+                                        <td><a href="javascript:void(0)" title="1018188000-005">1018188000-005</a></td>
+                                        <td> Other </td>
+                                        <td>Self</td>
+                                        <td>09/08/2022</td>
+                                        <td>09/10/2022</td>
+                                        <td><span name="2">Supervisor</span></td>
+                                        <td>2</td>
+                                    </tr>       
+                                                
+                                    <tr>
+                                        <td colspan="8"> <a href="javascript:void(0)" title="Replace my travel card">Replace my travel card</a> </td>
+                                    </tr>
+                                
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+		        <div class="twocols">
+                    <div class="divannouncementcontainer">
+                        <div class="divmaincards">
+                            <div class="divheader">
+                                <h2> <span class="icon-annonuncement"></span> Announcement</h2>
+                                <div class="search divforminline">
+                                    <select name="calendar" id="" class="Knowledgefilter">
+                                        <option value="Select">Select</option>
+                                        <option cid="1" value="Option 1">Option 1</option>
+                                        <option cid="2" value="Option 2">Option 2</option>
+                                        <option cid="3" value="Option 3">Option 3</option>
+                                        <option cid="4" value="Option 4">Option 4</option>
+                                        <option cid="5" value="Option 5">Option 5</option>
+                                    </select>	
+                                </div>
+                            </div>
+
+                            <div class="divarticlecontainer">
+                                <div class="divnoresults hidecomponent">There are no results 
+                                    to display
+                                </div>
+                                <div class="divarticleitem">
+                                    <a href="AnnouncementInnerview.aspx" class="anchortitle" title="Department of the Air Force awards contract for new ICBM system that enhances, strengthens US triad">
+                                        Department of the Air Force awards contract for new ICBM system that enhances, strengthens US triad</a>                                                                                              
+                                    <p></p>
+                                    <div class="divattachments hidecomponent">
+                                        <ul>
+                                            <li><a href="javascript:void(0)" title="Investigations (1).xls"> <span class="icon-emptyfile"></span> 
+                                            Investigations (1).xls</a></li>
+                                            <li><a href="javascript:void(0)"  title="Settingcode.docx"> <span class="icon-emptyfile"></span> 
+                                            Settingcode.docx</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="articleinfo">
+                                        <span>Posted Date:</span>
+                                        <span>10/22/2021 05:35 PM</span>
+                                        <span>Category :</span> <span>SharePoint Access</span> 
+                                    </div>
+                                </div>
+                                <div class="divarticleitem">
+                                    <a href="AnnouncementInnerview.aspx" class="anchortitle" title="Air advisors host first virtual training with Panama partners amid COVID-19">
+                                        Air advisors host first virtual training with Panama partners amid COVID-19</a>                                                                                              
+                                    <p></p>
+                                
+                                    <div class="articleinfo">
+                                        <span>Posted Date:</span>
+                                        <span>10/22/2021 05:35 PM</span>
+                                        <span>Category :</span> <span>SharePoint Access</span> 
+                                    </div>
+                                </div>
+
+                                <div class="divarticleitem">
+                                    <a href="AnnouncementInnerview.aspx" class="anchortitle" title="Department of the Air Force delegates approval authority for nonchargeable emergency leave of absence">
+                                        Department of the Air Force delegates approval authority for nonchargeable emergency leave of absence</a>                                                                                              
+                                    <p></p>
+                                
+                                    <div class="articleinfo">
+                                        <span>Posted Date:</span>
+                                        <span>10/22/2021 05:35 PM</span>
+                                        <span>Category :</span> <span>SharePoint Access</span> 
+                                    </div>
+                                </div>
+
+                                <div class="divarticleitem">
+                                    <a href="AnnouncementInnerview.aspx" class="anchortitle" title="Special Tactics unit surpasses 6,900 days combating war in Middle East">
+                                        Special Tactics unit surpasses 6,900 days combating war in Middle East</a>                                                                                              
+                                    <p></p>
+                                
+                                    <div class="articleinfo">
+                                        <span>Posted Date:</span>
+                                        <span>10/22/2021 05:35 PM</span>
+                                        <span>Category :</span> <span>SharePoint Access</span> 
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <a href="AnnouncementInnerview.aspx" title="View More" class="anchorviewmore anchorAnnouncment">
+                                View More</a>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		
+            <div class="divrightcontainer">
+                <div class="divannouncementcontainer">
+                    <div class="divmaincards">
+                        <div class="divheader">
+                            <h2> <span class="icon-KB"></span> Knowledge Base</h2>
+                        
+                            <div class="search searcharea divforminline">
+                                <select name="Knowledgefilterby" id="" class="Knowledgefilter">
+                                    <option value="Select Category">Select Category</option>
+                                    <option cid="1" value="Category 1">Category 1</option>
+                                    <option cid="2" value="Category 2">Category 2</option>
+                                    <option cid="3" value="Category 3">Category 3</option>
+                                    <option cid="4" value="Category 4">Category 4</option>
+                                    <option cid="5" value="Category 5">Category 5</option>
+                                    </select>
+                                <input type="text" name="Search" placeholder="Search Item ID">
+                                <a title="Search" href="javascript:void(0)" class="search-icon"><span class="icon-search"></span></a>
+                            </div>
+                        </div>
+            
+                
+                
+                        <div class="divarticlecontainer">
+                            <div class="divnoresults hidecomponent"> There are no results to display </div>
+                            <article>
+                            
+                                <a href="KnowledgeGraph.html" class="anchortitle" title="Memorandum on Deferring Payroll Tax Obligations in Light of the Ongoing COVID-19 Disaster">Memorandum on Deferring Payroll Tax Obligations in Light of the Ongoing COVID-19 Disaster</a>                                                                                              
+                                <p>By the authority vested in me as President by the Constitution and the laws of the United States of America, it is hereby ordered as follows:  Section 1.  Policy.  The 2019 novel coronavirus (COVID-19) that originated in the People’s Republic of China has caused significant, sudden, and unexpected disruptions to the American economy.  On March 13, 2020, I determined that the COVID-19 pandemic is of sufficient severity and magnitude to warrant an emergency declaration under section 501(b) of the Robert T. Stafford Disaster Relief and Emergency Assistance Act, 42 U.S.C. 5121-5207, and that is still the case today.  </p>
+                                <div class="divAttachments">
+                                    <a href="javascript:void(0)" title="Tax Deferral .docx"><span class="icon-worddoc"></span> Tax Deferral .docx</a>
+                                </div>
+                                <div class="articleinfo">
+                                    <span>Posted Date :</span>
+                                    <span>16/04/2022 05:35 PM</span>
+                                    <span>Category :</span> 
+                                    <span>SharePoint Access </span> 
+                                    <span>Sub Category :</span> 
+                                    <span>Other</span>
+                                </div>
+                            </article>
+        
+                            <article>
+                                
+                                <a href="KnowledgeGraph.html" class="anchortitle" title="How to update your Comptroller Services Portal Profile">How to update your Comptroller Services Portal Profile</a>                                
+                                <p>CSP is an automated incident management application that allows customers to request and receive online assistance from their servicing comptroller squadron. CSP has integrated workflows which assist the customer in seeking help with travel pay, military pay and civilian pay. The innovative program will assist with personnel pay and travel operations and has workflows for unit accounting and unit resource management. These additional capabilities will assist unit resource advisors and cost center managers in seeking help with accounting and budget support. </p>
+                                <div class="divAttachments">
+                                    <a href="javascript:void(0)" title="Tax Deferral .docx"><span class="icon-worddoc"></span> Tax Deferral .docx</a>
+                                </div>
+                                <div class="articleinfo">
+                                    <span>Posted Date :</span>
+                                    <span>16/04/2022 05:35 PM</span>
+                                    <span>Category :</span> 
+                                    <span>SharePoint Access </span> 
+                                    <span>Sub Category :</span> 
+                                    <span>Other</span>
+                                </div>
+                            </article>
+
+                            <article>
+                            
+                                <a href="KnowledgeGraph.aspx" class="anchortitle" title="Memorandum on the Withdrawal of Certain Areas of the United States Outer Continental Shelf from Leasing Disposition">Memorandum on the Withdrawal of Certain Areas of the United States Outer Continental Shelf from Leasing Disposition</a>                                                                                              
+                                <p>Under the authority granted to me in section 12(a) of the Outer Continental Shelf Lands Act, 43 U.S.C. 1341(a), I hereby withdraw from disposition by leasing for 10 years, beginning on July 1, 2022, and ending on June 30, 2032. (1) the areas of the Outer Continental Shelf designated by section 104(a) of the Gulf of Mexico Energy Security Act of 2006, Public Law 109-432; and (2) the areas currently designated by the Bureau of Ocean Energy Management as the South Atlantic and Straits ofFlorida Planning Areas.</p>
+                                <div class="divAttachments">
+                                    <a href="javascript:void(0)" title="Tax Deferral .docx"><span class="icon-worddoc"></span> Tax Deferral .docx</a>
+                                </div>
+                                <div class="articleinfo">
+                                    <span>Posted Date :</span>
+                                    <span>16/04/2022 05:35 PM</span>
+                                    <span>Category :</span> 
+                                    <span>SharePoint Access </span> 
+                                    <span>Sub Category :</span> 
+                                    <span>Other</span>
+                                </div>
+                            </article>
+
+                            <article>
+                            
+                                <a href="KnowledgeGraph.aspx" class="anchortitle" title="Memorandum on the Delegation of Certain Functions and Authorities under the Global Fragility Act of 2019">Memorandum on the Delegation of Certain Functions and Authorities under the Global Fragility Act of 2019</a>                                                                                              
+                                <p>By the authority vested in me as President by the Constitution and the laws of the United States of America, including section 301 of title 3, United States Code, I hereby delegate to the Secretary of State, in consultation with the Secretary of the Treasury, the Secretary of Defense, the Secretary of Energy, the Secretary of Commerce, the Director of National Intelligence, the Administrator of the United States Agency for International Development, and the Director of the Office of Management and Budget, the functions and authorities vested in the President by sections 504(a) and (c) of the Global Fragility Act of 2019 (Public Law 116-94). The Secretary of Defense, the Secretary of Energy, the Secretary of Commerce, the Director of National Intelligence, the Administrator of the United States Agency for International Development, and the Director of the Office of Management and Budget, the functions and authorities vested in the President by sections 504(a) and (c) of the Global Fragility Act of 2019 (Public Law 116-94).</p>
+                                <div class="divAttachments">
+                                    <a href="javascript:void(0)" title="Tax Deferral .docx"><span class="icon-worddoc"></span> Tax Deferral .docx</a>
+                                </div>
+                                <div class="articleinfo">
+                                    <span>Posted Date :</span>
+                                    <span>16/04/2022 05:35 PM</span>
+                                    <span>Category :</span> 
+                                    <span>SharePoint Access </span> 
+                                    <span>Sub Category :</span> 
+                                    <span>Other</span>
+                                </div>
+                            </article>
+                            
+                            <a href="KnowledgeGraph.aspx" title="View More" class="anchorviewmore">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		</div>
+	</section>
+
+    <!--Customer code end -->
+
+    <div class="divFooter">
+        <p>©2022 Idea Entity Corporation | All Rights Reserved.</p>
+    </div>
+
+
+    <script src="SiteAssets/RhyBus/Js/RhyBusJquery3.6.0.min.js" type="text/javascript"></script>
+    <script src="SiteAssets/RhyBus/Js/RhyBusGlobalfuncations.js" type="text/javascript"></script>
+    <script src="SiteAssets/502HelpDesk/Js/502HelpDeskCustomertabs.js" type="text/javascript"></script>
+ 
+</body>
+</html>

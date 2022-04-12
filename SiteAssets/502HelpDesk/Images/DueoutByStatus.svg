@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="506.226" height="290.272" viewBox="0 0 506.226 290.272">
+  <g id="Group_22771" data-name="Group 22771" transform="translate(-699 -350.728)">
+    <path id="Chart_Grid" data-name="Chart Grid" d="M466.7,265.527v-.06H1.28v.06H0V.3H.556V0H467.577V.3h.4V265.527Zm0-1.754V1.693H1.28V52.754H466.569v1.693H1.28v51.061H466.569V107.2H1.28v51.062H466.569v1.693H1.28v51.061H466.569v1.693H1.28v51.061Z" transform="translate(737.25 357)" fill="#eaf0f4"/>
+    <g id="Y-Axis-Info" transform="translate(722.87 350.728)">
+      <text id="_0" data-name="0" transform="translate(6.22 273.542)" fill="#43425d" font-size="11" font-family="SourceSansPro-Regular, Source Sans Pro" opacity="0.721"><tspan x="0" y="0">0</tspan></text>
+      <text id="_10" data-name="10" transform="translate(0.1 167.961)" fill="#43425d" font-size="11" font-family="SourceSansPro-Regular, Source Sans Pro" opacity="0.721"><tspan x="0" y="0">10</tspan></text>
+      <text id="_5" data-name="5" transform="translate(4.1 220.281)" fill="#43425d" font-size="11" font-family="SourceSansPro-Regular, Source Sans Pro" opacity="0.721"><tspan x="0" y="0">5</tspan></text>
+      <text id="_15" data-name="15" transform="translate(0.1 115.561)" fill="#43425d" font-size="11" font-family="SourceSansPro-Regular, Source Sans Pro" opacity="0.721"><tspan x="0" y="0">15</tspan></text>
+      <text id="_20" data-name="20" transform="translate(0.1 63.24)" fill="#43425d" font-size="11" font-family="SourceSansPro-Regular, Source Sans Pro" opacity="0.721"><tspan x="0" y="0">20</tspan></text>
+      <text id="_25" data-name="25" transform="translate(0 11)" fill="#43425d" font-size="11" font-family="SourceSansPro-Regular, Source Sans Pro" opacity="0.721"><tspan x="0" y="0">25</tspan></text>
+    </g>
+    <g id="Group_22418" data-name="Group 22418" transform="translate(754 565)">
+      <text id="Not_Started" data-name="Not Started" transform="translate(27 72)" fill="#43425d" font-size="11" font-family="SourceSansPro-Semibold, Source Sans Pro" font-weight="600"><tspan x="-27.06" y="0">Not Started</tspan></text>
+      <rect id="Rectangle_16120" data-name="Rectangle 16120" width="27" height="57" transform="translate(13)" fill="#0c909a"/>
+    </g>
+    <g id="Group_22768" data-name="Group 22768" transform="translate(891.425 512)">
+      <text id="In_Progress" data-name="In Progress" transform="translate(25.575 125)" fill="#43425d" font-size="11" font-family="SourceSansPro-Semibold, Source Sans Pro" font-weight="600"><tspan x="-26.411" y="0">In Progress</tspan></text>
+      <rect id="Rectangle_16120-2" data-name="Rectangle 16120" width="26" height="153" transform="translate(12.575 -43)" fill="#966e01"/>
+    </g>
+    <g id="Group_22769" data-name="Group 22769" transform="translate(1024.851 459)">
+      <text id="Completed" transform="translate(26.149 178)" fill="#43425d" font-size="11" font-family="SourceSansPro-Semibold, Source Sans Pro" font-weight="600"><tspan x="-25.993" y="0">Completed</tspan></text>
+      <rect id="Rectangle_16120-3" data-name="Rectangle 16120" width="27" height="163" transform="translate(12.149)" fill="#019607"/>
+    </g>
+    <g id="Group_22770" data-name="Group 22770" transform="translate(1146.275 568)">
+      <text id="Overdue" transform="translate(19.725 69)" fill="#43425d" font-size="11" font-family="SourceSansPro-Semibold, Source Sans Pro" font-weight="600"><tspan x="-20.196" y="0">Overdue</tspan></text>
+      <rect id="Rectangle_16334" data-name="Rectangle 16334" width="26" height="54" transform="translate(6.725)" fill="#961201"/>
+    </g>
+    <text id="Due_Outs" data-name="Due Outs" transform="translate(711 511.5) rotate(-90)" fill="#43425d" font-size="12" font-family="SourceSansPro-Semibold, Source Sans Pro" font-weight="600" opacity="0.764"><tspan x="0" y="0">Due Outs</tspan></text>
+  </g>
+</svg>

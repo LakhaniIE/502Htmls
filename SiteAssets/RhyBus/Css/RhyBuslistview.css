@@ -1,0 +1,303 @@
+﻿/*RhyBus Listview*/
+
+/*****************************************/
+/*Tabs section*/
+/*****************************************/
+.divlistviewcontainer {margin-top: 10px !important;}
+.divleftcontainer, .divrightcontainer {width: 100%; position: relative;}
+.divtablelist .tab-content > .tab-pane {display: none;}
+.divtablelist .tab-content > .active {display: block;}
+.divtablelist ul {position: relative; top: 3px;}
+.divtablelist ul, .divtablelist ul li {list-style-type: none; margin: 0px; padding: 0px; display: inline-block;}
+.divtablelist ul li {margin-right: 6px; padding-bottom: 8px;}
+.divtablelist ul li:last-child {margin-right: 0px;}
+.divtablelist ul li a {font-family: 'latobold', sans-serif; font-size: 13px; color: #5d5d5d; text-transform: uppercase;}
+.divtablelist ul li a:hover {text-decoration: none;}
+.divtablelist ul li a .spancount {padding: 2px 8px; background-color: #e6e6e6; border-radius: 3px; margin-left: 3px;}
+.divtablelist ul li.active {border-bottom: 3px solid #FFC400;}
+.divtablelist ul li.active a {color: #000; border-color: #0072c6;}
+.divtablelist ul li.active a .spancount {background-color: #FFC400;}
+.divtablelist .divtablistheader {width: 100%; display: flex; position: relative; border-bottom: 3px solid #DCE3E8;}
+.divtablelist .tablegrid {width: 100%; position: relative; border: 1px solid #e6e6e6; border-top: none; margin: 10px 0 0 0; border-collapse: collapse;}
+.divtablelist .tablegrid thead {background-color: #003f91;}
+.divtablelist .tablegrid thead th {text-align: left; color: #fff; font-family: 'latobold', sans-serif; font-size: 13px; padding: 8px 6px;}
+.divtablelist .tablegrid tbody td {padding: 8px 4px 0px 4px; font-family: 'sourcesansproregular', sans-serif; font-size: 13px; color: #101010;}
+.divtablelist .tablegrid tbody td[colspan] {border-bottom: 1px solid #ECECEC; padding-bottom: 8px;}
+.divtablelist .tablegrid tbody td[colspan] a{padding-left:36px; display: block;}
+.divtablelist .tablegrid tbody td:first-child{width: 20px; padding-right: 0px;}
+.divtablelist .tablegrid tbody td a {color: #044496; font-family: 'sourcesansprosemibold', sans-serif; font-size: 13px;}
+.divtablelist .tablegrid tbody td span[class] {font-family: 'sourcesansprosemibold', sans-serif;}
+.divtablelist .tablegrid tbody td span[class="notstated"] {color: #0c80be;}
+.divtablelist .tablegrid tbody td span[class="inprogress"] {color: #98730e;}
+.divtablelist .tablegrid tbody td span[class="completed"] {color: #3b860d;}
+.divtablelist .tablegrid tbody td span[class="overdue"] {color: #c73d00;}
+.divsubKPIsectionwithoutborder{border: none !important;}
+
+/*****************************************/
+/*KPI css*/
+/*****************************************/
+.divsubKPIsection ul{display: flex; flex-wrap: wrap; border: none !important; }
+.divsubKPIsection ul li a{ border-bottom: 3px solid !important; border-left: 1px solid #ccc !important; }
+.divsubKPIsection ul li a[name="3"] {
+    border-bottom-color: #1EA39E !important;
+}
+.divsubKPIsection ul li a[name="4"] {
+    border-bottom-color: #955463 !important;
+}
+.divsubKPIsection ul li a[name="5"] {
+    border-bottom-color: #6907A7 !important;
+}
+.divsubKPIsection ul li a[name="6"] {
+    border-bottom-color: #A01C7D !important;
+}
+.divsubKPIsection ul li {
+    list-style-type: none;
+    width: 50%  !important;
+    padding: 0px 10px 0px 0px;
+    margin-bottom: 10px;
+}
+.divsubKPIsection ul li a > p{text-align: center !important; display: block; width: 100%;}
+.divsubKPIsection ul li a > h2{text-align: center !important; width: 100%;}
+.ullistviewactionbtns {position: absolute !important; right: 0px; top: 0px !important;}
+.ullistviewactionbtns li {position: relative; padding-bottom: 0px !important;}
+.ullistviewactionbtns > li > a {
+    font-family: 'sourcesansprosemibold',sans-serif;
+    font-size: 13px;
+    color: #fff !important;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: 5px !important;
+    display: inline-block;
+}
+.ullistviewactionbtns li.anchorbutton1 a {
+    background-color: #07552E;
+}
+.ullistviewactionbtns li.anchorbutton2 a {
+    background-color: #036583;
+}
+.ullistviewactionbtns li.anchorbutton3 a {
+    background-color: #84881F;
+}
+.ullistviewactionbtns li.anchorbutton4 a {
+    font-family: 'sourcesansprosemibold', sans-serif;
+    background-color:  #547a91;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+.ullistviewactionbtns li.anchorbutton1 .divactionpoup {
+    border-color: #07552E;
+}
+.ullistviewactionbtns li.anchorbutton2 .divactionpoup {
+    border-color: #036583;
+}
+.ullistviewactionbtns li.anchorbutton3 .divactionpoup {
+    border-color: #84881F;
+}
+
+
+/*****************************************/
+/*Popup css*/
+/*****************************************/
+.divactionpoup {
+    width: 435px;
+    background-color: #fff;
+    border-top: 3px solid #07552E;
+    box-shadow: 0px 2px 3px #989898;
+    z-index: 2;
+    padding: 12px;
+    margin-bottom: 15px;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    display: none;
+    color: #323232;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.popupbtns {
+    width: 100%;
+    display: flex;
+    margin-bottom: 5px;
+}
+.popupbtns ul {
+    margin-left: auto;
+    list-style-type: none;
+    display: inline-block;
+}
+.popupbtns ul li.ok-btn a {
+    background-color: #246ec4;
+}
+.popupbtns ul li.cancel-btn a {
+    background-color: #5c7296;
+}
+.popupbtns ul li a span[class^="icon-"] {
+    padding-right: 3px !important;
+    margin-right: 0px !important;
+    font-size: 10px !important;
+}
+.popupbtns ul li.ok-btn{
+    margin-right: 5px;
+}
+.popupbtns ul li a {
+    font-family: 'sourcesansprosemibold',sans-serif;
+    font-size: 13px;
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    padding: 5px 10px !important;
+}
+.divformgroup a.peoplepicker-icon {
+    position: absolute;
+    right: 5px;
+    top: 25px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 27px;
+    text-decoration: none;
+    background-color: #fff !important;
+    color: #959595;
+}
+.divwithoutcheck .tablegrid tbody td:first-child{width: auto !important;}
+.divwithoutcheck .tablegrid tbody td[colspan] a{padding-left: 0px !important;}
+
+/*****************************************/
+/*Filters section*/
+/*****************************************/
+.divrightcontainer header{padding:10px 15px;min-height: 40px;background-color: #fff;position: relative;width: 100%; border-top-left-radius: 4px; border-top-right-radius: 4px; border: 1px solid #eee; display: flex; justify-content: space-between;}
+.divrightcontainer header h1{color: #000;font-size: 15px;font-family: "sourcesansprosemibold";font-weight: normal;margin:3px 0 0px;}
+.divrightcontainer header h1 i{padding-right:5px;}
+.divrightcontainer header .divfiscalyear{color:#000;font-size:13px; margin: 0px 5px 0px auto;font-family: 'latomedium', sans-serif;}
+.divrightcontainer header .clearall-link{font-family: 'sourcesansproregular', Tahoma, sans-serif; font-size: 13px; color: #033c86; margin-top: 2px;}
+.divfilters{padding: 10px;border: 1px solid #eee; background: #fff; border-top: none; box-shadow: 0 2px 0 rgb(0 0 0 / 7%);}
+.divfilters .searcharea input{padding-right:40px !important;}
+.divfilters .searcharea{padding-bottom: 5px;;}
+.divfilters .search-icon{position: absolute;right: 20px;text-decoration: none;top:16px}
+.divfilters .filterrow{display: flex;display: -ms-flexbox;display: -webkit-flex;flex-wrap: wrap;padding-bottom: 5px;}
+.divfilters .filterrow .filterfield{padding: 5px 10px 5px 0;-ms-flex: 0 0 50%;flex: 0 0 50%;position: relative;display: inline-block;max-width: 50%;}
+.divfilters .filterrow .req-amount{-ms-flex: 0 0 100%;flex: 0 0 100%;max-width: 100%;padding-right:0;}
+.divfilters .filterrow .filterfield:nth-child(even){padding-right:0px;}
+.divfilters .requirementleveldiv{border: 1px solid #d8d8d8;border-radius: 4px;margin-bottom: 5px;}
+.divfilters .requirementleveldiv .panelheading{background-color: rgb(222, 241, 241);border-radius: 3px;padding: 8px;font-size: 12px;margin: 0px;color: #164C6E; font-family: 'latobold', sans-serif;width: 100%;display: inline-block;text-decoration: none;;}
+.divfilters .requirementleveldiv .panelbody{padding: 10px 10px 5px 10px;border: 1px solid #d8d8d8;border-radius: 4px;margin: 10px;}
+.divfilters .requirementleveldiv .panelbody .panelinfo{display: flex;width: 100%;justify-content:space-between}
+.divfilters .requirementleveldiv .panelbody .panelinfo p{font-size: 12px;;margin: 0;font-family: 'latobold', sans-serif;color:#0072c6}
+.divfilters .requirementleveldiv .panelbody .panelinfo h1{font-size: 13px;font-family: 'latobold', sans-serif;color:#0072c6;margin:0}
+.submenu{display: none;}
+.divrightcontainer .totalrequirements{padding-bottom:10px;}
+.divrightcontainer .totalrequirements a{background-color: #2F3E7C;display: flex;position: relative; text-decoration: none; width: 100%;justify-content: space-between;}
+.divrightcontainer .totalrequirements a .totalbgdetails{padding: 6px 0 6px 13px;}
+.divrightcontainer .totalrequirements a .totalbgdetails p{text-transform: uppercase;color: #fff;font-family: 'latobold';font-size: 13px;margin: 0px;padding-bottom: 5px;display:block}
+.divrightcontainer .totalrequirements a .totalbgdetails h1{font-family: 'sourcesansprobold';font-size: 20px;color: #fff;margin: 0;display:block}
+.divrightcontainer .totalrequirements .count{background: #4A5995;min-width: 55px;font-family: 'sourcesansprobold';font-size: 23px;color: #fff;text-align: center;min-height:60px;line-height: 2.8;}
+.divrightcontainer .divkpicard a.cardaction{border: 1px solid #d8d8d8;text-decoration: none !important;margin-bottom: 10px;font-size: 12px;font-family: "sourcesansprosemibold", sans-serif;width: 100%;border-radius: 4px;background-color: #fff;display: flex;line-height: 3.1;}
+.divrightcontainer .divkpicard a.cardaction .count{font-family: "latobold", sans-serif;font-size:12px;min-width: 40px;min-height: 39px;text-align: center;border-right: 1px solid #d8d8d8;}
+.divrightcontainer .divkpicard a.cardaction .statusdetails{padding: 0 0 0 10px;display: flex;justify-content: space-between;width: 80%;}
+.divrightcontainer .divkpicard a.cardaction .statusdetails p{margin:0;text-transform: uppercase;font-size: 12px;font-family: "latobold", sans-serif;display: inline-block;}
+.divrightcontainer .divkpicard a.cardaction .statusdetails h1{margin: 0;display: inline-block;font-size:12px;font-family: "latobold", sans-serif;}
+.divkpicard a.cardaction span[name="1"], .divkpicard a.cardaction p[name="1"],.divkpicard a.cardaction h1[name="1"]{color:#3B860D}
+.divkpicard a.cardaction span[name="2"], .divkpicard a.cardaction p[name="2"],.divkpicard a.cardaction h1[name="2"]{color:#A83B3B}
+.divkpicard a.cardaction span[name="3"], .divkpicard a.cardaction p[name="3"],.divkpicard a.cardaction h1[name="3"]{color:#819F21}
+.divkpicard a.cardaction span[name="4"], .divkpicard a.cardaction p[name="4"],.divkpicard a.cardaction h1[name="4"]{color:#5E6E96}
+.divkpicard a.cardaction span[name="5"], .divkpicard a.cardaction p[name="5"]{color:#8D2208;}
+@media screen and (max-width: 1199px){
+    .divrightcontainer .divkpicard a.cardaction .statusdetails{width:94%}
+    .divleftcontainer{margin-bottom: 10px;}
+}
+@media (min-width:1200px) and (max-width:1248px){
+
+    .divrightcontainer .divkpicard a.cardaction .count, .divrightcontainer .divkpicard a.cardaction .statusdetails p, .divrightcontainer .divkpicard a.cardaction .statusdetails h1{font-size: 11px !important;}
+    .divrightcontainer .divkpicard a.cardaction{line-height: 3.4 !important;}
+}
+
+/*Accordian kpis*/
+
+.divkpislist{width: 100%;display: inline-block;position: relative;}
+.divkpislist ul, .divkpislist ul li{width: 100%; padding: 0px;display: inline-block;list-style-type: none;position: relative; margin: 0px;}
+.divkpislist ul li{margin-bottom: 10px;}
+.divkpislist ul li a{text-decoration: none;}
+.divkpislist ul li .divSpendactionkpisheader{ width: 100%;cursor: pointer;position: relative; display: block;}
+.divkpislist ul li .divSpendactionkpisheader span.icon-arrow{position: absolute;font-size: 21px;  color: #115689; width: 50px;  line-height: 43px; text-align: center;}
+.Spendactionkpispanel {display: none;position: relative; border: 1px solid #CED5DC; border-top: none; background-color: #F4F8FC;}
+.divpanelheading {padding-left:50px; display: inline-block;}
+.divpanelheading .spankpititle, .divpanelheading .spankpiamount{font-size: 13px; color: #115689; display: block;font-family: "latobold", sans-serif; text-transform: uppercase;}
+.divpanelheading .spankpiamount{padding: 0px 0px 5px 0px;}
+span.spankpicount {width: 50px;float: right; background-color: #115689; line-height: 43px;text-align: center; border-left: 1px solid rgba(255,255,255,0.5); font-family: "sourcesansprosemibold", sans-serif; color: #fff; font-size:22px;}
+.divkpislist ul li .divSpendactionkpisheader[aria-expanded="true"] span.icon-arrow { -webkit-transform: rotate(90deg);transform: rotate(90deg); width: 56px; line-height: 43px;}
+.divkpicards.divpanelbody {width: 100%; position: relative;padding:15px 10px;}
+.divkpicards.divpanelbody ul{display: flex;flex-wrap: wrap;margin: 0px;}
+.divkpicards.divpanelbody ul li {list-style-type: none; width: 50%;padding: 0px 10px 0px 0px; margin-bottom: 10px;}
+.divkpicards.divpanelbody ul li a{background-color: #fff; padding: 5px; border-radius: 6px; height: auto; border: 1px solid #DBDBDB; border-bottom: 3px solid; width: 100%; display: inline-block; text-align: center;}
+.divkpicards.divpanelbody ul li:last-child{padding-right: 0px;}
+.divkpicards.divpanelbody ul li:nth-child(4){padding-right: 10px;}
+.divkpicards.divpanelbody ul li a h2{font-size: 16px;font-family: "latobold", sans-serif; margin: 0px; padding:3px 0 0 0;}
+.divkpicards.divpanelbody ul li a p{font-size: 12px;font-family: "latobold", sans-serif; margin: 0px; padding: 3px 0px 3px 0px; text-transform: uppercase;}
+.divkpicards.divpanelbody .divinnerkpis ul, .divkpicards.divpanelbody .divinnerkpis.divinnerkpisbg ul{display: flex;flex-wrap: wrap;margin: 0px;}
+.divkpicards.divpanelbody .divinnerkpis ul li, .divkpicards.divpanelbody .divinnerkpis.divinnerkpisbg ul li{width: 100%; list-style-type: none; margin-bottom: 5px; padding-right: 10px;}
+.divkpicards.divpanelbody .divinnerkpis ul li a{border: none; width: 100%; display: inline-block; position: relative;border-radius: 4px; padding: 0px;}
+.divkpicards.divpanelbody .divinnerkpis ul li a span.spaninnerkpicont, .divkpicards.divpanelbody .divinnerkpis.divinnerkpisbg ul li a span.spaninnerkpicont {width: 50px; float: left; min-height: 40px; border-top-left-radius: 4px; border-bottom-left-radius: 4px;color: #fff;text-align: center;line-height: 40px; font-family: "latobold", sans-serif; font-size: 16px;}
+.divkpicards.divpanelbody .divinnerkpis ul li a span.spaninnerkpititile, .divkpicards.divpanelbody .divinnerkpis.divinnerkpisbg ul li a span.spaninnerkpititile { color: #fff;line-height: 40px; font-family: "sourcesansprosemibold", sans-serif; font-size: 13px; float: left; margin-left: 10px; text-transform: uppercase;} 
+.divkpicards.divpanelbody .divinnerkpis ul li a span.spaninneramount, .divkpicards.divpanelbody .divinnerkpis.divinnerkpisbg ul li a span.spaninneramount {float: right;padding-right: 15px;line-height: 40px;color: #fff;font-family: "latobold", sans-serif; font-size: 15px;}
+.divkpicards.divpanelbody .divinnerkpis ul li:last-child{margin-bottom: 0px;}
+.divkpicards.divpanelbody .divinnerkpis.divinnerkpisbg ul li a{background-color: #fff; border: 1px solid #CECECE; border-radius: 4px; width: 100%; display: inline-block; position: relative;}
+.divkpicards.divpanelbody .divinnerkpis.divinnerkpisbg ul li a span.spaninnerkpititile{color: #2F3133;}
+.divSpendactionkpisAwardedheader .divpanelheading{padding-left: 15px;}
+.divhr {width: 100%;height: 1px; background: rgba(112,112,112,0.2); margin-bottom: 10px;}
+.divkpis .divkpisnormal{width: 100%; margin:0; padding: 0px; position: relative; display: inline-block;}
+.divkpis .divkpisnormal ul{margin: 0px; padding: 0px; float: left; width: 100%;}
+.divkpis .divkpisnormal ul li{list-style-type: none; display: block; margin-bottom: 5px;}
+.divkpis .divkpisnormal ul li a{border: none; width: 100%; display: inline-block;position: relative;padding: 0px;}
+.divkpis .divkpisnormal ul li a span.spaninnerkpicont{ width: 50px;float: left;min-height: 40px; color: #fff; text-align: center;line-height: 40px;font-family: "latobold", sans-serif; font-size: 16px;}
+.divkpis .divkpisnormal ul li a span.spaninnerkpititile{color: #fff;line-height: 40px;font-family: "sourcesansprosemibold", sans-serif;font-size: 13px;float: left; margin-left: 10px; text-transform: uppercase;}
+.divkpis .divkpisnormal ul li a span.spaninneramount{float: right;padding-right: 15px; line-height: 40px;color: #fff;font-family: "latobold", sans-serif;font-size: 15px;}
+.divkpicards.divpanelbody.divRequirementkpis ul li {width: 100%;padding-right: 10px;}
+.divkpicards.divpanelbody.divRequirementkpis ul li:last-child{margin-bottom: 0px;}
+.divkpicards.divpanelbody.divRequirementkpis ul li a {text-align: left;padding: 6px; border: 1px solid #DBDBDB; border-left: 3px solid;}
+.divkpicards.divpanelbody.divRequirementkpis ul li a p {float: left;}
+.divkpicards.divpanelbody.divRequirementkpis ul li a h2 {float: right;}
+/*******************************************/
+/*Main KPIs*/
+/*******************************************/
+.divkpislist ul li .divSpendactionkpisheader[name="1"]{background: #ffffff; border: 1px solid #115689;}
+.divkpislist ul li .divSpendactionkpisheader[name="2"]{background: #fff; border: 1px solid #182A90;}
+.divkpislist ul li .divSpendactionkpisheader[name="3"]{background: #737708;}
+.divkpislist ul li .divSpendactionkpisheader[name="3"] span.icon-arrow{background: #8F9328;}
+.divkpislist ul li .divSpendactionkpisAwardedheader[name="4"]{background: #fff;border:2px solid #ccc; display: block;}
+.divkpis .divkpisnormal ul li a[name="5"]{background: #912D35;}
+.divkpis .divkpisnormal ul li a[name="5"] span.spaninnerkpicont{background-color: #721D24;}
+.divkpis .divkpisnormal ul li a[name="6"]{background: #69434C;}
+.divkpis .divkpisnormal ul li a[name="6"] span.spaninnerkpicont{background-color: #55333B;}
+.divkpis .divkpisnormal ul li a[name="7"]{background: #5E5A7E;}
+.divkpis .divkpisnormal ul li a[name="7"] span.spaninnerkpicont{background-color: #514C72;}
+.divkpis .divkpisnormal ul li a[name="8"]{background: #1E8FA3;}
+.divkpis .divkpisnormal ul li a[name="8"] span.spaninnerkpicont{background-color: #1C8395;}
+/*******************************************/
+/*Full wdith Inner KPIs*/
+/*******************************************/
+.divkpicards.divpanelbody .divinnerkpis ul li a[name="1"]{background: #3B860D;}
+.divkpicards.divpanelbody .divinnerkpis ul li a[name="1"] span.spaninnerkpicont{background: #286503;}
+.divkpicards.divpanelbody .divinnerkpis ul li a[name="2"]{background: #90000C;}
+.divkpicards.divpanelbody .divinnerkpis ul li a[name="2"] span.spaninnerkpicont{background: #640303;}
+.divkpicards.divpanelbody .divinnerkpis.divinnerkpisbg ul li a[name="3"] span.spaninnerkpicont{background: #0C9D00;}
+.divkpicards.divpanelbody .divinnerkpis.divinnerkpisbg ul li a[name="3"] span.spaninneramount{color: #0C9D00;}
+.divkpicards.divpanelbody .divinnerkpis.divinnerkpisbg ul li a[name="4"] span.spaninnerkpicont{background: #6F5204;}
+.divkpicards.divpanelbody .divinnerkpis.divinnerkpisbg ul li a[name="4"] span.spaninneramount{color: #6F5204;}
+.divkpicards.divpanelbody .divinnerkpis.divinnerkpisbg ul li a[name="5"] span.spaninnerkpicont{background: #037483;}
+.divkpicards.divpanelbody .divinnerkpis.divinnerkpisbg ul li a[name="5"] span.spaninneramount{color: #037483;}
+
+/*******************************************/
+/*Inner KPIs*/
+/*******************************************/
+.divkpicards.divpanelbody ul li a[name="1"] {border-left-color: #C2733F;}
+.divkpicards.divpanelbody ul li a[name="1"] h2, .divkpicards.divpanelbody ul li a[name="1"] p{color:#C2733F;}
+.divkpicards.divpanelbody ul li a[name="2"] {border-left-color: #93981D;}
+.divkpicards.divpanelbody ul li a[name="2"] h2, .divkpicards.divpanelbody ul li a[name="2"] p{color:#93981D;}
+.divkpicards.divpanelbody ul li a[name="3"] {border-bottom-color: #1EA39E;}
+.divkpicards.divpanelbody ul li a[name="3"] h2, .divkpicards.divpanelbody ul li a[name="3"] p{color:#1EA39E;}
+.divkpicards.divpanelbody ul li a[name="4"] {border-bottom-color: #955463;}
+.divkpicards.divpanelbody ul li a[name="4"] h2, .divkpicards.divpanelbody ul li a[name="4"] p{color:#955463;}
+.divkpicards.divpanelbody ul li a[name="5"] {border-bottom-color: #6907A7;}
+.divkpicards.divpanelbody ul li a[name="5"] h2, .divkpicards.divpanelbody ul li a[name="5"] p{color:#6907A7;}
+.divkpicards.divpanelbody ul li a[name="6"] {border-bottom-color: #A01C7D;}
+.divkpicards.divpanelbody ul li a[name="6"] h2, .divkpicards.divpanelbody ul li a[name="6"] p{color:#A01C7D;}

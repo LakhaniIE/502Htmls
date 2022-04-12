@@ -1,0 +1,8 @@
+div#DeltaPlaceHolderMain { width: 90%;margin: 0 auto;padding-top: 10px;}
+.accessgroup .creategrpbtn {background: #003f91;color: #fff;text-transform: uppercase;padding: 5px 10px 5px 8px;font-size: 13px;font-family: 'sourcesansprosemibold';text-decoration: none;}
+.accessgroup .creategrpbtn i.icon-docadd { position: relative;  top: 0px;font-size: 10px; right: 2px;}
+.accessgroup .creategroup { width: 100%;display: flex; position: relative;border-bottom: 1px dashed #bdbdbd;padding: 0 0 5px 0;}
+.topbar {display: flex; width: 100%; position: relative;}
+.anchorbackbtn {margin-left: auto; padding: 5px 8px; font-family: 'sourcesansprosemibold'; font-size: 13px; color: #fff; text-decoration: none !important; text-transform: uppercase;}
+.anchorbackbtn, .anchorbackbtn:visited, .anchorbackbtn:hover, .anchorbackbtn:active { background: #334860; color:#fff}
+.anchorbackbtn i.icon-left-arrow { position: relative;  top: 0px;font-size: 10px; right: 2px;}

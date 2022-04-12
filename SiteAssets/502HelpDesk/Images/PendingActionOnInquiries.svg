@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="501.506" height="351.603" viewBox="0 0 501.506 351.603">
+  <defs>
+    <filter id="Rectangle_17201" x="219.354" y="0" width="23" height="23" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_17202" x="276.359" y="0" width="23" height="23" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_17203" x="333.422" y="0" width="23" height="23" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_17204" x="395.506" y="0" width="23" height="23" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-4"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_27348" data-name="Group 27348" transform="translate(-171.494 -681)">
+    <line id="Line_1089" data-name="Line 1089" y2="257.016" transform="translate(263.939 728.5)" fill="none" stroke="#ebebeb" stroke-width="1"/>
+    <line id="Line_1090" data-name="Line 1090" x1="420" transform="translate(243.17 985.242)" fill="none" stroke="#ebebeb" stroke-width="1"/>
+    <text id="Google_Chrome" data-name="Google Chrome" transform="translate(195.889 947)" fill="#43425d" font-size="12" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="0" y="0">Unassigned</tspan></text>
+    <text id="Google_Chrome-2" data-name="Google Chrome" transform="translate(254.494 876.636)" fill="#43425d" font-size="12" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="-82.908" y="0">Customer Action</tspan><tspan x="-41.28" y="14">Pending</tspan></text>
+    <text id="Google_Chrome-3" data-name="Google Chrome" transform="translate(254.607 815.143)" fill="#43425d" font-size="12" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="-75.66" y="0">Pending Action</tspan><tspan x="-71.568" y="14">Outside Portal</tspan></text>
+    <text id="Google_Chrome-4" data-name="Google Chrome" transform="translate(255.365 759.321)" fill="#43425d" font-size="12" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="-30.432" y="0">Active</tspan></text>
+    <g id="Group_24839" data-name="Group 24839" transform="translate(263.672 741.179)">
+      <rect id="Rectangle" width="82.668" height="28" transform="translate(17)" fill="#a9b23f"/>
+      <rect id="Rectangle-2" data-name="Rectangle" width="21.668" height="28" fill="#81741a"/>
+      <rect id="Rectangle-3" data-name="Rectangle" width="63.668" height="28" transform="translate(97)" fill="#2e89b9"/>
+      <rect id="Rectangle-4" data-name="Rectangle" width="83.668" height="28" transform="translate(158)" fill="#b17320"/>
+    </g>
+    <g id="Group_27347" data-name="Group 27347" transform="translate(264.518 928)">
+      <rect id="Rectangle-5" data-name="Rectangle" width="31.668" height="28" transform="translate(68)" fill="#a9b23f"/>
+      <rect id="Rectangle-6" data-name="Rectangle" width="71.668" height="28" fill="#81741a"/>
+      <rect id="Rectangle-7" data-name="Rectangle" width="5.668" height="28" transform="translate(97)" fill="#2e89b9"/>
+      <rect id="Rectangle-8" data-name="Rectangle" width="8.668" height="28" transform="translate(102)" fill="#b17320"/>
+    </g>
+    <g id="Group_27345" data-name="Group 27345" transform="translate(263.664 802.179)">
+      <rect id="Rectangle-9" data-name="Rectangle" width="10.668" height="28" fill="#81741a"/>
+      <rect id="Rectangle-10" data-name="Rectangle" width="119.668" height="28" transform="translate(7)" fill="#2e89b9"/>
+      <rect id="Rectangle-11" data-name="Rectangle" width="9.668" height="28" transform="translate(124)" fill="#b17320"/>
+    </g>
+    <g id="Group_27346" data-name="Group 27346" transform="translate(264.664 865.179)">
+      <rect id="Rectangle-12" data-name="Rectangle" width="96.668" height="28" transform="translate(30)" fill="#a9b23f"/>
+      <rect id="Rectangle-13" data-name="Rectangle" width="42.668" height="28" fill="#81741a"/>
+      <rect id="Rectangle-14" data-name="Rectangle" width="9.668" height="28" transform="translate(124)" fill="#b17320"/>
+    </g>
+    <text id="Google_Chrome-5" data-name="Google Chrome" transform="translate(264.324 1002)" fill="#43425d" font-size="12" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="0" y="0">0</tspan></text>
+    <text id="Google_Chrome-6" data-name="Google Chrome" transform="translate(336.492 1002)" fill="#43425d" font-size="12" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="0" y="0">05</tspan></text>
+    <text id="Google_Chrome-7" data-name="Google Chrome" transform="translate(413.742 1002)" fill="#43425d" font-size="12" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="0" y="0">10</tspan></text>
+    <text id="Google_Chrome-8" data-name="Google Chrome" transform="translate(569.258 1002)" fill="#43425d" font-size="12" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="0" y="0">20</tspan></text>
+    <text id="Google_Chrome-9" data-name="Google Chrome" transform="translate(492.008 1002)" fill="#43425d" font-size="12" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="0" y="0">15</tspan></text>
+    <text id="Google_Chrome-10" data-name="Google Chrome" transform="translate(647.523 1002)" fill="#43425d" font-size="12" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="0" y="0">25</tspan></text>
+    <text id="INQUIRIES" transform="translate(424.559 1029.603)" fill="#43425d" font-size="13" font-family="Lato-Bold, Lato" font-weight="700" opacity="0.764"><tspan x="0" y="0">INQUIRIES</tspan></text>
+    <g id="Group_27343" data-name="Group 27343" transform="translate(396.848 685)">
+      <text id="Google_Chrome-11" data-name="Google Chrome" transform="translate(45 11)" fill="#43425d" font-size="11" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="-29.744" y="0">3 Days</tspan></text>
+      <g transform="matrix(1, 0, 0, 1, -225.35, -4)" filter="url(#Rectangle_17201)">
+        <g id="Rectangle_17201-2" data-name="Rectangle 17201" transform="translate(225.35 6)" fill="#81741a" stroke="#fff" stroke-width="2">
+          <rect width="11" height="11" rx="5.5" stroke="none"/>
+          <rect x="1" y="1" width="9" height="9" rx="4.5" fill="none"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_27342" data-name="Group 27342" transform="translate(453.854 685)">
+      <text id="Google_Chrome-12" data-name="Google Chrome" transform="translate(45 11)" fill="#43425d" font-size="11" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="-29.744" y="0">7 Days</tspan></text>
+      <g transform="matrix(1, 0, 0, 1, -282.36, -4)" filter="url(#Rectangle_17202)">
+        <g id="Rectangle_17202-2" data-name="Rectangle 17202" transform="translate(282.36 6)" fill="#a9b23f" stroke="#fff" stroke-width="2">
+          <rect width="11" height="11" rx="5.5" stroke="none"/>
+          <rect x="1" y="1" width="9" height="9" rx="4.5" fill="none"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_27341" data-name="Group 27341" transform="translate(510.916 685)">
+      <text id="Google_Chrome-13" data-name="Google Chrome" transform="translate(14 11)" fill="#43425d" font-size="11" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="0" y="0">10 Days</tspan></text>
+      <g transform="matrix(1, 0, 0, 1, -339.42, -4)" filter="url(#Rectangle_17203)">
+        <g id="Rectangle_17203-2" data-name="Rectangle 17203" transform="translate(339.42 6)" fill="#2e89b9" stroke="#fff" stroke-width="2">
+          <rect width="11" height="11" rx="5.5" stroke="none"/>
+          <rect x="1" y="1" width="9" height="9" rx="4.5" fill="none"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_27344" data-name="Group 27344" transform="translate(573 685)">
+      <text id="Google_Chrome-14" data-name="Google Chrome" transform="translate(15 11)" fill="#43425d" font-size="11" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="0" y="0">More than 10 Days</tspan></text>
+      <g transform="matrix(1, 0, 0, 1, -401.51, -4)" filter="url(#Rectangle_17204)">
+        <g id="Rectangle_17204-2" data-name="Rectangle 17204" transform="translate(401.51 6)" fill="#b17320" stroke="#fff" stroke-width="2">
+          <rect width="11" height="11" rx="5.5" stroke="none"/>
+          <rect x="1" y="1" width="9" height="9" rx="4.5" fill="none"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+/**************************************/
+/*Policy Memos & Guidelines*/
+/**************************************/
+.divnoresults {color: #9c9c9c; font-family: 'sourcesansproregular';}
+.divpageheader {width: 99%; border-bottom: 1px solid #c7c7c7; padding: 10px 0 0 0; margin: 10px 0 10px 0;  display: flex;}
+.divpageheader h1 {font-family: 'latobold'; text-transform: uppercase; color: #000; font-size: 16px; margin: 0px;}
+.divpageheader h1 span[class^="icon-"]{font-size: 20px; padding-right: 10px; position: relative; top: 3px;} 
+.divpageheader h1:after { content: ""; border-bottom: 3px #FFC141 solid; width: 113px; position: relative; top: 3px; display: block; padding: 5px 0 0;}
+.divpolicymemocontainer {width: 100%; display: flex;}
+.divpolicymemocontainer .divpolicymemocontent {width: 100%; border-right: 1px dashed #CBCBCB; padding-right: 10px; padding-left: 10px;}
+.divpolicymemocontainer .divpolicymemocontent:last-child {border-right: none;}
+.divpolicymemocontainer .divpolicymemocontent h1 { color: #9F7300; font-family: 'sourcesansprosemibold'; font-size: 15px; margin: 0 0 10px 0; text-transform: uppercase;}
+.divpolicymemocontainer ul, .divpolicymemocontent ul li {margin: 0px; padding: 0px; list-style-type: none; position: relative;}
+.divpolicymemocontainer ul {width: 100%;}
+.divpolicymemocontainer ul li {display: block; margin-right: 15px;}
+.divpolicymemocontainer ul li a {position: relative; margin: 0 0 10px 0; display: inline-block;  font-family: 'sourcesansproregular'; font-size: 14px; color: #003f91; -ms-word-break: break-all; word-break: break-all; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; text-decoration: none;}
+.divpolicymemocontainer ul li a span[class^="icon-"]{font-size: 15px;color: #003f91; padding-right: 5px;}

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="506.226" height="290.272" viewBox="0 0 506.226 290.272">
+  <g id="Group_29259" data-name="Group 29259" transform="translate(-1251 -348.728)">
+    <path id="Chart_Grid" data-name="Chart Grid" d="M466.7,265.527v-.06H1.28v.06H0V.3H.556V0H467.577V.3h.4V265.527Zm0-1.754V1.693H1.28V52.754H466.569v1.693H1.28v51.061H466.569V107.2H1.28v51.062H466.569v1.693H1.28v51.061H466.569v1.693H1.28v51.061Z" transform="translate(1289.25 355)" fill="#eaf0f4"/>
+    <g id="Y-Axis-Info" transform="translate(1274.871 348.728)">
+      <text id="_0" data-name="0" transform="translate(6.22 273.542)" fill="#43425d" font-size="11" font-family="SourceSansPro-Regular, Source Sans Pro" opacity="0.721"><tspan x="0" y="0">0</tspan></text>
+      <text id="_10" data-name="10" transform="translate(0.1 167.961)" fill="#43425d" font-size="11" font-family="SourceSansPro-Regular, Source Sans Pro" opacity="0.721"><tspan x="0" y="0">10</tspan></text>
+      <text id="_5" data-name="5" transform="translate(4.1 220.281)" fill="#43425d" font-size="11" font-family="SourceSansPro-Regular, Source Sans Pro" opacity="0.721"><tspan x="0" y="0">5</tspan></text>
+      <text id="_15" data-name="15" transform="translate(0.1 115.561)" fill="#43425d" font-size="11" font-family="SourceSansPro-Regular, Source Sans Pro" opacity="0.721"><tspan x="0" y="0">15</tspan></text>
+      <text id="_20" data-name="20" transform="translate(0.1 63.24)" fill="#43425d" font-size="11" font-family="SourceSansPro-Regular, Source Sans Pro" opacity="0.721"><tspan x="0" y="0">20</tspan></text>
+      <text id="_25" data-name="25" transform="translate(0 11)" fill="#43425d" font-size="11" font-family="SourceSansPro-Regular, Source Sans Pro" opacity="0.721"><tspan x="0" y="0">25</tspan></text>
+    </g>
+    <g id="Group_22418" data-name="Group 22418" transform="translate(1308 563)">
+      <text id="Submitted" transform="translate(25 72)" fill="#43425d" font-size="11" font-family="SourceSansPro-Semibold, Source Sans Pro" font-weight="600"><tspan x="-24.965" y="0">Submitted</tspan></text>
+      <rect id="Rectangle_16120" data-name="Rectangle 16120" width="27" height="57" transform="translate(11)" fill="#189dc6"/>
+    </g>
+    <g id="Group_22768" data-name="Group 22768" transform="translate(1390 510)">
+      <text id="Technician" transform="translate(14 125)" fill="#43425d" font-size="11" font-family="SourceSansPro-Semibold, Source Sans Pro" font-weight="600"><tspan x="-25.465" y="0">Technician</tspan></text>
+      <rect id="Rectangle_16120-2" data-name="Rectangle 16120" width="26" height="110" transform="translate(1)" fill="#3f3fbf"/>
+    </g>
+    <g id="Group_22769" data-name="Group 22769" transform="translate(1460 571)">
+      <text id="Supervisor" transform="translate(16 64)" fill="#43425d" font-size="11" font-family="SourceSansPro-Semibold, Source Sans Pro" font-weight="600"><tspan x="-25.773" y="0">Supervisor</tspan></text>
+      <rect id="Rectangle_16120-3" data-name="Rectangle 16120" width="27" height="163" transform="translate(2 -114)" fill="#969608"/>
+    </g>
+    <g id="Group_22770" data-name="Group 22770" transform="translate(1530 586)">
+      <text id="Section_Chief" data-name="Section Chief" transform="translate(24 49)" fill="#43425d" font-size="11" font-family="SourceSansPro-Semibold, Source Sans Pro" font-weight="600"><tspan x="-31.152" y="0">Section Chief</tspan></text>
+      <rect id="Rectangle_16334" data-name="Rectangle 16334" width="26" height="54" transform="translate(11 -20)" fill="#892703"/>
+    </g>
+    <g id="Group_29257" data-name="Group 29257" transform="translate(1621 594)">
+      <text id="MPF_Leadership" data-name="MPF Leadership" transform="translate(22 41)" fill="#43425d" font-size="11" font-family="SourceSansPro-Semibold, Source Sans Pro" font-weight="600"><tspan x="-37.422" y="0">MPF Leadership</tspan></text>
+      <rect id="Rectangle_16334-2" data-name="Rectangle 16334" width="26" height="44" transform="translate(9 -18)" fill="#3eb71b"/>
+    </g>
+    <g id="Group_29258" data-name="Group 29258" transform="translate(1703 594)">
+      <text id="Reopened" transform="translate(22 41)" fill="#43425d" font-size="11" font-family="SourceSansPro-Semibold, Source Sans Pro" font-weight="600"><tspan x="-23.914" y="0">Reopened</tspan></text>
+      <rect id="Rectangle_16334-3" data-name="Rectangle 16334" width="26" height="29" transform="translate(9 -3)" fill="#b854bc"/>
+    </g>
+    <text id="Inquiries" transform="translate(1263 509.5) rotate(-90)" fill="#43425d" font-size="12" font-family="SourceSansPro-Semibold, Source Sans Pro" font-weight="600" opacity="0.764"><tspan x="0" y="0">Inquiries</tspan></text>
+  </g>
+</svg>

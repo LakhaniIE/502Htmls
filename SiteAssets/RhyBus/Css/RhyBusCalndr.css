@@ -1,0 +1,109 @@
+/*RhyBus Calendar*/
+
+/***************************************/
+/*Calendar*/
+/***************************************/
+.divcalendarcontent {width: 100%; position: relative; display: inline-block; min-height: 293px; max-height: 288px;}
+.divcalendarcontent .ulnav {padding-left: 0; margin: 0; list-style: none; border-bottom: 3px solid #efefef; width:100%; display: flex;}
+.divcalendarcontent .ulnav > li { margin-bottom: -3px;  border-left: 0px;}
+.divcalendarcontent .ulnav > li {position: relative;display: block;}
+.divcalendarcontent .ulnav > li > a {color: #3c3993; font-size: 13px; font-family: 'sourcesansprosemibold';}
+.divcalendarcontent .ulnav > li.active > a, .divcalendarcontent .ulnav > li.active > a:hover, .divcalendarcontent .ulnav > li.active > a:focus, 
+.divcalendarcontent .ulnav > li > a:focus { color: #3c3993; cursor: default; border-bottom: 3px solid #484848;}
+.divcalendarcontent .ulnav > li > a { line-height: 1.428571429;border: 1px solid transparent; text-decoration: none;}
+.divcalendarcontent .ulnav > li > a { position: relative; display: block; padding: 6px 4px 6px 6px;}
+.divcalendarcontent .ulnav > li > a .spanindication {width: 7px; height: 7px;  margin-left: 5px; position: relative; display: inline-block;}
+.divcalendarcontent .ulnav > li > a .spanpurple {background-color: #008dee;}
+.divcalendarcontent .ulnav > li > a .spanmer {background-color: #853d3d;}
+.divcalendarcontent .tab-pane {width:100%; position:relative;}
+.divcalendarcontent .tab-content > .tab-pane { display: none;}
+.divcalendarcontent .tab-content > .active {display: block;}
+.divcalendarnew { margin: 10px 0 0 0;}
+.divcalendaritem {width: 100%; display: inline-block;}
+.divcalendarnew header {background:#fafafa; border: 1px solid #e2e2e2; padding:8px 15px; margin:0 0 5px 0; color:#0e2982; text-transform:uppercase; font-family: 'sourcesansprosemibold'; font-size:15px;}
+.divcalendarnew ul, .divcalendarnew ul li {width:100%; position:relative; margin:0px; padding:0px;}
+.divcalendarnew ul li { padding:2px 10px 5px;list-style-type: none;}
+.divcalendarnew ul li .eventdetails {border-left:3px solid #008dee;padding:0px 0px 0 5px; display:inline-block; font-family: 'sourcesansproregular', sans-serif;}
+.divcalendarnew ul li h6 {margin:0;width:auto; position:relative; color:#0e3460; font-size:13px; font-weight: normal;}
+.divcalendarnew ul li span[class^="icon-"] {color:#13395f; position: absolute; right: 2px;}
+.divcalendarnew ul li span[class^="icon-"]:before { font-size:12px; font-weight: 600;}
+.divcalendarnew ul li label, .divcalendarnew ul li p { max-width:100%;min-width:95%;overflow:hidden; text-overflow: ellipsis; white-space:nowrap; margin:0px; color:#0e2982; font-size:13px;cursor: unset;}
+.divcalendarnew ul li a:focus+p+.divcalendarpopup, .divcalendarnew ul li a:active+p+.divcalendarpopup { display:block;}
+.divcalendarnew ul li a:visited {color:#0e2982;}
+.divcalendarnew ul li p {color:#656565;}
+.divcalendarnew ul li:hover, .divcalendarnew ul li:active { background:#ebf3ff;}
+.divcalendarnew .divcalendarpopup { width:370px; min-height:245px; position:absolute; border-radius: 5px; box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.12); box-sizing: border-box; z-index:1; padding:15px;
+left:-webkit-calc(100% - -10px); left:-moz-calc(100% - -10px); left:calc(100% - -10px); top:-128px; display: none; background: rgb(237,237,237);
+background: -moz-linear-gradient(0deg, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 94%);
+background: -webkit-linear-gradient(0deg, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 94%);
+background: linear-gradient(0deg, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 94%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ededed",endColorstr="#ffffff",GradientType=1);}
+.divcalendarnew ul li:hover > .divcalendarpopup, .divcalendarnew ul li a:active > .divcalendarpopup, .divcalendarnew ul li a:focus > .divcalendarpopup  { display:block;}
+.divcalendarnew .divcalendarpopup h2 {font-size:14px; color:#008dee; margin: 0 0 5px 0; font-family: 'sourcesansprosemibold'; font-size: 14px;}
+.divcalendarnew .divcalendarinfo {max-height:200px; overflow: auto;}
+.divcalendarnew .divcalendarinfo ul, .divcalendarnew .divcalendarinfo ul li {width:100%; position:relative;}
+.divcalendarnew .divcalendarinfo ul li { margin:0 0 5px 0; padding:0px; display: flex;}
+.divcalendarnew .divcalendarinfo ul li:hover, .divcalendarnew .divcalendarinfo ul li:active { background-color:transparent;}
+.divcalendarnew .divcalendarinfo ul li p { font-size:12px; color:#000; min-width:80px; font-weight: 600;}
+.divcalendarnew .divcalendarinfo ul li span, .divcalendarnew .divcalendarinfo ul li i {font-size:13px; color:#333;}
+.divcalendarnew .divcalendarinfo ul li span { margin:0 15px 0 0;}
+.divcalendarnew .divcalendarinfo ul li i { font-style: normal;}
+.divcalendarnew .divcalendarinfo h3{font-size:13px; color:#000; font-weight: 600; max-width:100%; margin:0 0 5px 0;}
+.divcalendarnew .divcalendarinfo p {font-size:13px !important; color:#333; max-width:100%; overflow: inherit; white-space:normal; }
+.divcalendarpopup:before {content: ""; position: absolute; width: 0; height: 0; bottom: 84px; left: 0; box-sizing: border-box; border: 0.8em solid #ededed; border-color: transparent transparent #eee #ededed;
+transform-origin: 0 0; box-shadow: -3px 3px 3px 0 rgba(0, 0, 0, 0.1);  -ms-transform: rotate(43deg); -webkit-transform: rotate(43deg); transform: rotate(43deg);}
+.ulmeetingslist li .eventdetails{border-left:3px solid #853d3d !important}
+.anchorcalendarviewmore { position: absolute; bottom: -33px; right: 0px;     font-family: 'sourcesansproregular', sans-serif;
+    font-size: 13px;
+    color: #033c86;}
+
+/***************************************/
+/*Calendar With out tabs*/
+/***************************************/
+
+.divplaceholderbody{min-height:230px;max-height:317px}
+.divdatetime > span{padding-right: 5px; font-family:'latoregular'; font-size: 13px; color: #444;}
+.divplaceholderbody .panelitem h4{color: #003f91; font-size: 14px;font-family: 'sourcesansprosemibold';}
+.divplaceholderbody > .divcontent{margin: 15px 0 0 0; width: 100%; position: relative; display: inline-block;}
+.divplaceholderbody .panelitem{width:100%;float:left;position:relative;margin:0 0 15px 0px;border-left:4px solid #6d7d9d;padding:0 0 0 10px}
+.divplaceholderbody .divcontent div:nth-child(3) { margin-bottom:5px;}
+.divplaceholderbody .divcontent div:nth-of-type(even){border-left-color:#4a9bd6}
+.divplaceholderbody .panelitem .divdatetime{width:100%;float:left;position:relative}
+.divplaceholderbody .panelitem .divdatetime span.spantime{float: right;}
+span.spanlocation p{margin: 0px;font-family:'latoregular'; font-size: 13px; color: #444;}
+.divplaceholderbody .panelitem .month{float:left}
+.divplaceholderbody .panelitem .month span{font-family:'sourcesansprosemibold';font-size:13px;color:#003f91}
+.divplaceholderbody .panelitem .date{float:right}
+.divplaceholderbody .panelitem .date span{font-family:'sourcesansproregular';font-size:13px;color:#505658}
+.divplaceholderbody .panelitem h4 a{font-family:'latoregular';font-size:13px;color:#003f91;cursor:pointer}
+.divplaceholderbody .panelitem .left span:nth-child(1),.divplaceholderbody .panelitem .left span:nth-child(2){color:#444;font-family:'latoregular';font-size:13px}
+.divplaceholderbody .panelitem .left span:nth-child(1){padding:0 3px 0 0}
+.divplaceholderbody .panelitem .left span:nth-child(3){font-size:14px}
+.divplaceholderbody .panelitem p {width:100%;overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.divplaceholderbody .panelitem:hover, .divplaceholderbody .panelitem:active { background:#ebf3ff;}
+.divplaceholderbody .divcalendarinfopopup { width:370px; min-height: 130px; position:absolute; border-radius: 5px; box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.12); box-sizing: border-box; z-index:1; padding:15px;
+left:-webkit-calc(100% - -10px); left:-moz-calc(100% - -10px); left:calc(100% - -10px); bottom: 0px;top:-110%; display: none; background: rgb(237,237,237);
+background: -moz-linear-gradient(0deg, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 94%);
+background: -webkit-linear-gradient(0deg, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 94%);
+background: linear-gradient(0deg, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 94%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ededed",endColorstr="#ffffff",GradientType=1);}
+.divplaceholderbody .panelitem:hover > .divcalendarinfopopup{ display:block !important;}
+.divcalendarinfopopup .divcalendarpopupinfo h2 {font-family: 'sourcesansprosemibold'; font-size:13px; color:#008dee;}
+.divplaceholderbody .divcalendarinfo {max-height:200px; overflow: auto; margin-top: 5px;}
+.divplaceholderbody .divcalendarinfo ul, .divcalendar .divcalendarinfo ul li {width:100%; float:left; position:relative;list-style-type:none;margin:0;padding:0;}
+.divplaceholderbody .divcalendarinfo ul li { margin:0 0 5px 0; padding:0px;}
+.divplaceholderbody .divcalendarinfo ul li:hover, .calendarnew .divcalendarinfo ul li:active { background-color:transparent;}
+.divplaceholderbody .divcalendarinfo ul li p { float:left; font-family: 'latomedium'; font-size:12px; color:#000; min-width:80px;width:auto; margin: 0px;}
+.divplaceholderbody .divcalendarinfo ul li span, .calendar .divcalendarinfo ul li i {  font-family: 'sourcesansproregular'; font-size:13px; color:#333;}
+.divplaceholderbody .divcalendarinfo ul li span { margin:0 15px 0 0;}
+.divplaceholderbody .divcalendarinfo ul li i { font-style: normal;}
+.divplaceholderbody .divcalendarinfo h3{font-family: 'latomedium'; font-size:13px; color:#000; max-width:100%; margin:0 0 5px 0; float:left;}
+.divplaceholderbody .divcalendarinfo p {font-family: 'sourcesansproregular'; font-size:13px !important; color:#333; max-width:100%; float:left; overflow: inherit; white-space:normal; }
+.divcalendarinfopopup:before {content: ""; position: absolute; width: 0; height: 0; bottom: 23px; left: 0; box-sizing: border-box; border: 0.8em solid #ededed; border-color: transparent transparent #eee #ededed;
+transform-origin: 0 0; box-shadow: -3px 3px 3px 0 rgba(0, 0, 0, 0.1);  -ms-transform: rotate(43deg); -webkit-transform: rotate(43deg); transform: rotate(43deg);}
+.morebut{font-family:'sourcesansproregular';color:#1b90b4;text-decoration:underline!important;font-size:12px;float:right}
+.morebut:visited {color:#1b90b4;}
+
+.divcalendarpopupinfo h2, .panelitem span{word-break: break-word;}
+.panelitem.divEventitem{border-left-color: #6d7d9d;}
+.anchormorebtn {text-align: right;font-size: 12px;color: #1d538b;text-decoration: none !important; float: right;}

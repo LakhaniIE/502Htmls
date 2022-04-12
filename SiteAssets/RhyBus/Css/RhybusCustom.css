@@ -1,0 +1,210 @@
+body{background-color: #fff;}
+
+.divheadercontainer{
+    border-bottom: 2px solid #f7f7f7;
+    display: flex;
+}
+
+.dashed{
+    border-bottom: 2px dashed #70707041;
+}
+
+.divheader h1 {
+    font-family: 'latobold'; 
+    font-size: 16px;
+    text-transform:uppercase; 
+    color: #000; 
+    margin: 0px;
+    padding: 18px 0px 18px 0px;
+    width: 100%;
+}
+
+.divheader h1::after { content: ""; border-bottom: 2px #FFC141 solid; width: 97px; position: absolute; bottom: 0px; display: block; padding: 5px 0 0 0;}
+
+.divheader .nounderline::after{
+   border-bottom: none;
+}
+
+.divheader h1 span:first-child{margin-right: 12px;}
+
+.divheader h1 span:last-child:not(:empty){
+    background-color: #FFC141;
+    border-radius: 4px;
+    padding: 2px 6px;
+    margin-left: 10px;
+}
+
+.divheader label{
+    font-family: 'latomedium', sans-serif;
+    font-size: 13px;
+    text-transform: capitalize;
+    color:#000;
+    padding-right: 5px;
+}
+.divheader select{
+    font-family: 'sourcesansproregular', Tahoma, sans-serif;
+    font-size: 13px;
+    color: #575757;
+    border: 1px solid #d7dae2 !important;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px rgb(0 0 0 / 6%);
+    padding: 2px 40px 2px 5px;
+    margin-right: 12px;;
+}
+
+.divfullwidthcontainer{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.searchbar{
+    box-shadow: none;
+    border: none !important;
+    border-radius: 0;
+    text-transform: capitalize;
+
+    display: inline-block;
+    padding: 0!important;
+    padding-bottom: 2px !important;
+    width: 279px !important;
+}
+
+.divheader .searchform{
+    display: flex;
+    border-bottom: 1px #575757 solid !important;
+}
+
+.divheader .searchform button{
+
+    background: none;
+    border: none;
+}
+.divcustomercard{
+    display: flex;
+    flex: 1 1 24.6%;
+    border: 1px solid #D8D8D8;
+    margin-top: 12px;
+    padding: 10px 20px;
+    align-items: center; 
+}
+
+.divcustomercard:not(:first-child){margin-left: 12px;}
+
+.divcustomercard h2 {
+    background-color: rgba(14, 72, 141, 11%);
+    border-radius: 100px;
+    padding: 17px;
+    font-family: 'latobold'; 
+    font-size: 16px;
+    text-transform:uppercase; 
+    color: #0E52A3; 
+    align-self: center;
+    margin-right: 12px;
+}
+
+.divcustomercard h4 {
+    font-family: 'latomedium'; 
+    font-size: 14px;
+    text-transform: capitalize; 
+    color: #000; 
+    padding-bottom: 3px;
+}
+
+.divcustomercard p {
+    font-family: 'sourcesansproregular'; 
+    font-size: 14px;
+    text-transform: capitalize; 
+    color: #666; 
+    display: inline-block;
+    padding-bottom: 3px;
+}
+
+.divcustomercard p:last-child{color:#003F91;}
+
+.divcustomercard span {
+    font-size: 12px;
+    color: #003F91;
+}
+
+.divlistcol{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 18.2%;  
+    margin-top: 18px;
+    
+}
+
+.divlistcol:not(:last-child){
+    border-right: 1px dashed #CBCBCB;
+    margin-right: 44px;
+}
+
+.divlistcol div,
+.divlistcol a:link,
+.divlistcol a:visited{
+    padding: 6px 0;
+    color: #044496;
+    font-size: 14px;
+    font-family: 'sourcesansproregular';
+}
+
+.divlistcol a:active,
+.divlistcol a:focus{
+    outline: none;
+}
+
+.divlistcol a{
+    text-decoration: none;
+}
+
+.divlistcol span{
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+.nowrap{
+    white-space: nowrap;
+    margin-left: 12px;
+}
+
+.divfullwidthcontainer .divqacard{
+    padding: 20px 0;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.divqacard h3{
+    padding-bottom: 13px;
+}
+
+.divqacard p:not(.light){
+    padding-bottom: 6px;
+}
+
+
+.divqacard h4{
+    padding: 15px 0;
+}
+.divfullwidthcontainer div h3{
+    font-family: 'latomedium',sans-serif;
+    font-size: 14px;
+    color:#29508D;
+}
+
+.divfullwidthcontainer div p {
+    font-family: 'sourcesansproregular',sans-serif;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.divfullwidthcontainer div .light {
+    font-family: 'sourcesansproregular',sans-serif;
+    font-size: 13px;
+    color: #65656585;
+}
+
+.divfullwidthcontainer div h4{
+    font-family: 'sourcesansproregular',sans-serif;
+    font-size: 13px;
+    color:#000;
+}

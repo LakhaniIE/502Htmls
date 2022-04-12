@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1046.51" height="343" viewBox="0 0 1046.51 343">
+  <g id="Group_29267" data-name="Group 29267" transform="translate(-715.482 -235)">
+    <g id="Group_29266" data-name="Group 29266" transform="translate(0 -450)">
+      <g id="Statistics" transform="translate(715.482 740)">
+        <path id="Chart_Grid" data-name="Chart Grid" d="M0,267.766V0H2.729V10.17h992.28v1.517H2.729V61.638h992.28v1.519H2.729v49.319h992.28v1.517H2.729v49.951h992.28v1.517H2.729v49.951h992.28v1.517H2.729v49.319H995.282V0h2.729V266.25H996.2v1.516Z" transform="translate(47.5)" fill="#eaf0f4"/>
+        <g id="Y-Axis-Info" transform="translate(28.518 3)">
+          <text id="_0" data-name="0" transform="translate(6 265)" fill="#43425d" font-size="11" font-family="Lato-Regular, Lato" opacity="0.721"><tspan x="0" y="0">0</tspan></text>
+          <text id="_20" data-name="20" transform="translate(0 164)" fill="#43425d" font-size="11" font-family="Lato-Regular, Lato" opacity="0.721"><tspan x="0" y="0">20</tspan></text>
+          <text id="_10" data-name="10" transform="translate(0 215)" fill="#43425d" font-size="11" font-family="Lato-Regular, Lato" opacity="0.721"><tspan x="0" y="0">10</tspan></text>
+          <text id="_30" data-name="30" transform="translate(0 113)" fill="#43425d" font-size="11" font-family="Lato-Regular, Lato" opacity="0.721"><tspan x="0" y="0">30</tspan></text>
+          <text id="_40" data-name="40" transform="translate(0 62)" fill="#43425d" font-size="11" font-family="Lato-Regular, Lato" opacity="0.721"><tspan x="0" y="0">40</tspan></text>
+          <text id="_50" data-name="50" transform="translate(0 11)" fill="#43425d" font-size="11" font-family="Lato-Regular, Lato" opacity="0.721"><tspan x="0" y="0">50</tspan></text>
+        </g>
+        <text id="Inquiries" transform="translate(13 149) rotate(-90)" fill="#43425d" font-size="13" font-family="Lato-Bold, Lato" font-weight="700" opacity="0.764"><tspan x="0" y="0">Inquiries</tspan></text>
+        <g id="Group_26610" data-name="Group 26610" transform="translate(62.518 169.032)">
+          <path id="Path_16351" data-name="Path 16351" d="M0,0H15V97.968H0Z" transform="translate(0 0)" fill="#486eb5"/>
+          <text id="OCT" transform="translate(15.489 113.967)" fill="#43425d" font-size="12" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="0" y="0">OCT</tspan></text>
+          <path id="Path_17892" data-name="Path 17892" d="M0,0H15V68.75H0Z" transform="translate(18.072 29.217)" fill="#48b548"/>
+          <path id="Path_19175" data-name="Path 19175" d="M0,0H15V28.285H0Z" transform="translate(36.144 69.682)" fill="#8d6e09"/>
+        </g>
+        <g id="Group_26609" data-name="Group 26609" transform="translate(146.518 31.17)">
+          <path id="Path_16351-2" data-name="Path 16351" d="M0,0H15V235.83H0Z" transform="translate(0 0)" fill="#486eb5"/>
+          <text id="NOV" transform="translate(14.708 251.83)" fill="#43425d" font-size="12" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="0" y="0">NOV</tspan></text>
+          <path id="Path_17893" data-name="Path 17893" d="M0,0H15V22.251H0Z" transform="translate(36 213.578)" fill="#8d6e09"/>
+          <path id="Path_19176" data-name="Path 19176" d="M0,0H15V74.174H0Z" transform="translate(18.001 161.656)" fill="#48b548"/>
+        </g>
+        <g id="Group_26608" data-name="Group 26608" transform="translate(230.518 101.018)">
+          <path id="Path_16351-3" data-name="Path 16351" d="M0,0H15V165.983H0Z" transform="translate(-0.001 0)" fill="#486eb5"/>
+          <text id="DEC" transform="translate(15.126 181.981)" fill="#43425d" font-size="12" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="0" y="0">DEC</tspan></text>
+          <path id="Path_17894" data-name="Path 17894" d="M0,0H15V17.864H0Z" transform="translate(36.894 148.118)" fill="#8d6e09"/>
+          <path id="Path_19177" data-name="Path 19177" d="M0,0H15V107.743H0Z" transform="translate(18.447 58.24)" fill="#48b548"/>
+        </g>
+        <g id="Group_26607" data-name="Group 26607" transform="translate(315.517 124)">
+          <path id="Path_16351-4" data-name="Path 16351" d="M0,0H15V143H0Z" transform="translate(0.001 0)" fill="#486eb5"/>
+          <text id="JAN" transform="translate(16.552 159)" fill="#43425d" font-size="12" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="0" y="0">JAN</tspan></text>
+          <path id="Path_17895" data-name="Path 17895" d="M0,0H15V31H0Z" transform="translate(36.489 112.001)" fill="#8d6e09"/>
+          <path id="Path_19178" data-name="Path 19178" d="M0,0H15V48.75H0Z" transform="translate(18.247 94.25)" fill="#48b548"/>
+        </g>
+        <g id="Group_26606" data-name="Group 26606" transform="translate(400.518 140.275)">
+          <path id="Path_16351-5" data-name="Path 16351" d="M0,0H15V126.726H0Z" transform="translate(0 0)" fill="#486eb5"/>
+          <text id="FEB" transform="translate(15.424 142.725)" fill="#43425d" font-size="12" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="0" y="0">FEB</tspan></text>
+          <path id="Path_17896" data-name="Path 17896" d="M0,0H15V15.18H0Z" transform="translate(35.621 111.544)" fill="#8d6e09"/>
+          <path id="Path_19179" data-name="Path 19179" d="M0,0H15V108.552H0Z" transform="translate(17.811 18.173)" fill="#48b548"/>
+        </g>
+        <g id="Group_26605" data-name="Group 26605" transform="translate(484.517 189.598)">
+          <path id="Path_16351-6" data-name="Path 16351" d="M0,0H15V77.4H0Z" transform="translate(-0.001 0)" fill="#486eb5"/>
+          <text id="MAR" transform="translate(14.893 93.402)" fill="#43425d" font-size="12" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="0" y="0">MAR</tspan></text>
+          <path id="Path_17897" data-name="Path 17897" d="M0,0H15V38.7H0Z" transform="translate(35.991 38.702)" fill="#8d6e09"/>
+          <path id="Path_19180" data-name="Path 19180" d="M0,0H15V65.552H0Z" transform="translate(17.995 11.851)" fill="#48b548"/>
+        </g>
+        <g id="Group_26604" data-name="Group 26604" transform="translate(568.517 149.388)">
+          <path id="Path_16351-7" data-name="Path 16351" d="M0,0H15V117.612H0Z" transform="translate(-0.001 0)" fill="#486eb5"/>
+          <text id="APR" transform="translate(15.577 133.612)" fill="#43425d" font-size="12" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="0" y="0">APR</tspan></text>
+          <path id="Path_17898" data-name="Path 17898" d="M0,0H15V67.044H0Z" transform="translate(34.734 50.569)" fill="#8d6e09"/>
+          <path id="Path_19181" data-name="Path 19181" d="M0,0H15V67.044H0Z" transform="translate(17.367 50.569)" fill="#48b548"/>
+        </g>
+        <g id="Group_26603" data-name="Group 26603" transform="translate(651.517 160.961)">
+          <path id="Path_16351-8" data-name="Path 16351" d="M0,0H15V106.04H0Z" transform="translate(0 0)" fill="#486eb5"/>
+          <text id="MAY" transform="translate(14.491 122.039)" fill="#43425d" font-size="12" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="0" y="0">MAY</tspan></text>
+          <path id="Path_17899" data-name="Path 17899" d="M0,0H15V10.238H0Z" transform="translate(35.975 95.802)" fill="#8d6e09"/>
+          <path id="Path_19182" data-name="Path 19182" d="M0,0H15V67.044H0Z" transform="translate(17.987 38.996)" fill="#48b548"/>
+        </g>
+        <g id="Group_26602" data-name="Group 26602" transform="translate(735.517 187.197)">
+          <path id="Path_16351-9" data-name="Path 16351" d="M0,0H15V79.8H0Z" transform="translate(0 0)" fill="#486eb5"/>
+          <text id="JUN" transform="translate(13.903 95.802)" fill="#43425d" font-size="12" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="0" y="0">JUN</tspan></text>
+          <path id="Path_17900" data-name="Path 17900" d="M0,0H15V9.7H0Z" transform="translate(34 70.104)" fill="#8d6e09"/>
+          <path id="Path_19183" data-name="Path 19183" d="M0,0H15V47.053H0Z" transform="translate(17 32.75)" fill="#48b548"/>
+        </g>
+        <g id="Group_26601" data-name="Group 26601" transform="translate(817.518 183.995)">
+          <path id="Path_16351-10" data-name="Path 16351" d="M0,0H15V83H0Z" transform="translate(0 0)" fill="#486eb5"/>
+          <text id="JUL" transform="translate(14.623 99.005)" fill="#43425d" font-size="12" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="0" y="0">JUL</tspan></text>
+          <path id="Path_17901" data-name="Path 17901" d="M0,0H15V59.445H0Z" transform="translate(33.246 23.56)" fill="#8d6e09"/>
+          <path id="Path_19184" data-name="Path 19184" d="M0,0H15V59.445H0Z" transform="translate(16.623 23.561)" fill="#48b548"/>
+        </g>
+        <g id="Group_26600" data-name="Group 26600" transform="translate(898.519 151.241)">
+          <path id="Path_16351-11" data-name="Path 16351" d="M0,0H15V115.759H0Z" transform="translate(0 0)" fill="#486eb5"/>
+          <text id="AUG" transform="translate(15.333 131.759)" fill="#43425d" font-size="12" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="0" y="0">AUG</tspan></text>
+          <path id="Path_17902" data-name="Path 17902" d="M0,0H15V59.445H0Z" transform="translate(36.667 56.315)" fill="#8d6e09"/>
+          <path id="Path_19185" data-name="Path 19185" d="M0,0H15V59.445H0Z" transform="translate(18.334 56.315)" fill="#48b548"/>
+        </g>
+        <g id="Group_26599" data-name="Group 26599" transform="translate(983.518 112.805)">
+          <path id="Path_16351-12" data-name="Path 16351" d="M0,0H15V154.2H0Z" transform="translate(0 0)" fill="#486eb5"/>
+          <text id="SEP" transform="translate(16.5 170.195)" fill="#43425d" font-size="12" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="0" y="0">SEP</tspan></text>
+          <path id="Path_17903" data-name="Path 17903" d="M0,0H15V59.445H0Z" transform="translate(35.001 94.75)" fill="#8d6e09"/>
+          <path id="Path_19186" data-name="Path 19186" d="M0,0H15V59.445H0Z" transform="translate(17.5 94.751)" fill="#48b548"/>
+        </g>
+      </g>
+      <g id="Group_29263" data-name="Group 29263" transform="translate(758.867 666)">
+        <text id="Submitted" transform="translate(795 32)" fill="#43425d" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1" font-size="12" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="0" y="0">Submitted</tspan></text>
+        <rect id="Rectangle_16921" data-name="Rectangle 16921" width="12" height="12" transform="translate(777.43 22)" fill="#486eb5"/>
+      </g>
+      <g id="Group_29264" data-name="Group 29264" transform="translate(612.992 666)">
+        <text id="Resolved" transform="translate(1023 32)" fill="#43425d" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1" font-size="12" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="0" y="0">Resolved</tspan></text>
+        <rect id="Rectangle_16922" data-name="Rectangle 16922" width="12" height="12" transform="translate(1007.305 22)" fill="#48b548"/>
+      </g>
+      <g id="Group_29265" data-name="Group 29265" transform="translate(686.992 666)">
+        <text id="Reopened" transform="translate(1023 32)" fill="#43425d" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1" font-size="12" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="0" y="0">Reopened</tspan></text>
+        <rect id="Rectangle_16922-2" data-name="Rectangle 16922" width="12" height="12" transform="translate(1007.305 22)" fill="#8d6e09"/>
+      </g>
+    </g>
+  </g>
+</svg>

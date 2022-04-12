@@ -1,0 +1,77 @@
+/*RhyBus Calendar Innerview*/
+
+/*Calendar*/
+/**************************************/
+.calendarcontainer { width:100%; float:left; position:relative; margin:0 0 40px 0;}
+.calendarcontainer .ms-webpartPage-root { border-spacing:0px;}
+.calendarcontainer .ms-acal-display { font-family:'sourcesansprosemibold'; font-size:14px;}
+.calendarcontainer .ms-webpart-chrome-title { display:none;}
+.calendarcontainer .ms-acal-month tbody tr th:first-child {display: none;}
+.calendarcontainer .ms-acal-month .ms-acal-month-top:last-child{border-right: 1px #c6c6c6 solid;}  	
+.calendarcontainer .ms-acal-month tbody tr th:first-child{ display:none;}
+.calendarcontainer .ms-rtestate-field table{ width:auto; float:right;}
+.calendarcontainer .ms-rtestate-field table tbody tr td p.Viewby{color:#0E2982; font-size:14px;padding: 10px 5px 0 0; text-align: right; font-family:'sourcesansprosemibold'}
+.calendarcontainer .ms-rtestate-field table tbody tr td a#selDay, .calendarcontainer .ms-rtestate-field table tbody tr td a#selWeek, .calendarcontainer .ms-rtestate-field table tbody tr td a#selMonth{font-family: 'sourcesansprosemibold'; font-size:13px; padding: 5px 10px; background-color: #475580; float: left;color: #fff; border-radius: 4px; margin-left: 3px; }
+.calendarcontainer .ms-webpartzone-cell{ margin-bottom:0;}
+.calendarcontainer .ms-acal-header{ margin-top:0;}
+.calendarcontainer .ms-rtestate-field .calselected{ background-color:#0083d4 !important;}
+.calendarcontainer .ms-WPBorder{border:0px}
+.calendarcontainer .ms-acal-header {margin: 0 0 10px 0;}
+.calendarcontainer .ms-acal-rootdiv{margin-left: 0px;}
+.calendarcontainer .ms-acal-month .ms-acal-month-top, .calendarcontainer .ms-webpart-zone table th {background-color: #FFFFFF;background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#EAEAEA));background: -webkit-linear-gradient(top, #FFFFFF, #EAEAEA);background: -moz-linear-gradient(top, #FFFFFF, #EAEAEA);background: -ms-linear-gradient(top, #FFFFFF, #EAEAEA);background: -o-linear-gradient(top, #FFFFFF, #EAEAEA);padding: 10px 15px 10px 5px;border-left: 1px #D9D9D9 solid;font-size: 13px;color: #444;text-transform: uppercase;font-family: 'sourcesansprosemibold';}
+.calendarcontainer .ms-rtestate-field table tbody tr td a:hover { text-decoration:none;}
+
+/**************************************/
+/*Calendar Inner View Page*/
+/**************************************/
+/*.calendarinnerpage { background-color:#fafafa;}*/
+.calendarviews { float:left; margin: 10px 0 10px 0;}
+.calendarinnerpage .pageheader {margin-bottom:5px;}
+.calendarinnerpage .calendardata { width:100%; float:left; position:relative;}
+.calendarinnerpage .content-section { width:100%; float:left; position:relative; height:auto;}
+.calendarinnerpage .list-items { list-style: none; float:left; margin:0; padding:0px; min-width:500px;}
+.calendarinnerpage .list-items li { float:left; margin:0 5px 0 0; position:relative;}
+.calendarinnerpage .list-items li a { float:left; padding:4px 8px; border:1px solid #333; position:relative; background:#e6f1ff; border:1px solid #c7d9f1; border-radius: 3px; color:#000;font-family: 'latomedium'; font-size: 12px; text-decoration: none;}
+.calendarinnerpage .list-items li a:hover { text-decoration: none;}
+.calendarinnerpage .list-items li.selected a {background:#f8d514; border:1px solid #d6b500;}
+.calendarinnerpage .list-items li.selected .downarrow {width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid #d6b500; position:absolute; bottom:-6px; right:22px;}
+.calendarinnerpage .list-items li[title="Events"] .downarrow { right: 20px;}
+.calendarinnerpage .list-items li[title="Trainings"] .downarrow, .calendarinnerpage .list-items li[title="Meetings"] .downarrow { right: 26px;}
+.calendarinnerpage .calendarcard { width:100%; float:left; position:relative;}
+.calendarinnerpage .calendarcard .viewbuttons { float:right; position:relative; z-index:2;}
+.content-section .ms-webpart-zone { position:relative; top:-40px;}
+.calendarinnerpage .calendarcard .viewbuttons table td[width="40%"] { display: none;}
+.calendarinnerpage .calendarcard .viewbuttons table[width="70%"] td a {padding:4px 12px; float:left; width:100%; border:1px solid #c7d9f1;}
+.calendarinnerpage .calendarcard .viewbuttons table[width="70%"] td:first-child a { border-top-left-radius: 4px; border-bottom-left-radius: 4px; border-right:none;}
+.calendarinnerpage .calendarcard .viewbuttons table[width="70%"] td:nth-child(3) a {border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-left:none;}
+.calendarinnerpage .calendarcard .viewbuttons table td a:hover { text-decoration: none;}
+.calendarinnerpage .calendarcard .viewbuttons table td a.calselected { background:#003F91; color:#fff;}
+.calendarinnerpage .calendarcard .viewbuttons .ms-webpartzone-cell { margin-bottom:0px;}
+.calendarindication { float: right; margin:5px 0 0 0; padding:0px;}
+.calendarindication ul, .calendarindication ul li { list-style-type:none; float:left; margin:0px; padding:0px;}
+.calendarindication ul li { margin:0 0 0 10px; font-family: 'latomedium'; font-size: 12px; color:#333;}
+.calendarindication ul li span { float:left; width:8px; height:8px; margin:4px 5px 0 0;}
+.calendarindication ul li.eventlabel span {background: #2C056C;}
+.calendarindication ul li.trainingslabel span {background: #10645D;}
+.calendarindication ul li.meetingslabel span {background: #853d3d;}
+.calendarindication ul li a{text-decoration: none !important;}
+
+.innerviewpage .pageheader {border-bottom:1px dashed #dbdbdb; margin:10px 0 0 0; padding-bottom:5px;display: flex;justify-content: space-between;}
+.innerviewpage .pageheader h1 {font-family:'latobold'; font-size:15px; color:#1F242E; text-transform:capitalize; margin:4px 0 0 0;}
+.innerviewpage .pageheader h1 span[class*=icon-] { padding-right:5px;}
+.innerviewpage .pageheader h1 span.icon-queans{font-size:16px;}
+.button {float: left; padding: 5px 8px; font-family: 'sourcesansprosemibold'; font-size: 13px; color: #fff; text-decoration: none !important; text-transform: uppercase;}
+.back-btn, .back-btn:visited, .back-btn:hover, .back-btn:active { background: #F8D512; color:#1F1F1F}
+a.button.back-btn span.icon-left-arrow {
+    position: relative;
+    top: 0px;
+    font-size: 10px;
+    right: 2px;
+}
+.innerviewpage .pageheader h1 .icon-knowledgebase { font-size:18px;}
+.innerviewpage .pageheader h1 i { font-family: 'latobold'; font-size: 13px; color: #1F242E;font-style:normal;}
+
+@media (min-width:320px) and (max-width:768px){
+    .innerviewpage .pageheader{flex-wrap: wrap;}
+	.innerviewpage .pageheader h1{margin-bottom:10px;}
+}

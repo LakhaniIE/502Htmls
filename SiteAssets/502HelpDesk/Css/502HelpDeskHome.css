@@ -1,0 +1,150 @@
+﻿
+/************************************/
+/*Clear Link*/
+/************************************/
+.anchorclearall{color: #1B90B4;}
+
+/************************************/
+/*Dashboard KPI Cards*/
+/************************************/
+.anchorcard {width: 100%; display: flex; justify-content: space-between; align-items: center; background-color: #fff; margin-bottom: 0px;border-radius: 6px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.10);border:1px solid transparent !important; padding:10px 15px !important; text-decoration: none;}
+.anchorcard:hover {text-decoration: none;}
+.anchorcard p {margin: 0px; text-transform: uppercase;font-size: 15px;font-family: 'latobold'; color: #383838;}
+.anchorcard p::after{content: ""; border-bottom: 3px solid transparent; width: 50%; display: block; padding: 3px 0 0 0;} 
+.anchorcard .divcardcount span {font-size:30px; font-family: 'latobold';}
+.anchorcard.statuscolor1.active {border-color: #32387B !important;}
+.anchorcard.statuscolor1 span{color: #32387B;}
+.anchorcard.statuscolor2.active{border-color: #2DACD3 !important;}
+.anchorcard.statuscolor2 span{color: #2DACD3;}
+.anchorcard.statuscolor3.active {border-color: #C3711F !important;}
+.anchorcard.statuscolor3 span{color: #C3711F;}
+.anchorcard.statuscolor4.active {border-color: #A444C1 !important;}
+.anchorcard.statuscolor4 span{color:#A444C1 ;}
+.anchorcard.statuscolor1, .anchorcard.statuscolor2, .anchorcard.statuscolor3, .anchorcard.statuscolor4{border-color: none;}
+.anchorcard.statuscolor1 p::after{border-color:#32387B ;}
+.anchorcard.statuscolor2 p::after{border-color:#2DACD3 ;}
+.anchorcard.statuscolor3 p::after{border-color:#C3711F ;}
+.anchorcard.statuscolor4 p::after{border-color:#A444C1 ;}
+.dashboardarea .col:last-child{border-left: 1px dashed #adadad;}
+.divfilters .divforminline select{width:100px !important;}
+/************************************/
+/*Dashboard Graph Cards*/
+/************************************/
+.divrow{margin: 10px -8px 0px;}
+.divplaceholderbody{ width: 100%; position: relative; display: flex; min-height: 360px; max-height: 450px; justify-content: center; align-items: center;}
+.divrow .divchartComponent.divchartflextable{flex:0 0 66%; max-width: 66%; margin: 0px 8px;}
+.divplaceholder{margin-bottom: 10px;}
+.divrow .divchartComponent.divchartflex{flex-basis: 0; margin: 0 8px; flex-grow: 1;}
+.divchartComponent .divplaceholder { margin-top: 0px;}
+.divCareerDevelopmentSection, .divCommanderssupportstaffSection, .divDueoutsSection{width: 100%; position: relative;}
+.divplaceholder img{max-width:100%}
+.divcalendarcontainer, .divannouncementcontainer{margin:10px 0 0 0;}
+.divannouncementcontainer .divheader h2 span[class^="icon-KB"]{font-size:18px;}
+
+/************************************/
+/*Due Outs Table*/
+/************************************/
+.divDueoutsTable{width: 100%; margin: 15px 0 0 0; position: relative; display: inline-block;}
+.divDueoutsTable .tablegrid {width: 100%; position: relative; display: inline-block !important; overflow-x: hidden; height:336px; overflow-y: auto;}
+.divDueoutsTable .tablegrid table {width: 100%; position:relative; border-collapse: collapse;} 
+.divDueoutsTable .tablegrid thead th:nth-child(1){ padding: 3px;width: 3px;height: 3px;}
+.divDueoutsTable .tablegrid tbody td:nth-child(1) {padding: 7px 10px;}
+.divDueoutsTable .tablegrid thead th {vertical-align: baseline; padding: 7px 5px 7px 0px; text-align: left; font-family: 'latobold'; font-size: 13px; color: #333; background-color: #fff !important; border-bottom: 1px solid #ececec;} 
+.divDueoutsTable .tablegrid tbody td { font-family: 'sourcesansproregular'; font-size: 14px; padding:7px 5px 7px 0px; color: #101010; ;}
+.divDueoutsTable .tablegrid tbody td a { font-family: 'sourcesansprosemibold'; font-size: 14px; text-decoration: none; color: #1E436A;}
+.divDueoutsTable .tablegrid tbody td a span{color: #00749F;}
+.divDueoutsTable .tablegrid tbody td a span:hover{text-decoration: underline;}
+.divDueoutsTable .tablegrid tbody td[colspan] {border-bottom: 1px solid #ececec; position: relative; top: -10px; padding-left: 36px; }
+.divDueoutsTable .tablegrid tbody td[colspan] a{font-family: 'sourcesansprosemibold'; font-size: 14px;text-decoration: none; color: #1E436A;}
+.divDueoutsTable .tablegrid tbody td span[name] {font-family: 'sourcesansprosemibold'; font-size: 14px;}
+.divDueoutsTable .tablegrid tbody td span[name="1"]{color:#961201;}
+.divDueoutsTable .tablegrid tbody td span[name="2"]{color:#019607;}
+.divDueoutsTable .tablegrid tbody td span[name="3"]{color:#966E01;}
+.divDueoutsTable .tablegrid tbody td span[name="4"]{color:#018B96;} 
+.divDueoutsTable .tablegrid table tr td a span.title-user:before {content: "\e928"; font-family: 'icomoon'!important; font-style: normal; font-size: 9px; padding: 4px;background: #797979; border-radius: 100%; color: #fff; margin: 0px 5px 0 5px;}
+.divDueoutsTable .tablegrid tbody tr:last-child td[colspan] { border-bottom: none;}
+.divDueoutsTable .tablegrid .scrollbar{overflow: hidden;overflow-y: auto;}
+.divDueoutsTable .tablegrid .scrollbar::-webkit-scrollbar {width: 6px;}
+.divDueoutsTable .tablegrid .scrollbar::-webkit-scrollbar-track {background: #F6F6F6 !important;}
+.divDueoutsTable .tablegrid .scrollbar::-webkit-scrollbar-thumb {background: #00529B;border-radius: 2px;}
+.divDueoutsTable .tablegrid .scrollbar:-webkit-scrollbar-thumb:hover {background: #00529B;}
+
+
+/************************************/
+/*Send Reminder Popup*/
+/************************************/
+.divsendreminderbtn .divsendreminderpopup{display:none}
+.divsendreminderbtn .divsendreminderpopup div{display:inline-block;}
+.divsendreminderbtn .divsendreminderpopup .divpopupbtns{display:flex; margin-bottom: 0px;}
+.divsendreminderbtn{margin-left: auto; position: relative;}
+.divsendreminderbtn a{text-decoration: none;}
+.divsendreminderbtn .anchorsendreminderbtn{padding: 8px 16px; background-color: #F0C619; color: #000; font-family: 'sourcesansprosemibold', sans-serif ; font-size: 12px; text-transform: uppercase; text-decoration: none;}
+.divsendreminderbtn a span[class^="icon-SendReminder"]{position: relative; top: 2px; right: 5px;}
+.divsendreminderpopup{top: 30px; border-top-color: #f0c619; border-radius: 0px; margin-bottom: 0px;}
+
+/************************************/
+/*Calendar Announcement Knowledge Base*/
+/************************************/
+.divcalendarcontainer .divheader, .divannouncementcontainer .divheader, .divkbcontainer .divheader{flex-wrap: wrap;}
+.divmaincards .divarticlecontainer article:last-child { border-bottom: none;}
+.divfiltersection{display: flex; position: relative; justify-content: space-between;}
+.divselect.divforminline{margin-left: 0px; margin-right: 5px;}
+.divselect.divforminline select{width: 90px;}
+.divselect.divforminline:nth-child(2){margin-right: 0px;}
+.divfiltersection.divannouncementsfilters select { width: 120px;}
+.divfiltersection .divsearch{position: relative; display: inline-block; margin-left: 5px;}
+.divfiltersection .divsearch input{position: relative; width: 160px; min-height: 25px; }
+.divfiltersection .divsearch .anchorsearchicon{right: 1px; top: 1px; width: 25px; height: 23px; text-decoration: none;}
+.divfiltersection .divsearch .anchorsearchicon span[class^="icon-"]{color:#374448}
+.divarticleitem .articleinfo span:first-child{border-right: none; padding-right: 0px;}
+.divarticlecontainer article .articleinfo span:nth-child(1){border-right: none;}
+.divarticlecontainer .articleinfo span:nth-child(2){border-right: 1px solid #ccc; padding-right: 5px;}
+.divarticlecontainer .articleinfo span:nth-child(5){border-right: 1px solid #ccc; padding-right: 5px;}
+.divmaincards .divarticleitem{padding-bottom: 20px;}
+.divarticleitem{margin-bottom: 5px;}
+.divcalendarcontainer ul li{padding-bottom: 5px; margin-bottom: 5px;}
+.divcalendarcontainer, .divannouncementcontainer{min-height: 445px;}
+.divmaincards .divarticlecontainer article{padding-bottom: 5px;}
+
+.anchorAnnouncment{bottom: 40px;}
+
+@media (min-width: 1024px) and (max-width: 1366px){
+    .divcalendarcontainer .divheader, .divannouncementcontainer .divheader, .divkbcontainer .divheader{flex-wrap: wrap;}
+ }
+
+ @media (min-width: 320px) and (max-width: 479px) { 
+    .divrow{display:contents;}   
+}
+
+@media (min-width: 480px) and (max-width: 767px) { 
+    .divrow{display:contents; }   
+}
+
+@media (min-width: 768px) and (max-width: 1024px) { 
+ 
+    .divfilters .divforminline select {min-width: 72px !important;}
+    .divfilters .divforminline {margin: 0px 2px 5px !important;}
+}
+@media screen and (max-width: 850px){
+    .divrow{display:contents;}  
+    .divrow .divchartComponent:nth-child(2) {
+        flex-basis: 0;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 0px 8px;
+    } 
+}
+
+/*Customised css need to add knowldge and announcement*/
+.divcalendarcontainer .search select{width: 95px; padding: 4px;}
+.divannouncementcontainer .search select{width: 120px; padding: 4px;}
+.divKnowldgecontainer .search select{width: 100px; padding: 4px;}
+.search select{width: 100px; padding: 4px;}
+.searcharea.divforminline input{width: auto !important;}
+.divarticlecontainer{min-height: 390px; max-height: 390px;}
+.divarticlecontainer article .articleinfo span:nth-child(2) {border-right: 1px solid #a2a2a2; padding-right: 4px;}
+.divarticlecontainer article .articleinfo span:nth-child(4) {border-right: 1px solid #a2a2a2; padding-right: 4px; margin-right: 4px;}
+.divarticleitem .anchortitle:hover{text-decoration: underline;}
+.divAttachments a{font-family: 'sourcesansproregular', Arial, Helvetica, sans-serif; text-decoration: none;  font-size: 12px;}

@@ -1,0 +1,192 @@
+﻿/*RhyBus Form*/
+
+*{box-sizing: border-box;}
+.divformcontainer{width: 100%; margin: 15px auto; padding: 0px; position: relative; display: inline-block;}
+.divformheader, .divformfooter{ width: 100%;background-color: #304e7e; position: relative;display: flex;padding: 5px; justify-content: space-between;}
+.divformheader h1 {font-family: 'latobold'; font-size: 13px;text-transform: uppercase; color: #fff; margin: 6px 0px;}
+.divformheader .actionbtns, .divformfooter .actionbtns{ margin-left: auto;}
+.divformheader .actionbtns ul, .divformheader .actionbtns ul li, .divformfooter .actionbtns ul,.divformfooter .actionbtns ul li {list-style-type: none;  margin: 0px; padding: 0;}
+.divformheader .actionbtns ul li a, .divformfooter .actionbtns ul li a{padding: 3px 10px; background-color: #ffc400; font-family: 'sourcesansprosemibold'; font-size: 13px; color: #000; text-transform: uppercase; text-decoration: none;}
+.divformheader .actionbtns ul li a span, .divformfooter .actionbtns ul li a span[class^="icon-"] {padding-right: 3px; font-size: 10px; font-weight:bold;}
+.divformheader .actionbtns ul li a.updatebtn span, .divformfooter .actionbtns ul li a.publishbtn span,.divformfooter .actionbtns ul li a.updatebtn span, .divformfooter .actionbtns ul li a.publishbtn span { font-weight: bold;}
+.divformheader .actionbtns ul li a:hover, .divformheader .actionbtns ul li a:focus, .divformheader .actionbtns ul li a:active,.divformfooter .actionbtns ul li a:hover, .divformfooter .actionbtns ul li a:focus, .divformfooter .actionbtns ul li a:active {background-color: #ffc400;}
+.divformheader .actionbtns ul li, .divformfooter .actionbtns ul li {margin-right: 5px; display: inline-block;}
+.divformheader .actionbtns ul li:last-child, .divformfooter .actionbtns ul li:last-child {margin-right: 0;}
+.divformheader .anchorInsbtn { background-color: #75acdd; border-radius: 4px; position: relative; font-family: 'sourcesansprosemibold'; font-size: 13px; color: #fff; text-decoration: none; padding: 6px 20px 3px 8px; margin-left: 5px;}
+.divformheader .anchorInsbtn i[class^="icon-"] { font-size: 10px; position: absolute; top: 10px; right: 5px; font-weight: bold;}
+.divformheader .anchorInsbtn.opened i[class^="icon-"]:before{transform: rotate(180deg);position:absolute;right:1px; top: -2px; left: -4px;}
+.divformbody{width: 100%;  position: relative; border-left:1px solid #cecece; border-right:1px solid #cecece; background-color: #fff;}
+.divforminstructions{display:none;background: #e4eef7; border: 1px solid #E6E6E6;border-top: 1px solid transparent; position: relative; padding: 5px 0px 5px 30px;} 
+.divforminstructions ul{margin: 0px; padding: 0px;}
+.divforminstructions ul li{list-style-type:circle; padding-bottom: 5px;}
+.divforminstructions ul li span{color:#000;font-family: 'sourcesansproregular'; font-size: 12px;}
+.divforminstructions ul li span.spanstar {color: #ff0000 !important;}
+.divcontainer a:focus, .divcontainer input:focus, .divcontainer textarea:focus, .divcontainer select:focus, div[tabindex="0"]:focus { outline: 1px dotted #323232; outline-offset: 2px;}
+.divformgroup input:focus, .divformgroup textarea:focus, .divformgroup select:focus, div[tabindex="0"]:focus {outline: 1px dotted #323232; outline-offset: 2px;}
+.divformgroup input[readonly="readonly"], .divformgroup select[readonly="readonly"]  {background: #f2f2f2; }
+.divcustomerdetails { border-right: 1px solid #ddd;}
+.divTopactionButtons{margin-top:5px;}
+.pii-info, .divformactionbtns {align-items: center; margin-left: auto;}
+.pii-infomsg {padding: 5px 7px 5px 7px; border: 1px solid #ffb100; background: #fff4cb; color: #000;font-family: 'sourcesansprosemibold', Tahoma, sans-serif; font-size: 12px;}
+/***************************************/
+/*Submit list*/
+/***************************************/
+.divformsubmitlist ,.divformsubmitlistbottom{display:none;background: #fff7d5; border: 1px dashed #d8ba39; position: relative; padding: 5px 0px 5px 30px;} 
+.divformsubmitlist ul, .divformsubmitlistbottom ul{margin: 0px; padding: 0px;}
+.divformsubmitlist ul li, .divformsubmitlistbottom ul li{list-style-type:circle; padding-bottom: 5px;}
+.divformsubmitlist ul li span, .divformsubmitlistbottom ul li span{color:#000;font-family: 'sourcesansproregular'; font-size: 12px; cursor: pointer;}
+.divformsubmitlist ul li span:hover, .divformsubmitlistbottom ul li span:hover {text-decoration: underline;}
+.divformsubmitlist ul li span.spanstar {color: #ff0000 !important;}
+.divformsubmitlist h2 , .divformsubmitlistbottom h2{font-family: 'sourcesansprosemibold';font-size: 15px;color: #ff4545;text-transform: uppercase;display: inline-block;margin: 0 0 5px 0; border-bottom: 1px solid #ff4545;}
+.divformsubmitlist a.spancloseicon, .divformsubmitlistbottom a.spancloseicon{margin-left: auto;text-decoration: none; background-color: #ffd000; padding: 5px 6px 3px 6px; font-size: 11px; position: absolute; right: 10px; top: 10px; color: #333;}
+
+
+
+/***************************************/
+/*Radio buttons*/
+/***************************************/
+.divradiobuttons {width: 100%;position: relative; display: inline-block; top: -5px; margin: 10px 0px 0px 0px; }
+.divradiobuttons label input[type="radio"]{width: auto; margin: 0 5px 0 0;position: relative; top: 2px;}
+.divradiobuttons label{margin: 0 6px 0 0; vertical-align: middle; cursor: pointer; font-family: 'sourcesansproregular',sans-serif;font-size: 13px; color: #333; display: inline-block;}
+
+/***************************************/
+/*Check boxes*/
+/***************************************/
+.divcheckboxes {width: 100%;position: relative; display: inline-block;  margin: 10px 0px 10px 0px;}
+.divcheckboxes label input[type="checkbox"]{width: auto; margin: 0 5px 0 0;position: relative; top: -3px;}
+.divcheckboxes label{margin: 0 18px 0 0; vertical-align: middle; cursor: pointer; font-family: 'sourcesansproregular',sans-serif;font-size: 13px; color: #333; display: inline-block;}
+
+
+
+
+/******************************************/
+/*Link Popup*/
+/******************************************/
+.modal-header button{min-width: auto;}
+h4.modal-title {color: #42515f;margin: 0;line-height: 1.4;font-size: 14px !important;font-family: 'latomedium' !important;font-weight: normal;}
+.checkbox.sn-checkbox-open-in-new-window input {width: auto;}
+.checkbox.sn-checkbox-open-in-new-window {margin: 0px;padding: 0px;}
+.form-group.note-form-group { padding-bottom: 10px !important;}
+.link-dialog .modal-footer {box-sizing: initial !important;border-top: none;}
+.link-dialog .modal-footer { height: 35px !important; padding: 10px;}
+.link-dialog .modal-footer .note-btn {background-color: #f8f8f8!important;border: 1px solid #c6c6c6 !important;padding: 5px !important;width: 100%;color: #333333 !important; cursor: pointer;}
+/******************************************/
+/*Attachments*/
+/******************************************/
+ .attachfile:focus{outline: 1px dotted #000;}
+.attachfile {border: 1px dashed #cecece;height: auto;padding: 60px 10px 30px 10px;background-color: #F0F4F8;text-align: center;float:left;width:100%;margin-bottom:5px; border-radius:3px;}
+.attachfile label {width: auto;border: 1px solid #656565;font-size: 12px;color: #4A4A4A;background-color: #F9FBFC;padding: 3px 15px;border-radius: 4px;cursor: pointer;position: relative;top: -12px;}
+.attachfile .icon-upload{font-size: 30px;color: #d0d0d0;padding-right: 10px; position: relative; top: -5px;}
+.attachmentsdisplay{width:100%;float:left;margin:3px 0;}
+.attachmentsdisplay ul{margin:0;padding:0;float:left;width:100%;}
+.attachmentsdisplay ul li {float:left; list-style-type:none;  width: auto; text-align: left; padding: 3px 15px 3px 0px;}
+.attachmentsdisplay ul li .attachedfiles {color:#0E2982; word-break: break-word; font-weight:normal; font-family: 'sourcesansprosemibold'; font-size: 14px; display: inline-block; margin-right: 5px;}
+.attachmentsdisplay ul li a {text-decoration: none;}
+.attachmentsdisplay ul li .icon-close{color:#C92B1F; font-size: 11px;top:1px; position: relative;}
+.hintmgs{font-size: 13px;color: #6f6d6d;float: left;margin: 5px 0 8px 0;width: 100%;font-weight: normal; font-family: 'sourcesansproregular';}
+
+/******************************************/
+/*Accordions*/
+/******************************************/
+
+.divsections {width: 100%;position: relative;display: inline-block; }
+.divsections .divsection{ position: relative; width: 100%; display: inline-block;    }
+.divsections .divsectionHead{display: flex; justify-content: space-between;cursor: pointer; }
+.divsections .divsectionHead h2{ padding: 5px; font-family: 'latobold',sans-serif; font-size: 14px; color: #00529B; width: auto; margin: 0px;}
+.divsections .divsectionHead a { text-decoration: none;}
+.divsections .divsectionHead span.icon-chevron-down{  padding: 5px 6px; position: relative; top:4px; color: #fff; font-size: 13px; font-weight: bold }
+.divsections .divsectionHead.Active span.icon-chevron-down::before{ -ms-transform: rotate(180deg); transform: rotate(180deg); display: inline-block;}
+.divsectionDetails.divformelements {padding: 0px 20px 0px 10px; border-right: 1px solid #ddd;}
+
+/******************************************/
+/*Leftside & Rightside*/
+/******************************************/
+.divformbody .divleftcontainer {padding-right: 0px;}
+.divformbody .divrightcontainer { padding-left: 0px;}
+.divrightinnercontainer .divheader{width: 100%; min-height: 40px; position: relative; display: inline-block; padding: 0px 15px 0px 15px; border-bottom: 1px solid #ddd;}
+.divrightinnercontainer .divheader h2{font-family: "latobold", sans-serif; font-size: 14px; margin: 0px; color: #333; text-transform: uppercase;line-height: 40px;}
+.divformbody .divrightinnercontainer {background-color: #FAFAFA;border-left: 1px solid #DDDDDD;display: inherit; height: 100%;}
+
+/******************************************/
+/*Rightside Accordian*/
+/******************************************/
+
+.divaccordioncontrols {border-left: 1px solid #ddd; margin: 0; padding: 0;}
+.divaccordioncontrols, .divaccordioncontrols > li {list-style-type: none; width: 100%; background-color: #fafafa;}
+.divaccordioncontrols > li > a {width: 100%; display: flex; padding: 10px 10px; position: relative; font-family: 'latobold', sans-serif; font-size: 14px; color: #333; text-decoration: none; text-transform: uppercase; border-bottom: 1px solid #ddd;}
+.divaccordioncontrols > li > a span { position: absolute; right: 15px; top: 13px; -ms-transform: rotate(90deg); transform: rotate(90deg); font-weight: bold;}
+.divaccordioncontrols > li > a[aria-expanded="true"] {background-color: #fff; color: #1f57af;}
+.divaccordioncontrols > li > a[aria-expanded="true"] span {-ms-transform: rotate(-90deg); transform: rotate(-90deg);}
+.divaccordioncontrols .divaccordianplaceholder { width: 100%; padding: 10px; display: none; height: 563px; overflow: auto;}
+.divaccordioncontrols li:nth-child(1) .divaccordianplaceholder {display: block; border-bottom: 1px solid #ddd;}
+.divaccordianplaceholder ul { list-style-type: none; margin: 0; padding: 0; }
+.divaccordianplaceholder ul li, .divaccordianplaceholder ul li a {font-family: 'latomedium', sans-serif; color: #333; font-size: 13px;}
+.divaccordianplaceholder ul li::before {content: "\e947"; font-family: 'icomoon' !important; font-weight: bold; font-size: 11px; position: absolute; left: 3px; top: 5px;}
+.divaccordianplaceholder ul li { padding-left: 18px; position: relative; margin: 0 0 5px 0;}
+.divaccordianplaceholder ul li a {text-decoration: none; color: #1f57af;}
+.divaccordianplaceholder ul li p {font-family: 'sourcesansproregular'; font-size: 13px;}
+.divformkbcontent ul li::before { display: none;}
+.divformkbcontent ul > li {padding-left: 0px; border-bottom: 1px solid #e2e2e2;}
+.divformkbcontent ul li p {font-size: 14px; line-height: 1.4;}
+.divkbattachments ul li {list-style-type: none; display: inline-block; padding-bottom: 0; border-bottom: 0;}
+.divkbattachments ul li a {font-size: 12px;}
+.divkbattachments ul li a span { padding-right: 3px;}
+.divpostedinfo {color: #858585; padding-bottom: 5px;}
+.divpostedinfo span:first-child {border-right: 1px solid #cccccc; padding-right: 5px; margin-right: 5px;}
+.noresults {width: 48%; margin: 0 auto; text-align: center; padding: 25% 0;}
+.noresults .icon-paper { font-size: 60px; color: #bdc2cc;}
+.noresults p {color: #8b96a7; font-family: 'sourcesansproregular', sans-serif; font-size: 14px;}
+.divkbsearch {width: 100%; position: relative; margin-bottom: 10px;}
+.divkbsearch input {width: 100%; padding: 8px 25px 8px 8px; border: 1px solid #e2e2e2;}
+.divkbsearch a {position: absolute; right: 8px; top: 9px; text-decoration: none; color: #333;}
+.divkbsearch a span::before {font-weight: bold; font-size: 14px;}
+.divkbsearch a:hover {text-decoration: none;}
+.divformfooter .divformactionbtns {margin-left: auto;}
+.divattachmentcontrol { align-self: baseline; width: 100%; padding: 5px 0px 0px 15px;}
+@media (min-width: 576px) {
+    .divinquirydetails {padding: 10px 15px 0 15px;}
+}
+@media (min-width: 1200px) {
+    .divinquirydetails {padding: 10px 0 0 0;}
+}
+@media (min-width: 320px) and (max-width: 828px) {
+    .divformactionbtns {margin: 10px auto 0 auto;}
+    .divcreateinq {border-left: none; margin-bottom: 10px;}
+}
+@media (min-width: 320px) and (max-width: 1152px) {
+    .divaccordioncontrols .divaccordianplaceholder { min-height: 563px; height: auto; overflow: none;}
+}
+
+@media (min-width: 1366px) {
+    .divformgroup label {max-width: 170px;}
+    .divinqurydescription .note-editor.note-frame .note-editing-area .note-editable {min-height: 153px;}
+}
+@media (min-width: 1920px) {
+    .divformgroup label {max-width: none;}
+    .divinqurydescription .note-editor.note-frame .note-editing-area .note-editable { min-height: 116px; }
+}
+
+
+/******************************************/
+/*Multi select */
+/******************************************/
+.fs-label-wrap {position: relative;background-color: #fff;border: 1px solid #c6c6c6;cursor: default;}
+.fs-wrap.multiple.fs-default:focus , .fs-wrap.multiple.fs-open:focus { outline: 1px dotted #000;}
+.fs-label-wrap,.fs-dropdown {-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+.fs-label-wrap .fs-label {padding:7px 10px 6px;font-size: 13px;  color: #000; font-family: 'sourcesansproregular';}
+.fs-arrow::before {font-family: 'icomoon' !important;content: "\e91b";position: absolute;top: 7px;right: 9px;bottom: 0;margin: auto;transition: ease-in 0.15s;font-size: 15px;color: #959595;cursor: pointer;}
+.fs-dropdown {position: absolute;background-color: #fff;border: 1px solid #c6c6c6;width:100%;border-top: none;z-index: 1000;}
+.fs-dropdown .fs-options { max-height: 200px;overflow: auto;}
+.fs-search input { border: none !important;box-shadow: none !important;outline: none;padding: 6px 0;width: 100%;}
+.fs-option, .fs-search, .fs-optgroup-label {padding: 6px 8px;border-bottom: 1px solid #eee;cursor: default; }
+.fs-option:last-child {border-bottom: none;}
+.fs-search {padding: 0 8px;}
+.fs-no-results {padding: 6px 8px;}
+.fs-option {cursor: pointer;word-break: break-all;}
+.fs-option.disabled {opacity: 0.4;cursor: default;}
+.fs-option.hl {background-color: #f5f5f5;}
+.fs-wrap.multiple .fs-option {position: relative;padding-left: 30px; font-size: 13px; color: #000; font-family: 'sourcesansproregular';}
+.fs-wrap.multiple .fs-checkbox {position: absolute;display: block;width: 30px;top: 0;left: 0;bottom: 0;}
+.fs-wrap.multiple .fs-option .fs-checkbox i { position: absolute; margin: auto;left: 0;right: 0;top: 0;bottom: 0;width: 14px;height: 14px;border: 1px solid #aeaeae;border-radius: 2px;background-color: #fff;}
+.fs-wrap.multiple .fs-option.selected .fs-checkbox i:before {background-color: #00529B;font-family: 'icomoon' !important;  content: "\e908"; position: absolute;z-index: 999;font-size: 6px;color: #fff; width: 14px;height: 12px;text-align: center;line-height: 12px; right: -1px;}
+.fs-optgroup-label {font-weight: bold;text-align: center;background-color: #f8f8f8;}

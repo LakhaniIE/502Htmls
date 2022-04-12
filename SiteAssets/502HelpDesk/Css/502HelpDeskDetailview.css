@@ -1,0 +1,53 @@
+﻿/***************************************/
+/*Detailview*/
+/***************************************/
+.divmenuresizer { width: calc(100% - 0px);}
+.divmpfactiondetails .divitem{width: 23.3333%; margin: 0 10px 8px 0px;}
+.divDescription{width: 100%; padding: 0 10px 0;}
+.divDescription  label {color: #6d6d6d;font-family: 'sourcesansprosemibold',sans-serif;font-size: 13px;}
+.divDescription  p { color: #000;font-family: 'sourcesansproregular',sans-serif;font-size: 13px;word-break: break-all; line-height: 1.5em; padding: 5px 0px 0px 0px;margin: 0px;}
+.divDiscussionscomment article:last-child{border-bottom: none !important;}
+.divactionbtns ul > li.liResolve > a {background-color: #269b0a;}
+.divactionbtns ul > li.liChangeSection > a {background-color: #346fcc;}
+.divactionbtns ul > li.liSendReminder > a {background-color: #F0C619; color: #000;}
+.divactionbtns ul > li.liComplete > a {background-color: #228d09;}
+.divactionbtns ul > li.libackbtn > a{background-color: #47607C;}
+.divactionbtns ul > li.liReturntoCSS > a{background-color: #593C9A;}
+
+.divResolvepopup {border-top-color: #269b0a; right: 0;}
+.divElevatepopup {border-top-color: #008893; right: 0;}
+.divSendReminder {border-top-color: #f0c619; right: 0;}
+.divcompletepopup{border-top-color: #228d09; right: 0;}
+.divChangeSectionpopup{border-top-color: #346fcc;}
+.divReturntoCSSpopup{border-top-color:#593C9A;}
+.divAssignedTo{border-top-color:#868B0C; right: 0;;}
+.divradiobuttons {width: 100%; position: relative; display: inline-block; top: -5px; margin: 10px 0px 0px 0px;}
+.divradiobuttons input{width: auto !important; position: relative; top:2px;}
+.divradiobuttons label {margin: 0 6px 0 0; vertical-align: middle; cursor: pointer; font-family: 'sourcesansproregular',sans-serif; margin-bottom: 0px; font-size: 13px; color: #979797 !important; display: inline-block; }
+.divDiscussionscomment{min-height: inherit; max-height: inherit; }
+.divDiscussionscomment article:last-child{border-bottom: none;}
+.divpopupbtns{margin: 0px;}
+.divpopupbtns > ul {justify-content: flex-end;}
+.divpopupbtns > ul > li > a {display: inline-block;}
+.divcheckListItems ul li::before{content: '\e93d';}
+.divfilescontent .accordion .divfilesheader.open .link:before{content: '\e927';}
+.divfilescontent .accordion .divfilesheader .link:before{content: '\e920';}
+.divactionpopup{width: 350px;}
+.divoptions{display: none;}
+.divchangeoptions{display: none;}
+.divuserscontentarea{min-height: 280px;}
+
+.divDueOutAcknoldgePopup{width: 50%; padding: 15px; margin: 0 auto; background: #fff; border-radius: 8px;box-shadow: 0 0 6px rgb(0 0 0 / 10%); position: absolute; top: 1%; right: 25%;}
+.divDueOutAcknoldgePopup h2{color: #bb832f; font-family: 'latobold', sans-serif; font-size: 14px;}
+.divDueOutAcknoldgePopup p{font-family: 'latobold', sans-serif; color: #000; font-size: 14px; margin-bottom: 0px;}
+.divDueOutAcknoldgePopup ol li{font-family: 'sourcesansproregular', sans-serif; font-size: 14px; color: #879197}
+.divDueOutAcknoldgePopup ol{margin: 0; padding: 0 0 0 15px;}
+.anchorDueOutAcknowledge{background:#346fcc; padding: 10px; font-family: 'latobold', sans-serif; font-size: 12px; color: #fff; text-decoration: none !important; width: 202px; display: flex; margin-left: auto;}
+.anchorDueOutAcknowledge span.icon-checked{margin-top: 2px; margin-right: 8px;}
+
+.divmpfactiondetails .divitem p{word-break: break-word;}
+.timeline li .timeline-body p{word-break: break-word;}
+.timeline li .timeline-heading h1{word-break: break-word;}
+.divfilescontent .submenu > ul > li > a{word-break: break-word;}
+
+

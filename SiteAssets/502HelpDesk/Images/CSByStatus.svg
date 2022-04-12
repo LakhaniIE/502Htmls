@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="506.226" height="296.702" viewBox="0 0 506.226 296.702">
+  <g id="Group_29717" data-name="Group 29717" transform="translate(-284 -269.298)">
+    <path id="Chart_Grid" data-name="Chart Grid" d="M466.7,265.527v-.06H1.28v.06H0V-12.7H1.28V0h466.3V.3h.4V265.527Zm0-1.754V1.694H1.28V52.754H466.569v1.694H1.28v51.061H466.569V107.2H1.28v51.061H466.569v1.693H1.28v51.062H466.569v1.694H1.28v51.061Z" transform="translate(322.25 282)" fill="#eaf0f4"/>
+    <g id="Y-Axis-Info" transform="translate(307.87 275.728)">
+      <text id="_0" data-name="0" transform="translate(6.22 273.542)" fill="#43425d" font-size="11" font-family="SourceSansPro-Regular, Source Sans Pro" opacity="0.721"><tspan x="0" y="0">0</tspan></text>
+      <text id="_10" data-name="10" transform="translate(0.1 167.961)" fill="#43425d" font-size="11" font-family="SourceSansPro-Regular, Source Sans Pro" opacity="0.721"><tspan x="0" y="0">10</tspan></text>
+      <text id="_5" data-name="5" transform="translate(4.1 220.281)" fill="#43425d" font-size="11" font-family="SourceSansPro-Regular, Source Sans Pro" opacity="0.721"><tspan x="0" y="0">5</tspan></text>
+      <text id="_15" data-name="15" transform="translate(0.1 115.561)" fill="#43425d" font-size="11" font-family="SourceSansPro-Regular, Source Sans Pro" opacity="0.721"><tspan x="0" y="0">15</tspan></text>
+      <text id="_20" data-name="20" transform="translate(0.1 63.24)" fill="#43425d" font-size="11" font-family="SourceSansPro-Regular, Source Sans Pro" opacity="0.721"><tspan x="0" y="0">20</tspan></text>
+      <text id="_25" data-name="25" transform="translate(0 11)" fill="#43425d" font-size="11" font-family="SourceSansPro-Regular, Source Sans Pro" opacity="0.721"><tspan x="0" y="0">25</tspan></text>
+    </g>
+    <g id="Group_22418" data-name="Group 22418" transform="translate(333 490)">
+      <text id="Submitted" transform="translate(25 72)" fill="#43425d" font-size="11" font-family="SourceSansPro-Semibold, Source Sans Pro" font-weight="600"><tspan x="-24.965" y="0">Submitted</tspan></text>
+      <rect id="Rectangle_16120" data-name="Rectangle 16120" width="27" height="57" transform="translate(11)" fill="#189dc6"/>
+    </g>
+    <g id="Group_22768" data-name="Group 22768" transform="translate(439.361 468)">
+      <text id="Technician" transform="translate(24.639 94)" fill="#43425d" font-size="11" font-family="SourceSansPro-Semibold, Source Sans Pro" font-weight="600"><tspan x="-25.465" y="0">Technician</tspan></text>
+      <rect id="Rectangle_16120-2" data-name="Rectangle 16120" width="26" height="79" transform="translate(11.639)" fill="#3f3fbf"/>
+    </g>
+    <g id="Group_29716" data-name="Group 29716" transform="translate(398 427)">
+      <text id="CSS" transform="translate(13 135)" fill="#43425d" font-size="11" font-family="SourceSansPro-Semibold, Source Sans Pro" font-weight="600"><tspan x="-8.948" y="0">CSS</tspan></text>
+      <path id="Path_20213" data-name="Path 20213" d="M0,0H26V120H0Z" fill="#006b84"/>
+    </g>
+    <g id="Group_22769" data-name="Group 22769" transform="translate(504.216 454)">
+      <text id="Supervisor" transform="translate(25.784 108)" fill="#43425d" font-size="11" font-family="SourceSansPro-Semibold, Source Sans Pro" font-weight="600"><tspan x="-25.773" y="0">Supervisor</tspan></text>
+      <rect id="Rectangle_16120-3" data-name="Rectangle 16120" width="27" height="93" transform="translate(11.784)" fill="#969608"/>
+    </g>
+    <g id="Group_22770" data-name="Group 22770" transform="translate(571.168 493)">
+      <text id="Section_Chief" data-name="Section Chief" transform="translate(30.832 69)" fill="#43425d" font-size="11" font-family="SourceSansPro-Semibold, Source Sans Pro" font-weight="600"><tspan x="-31.152" y="0">Section Chief</tspan></text>
+      <rect id="Rectangle_16334" data-name="Rectangle 16334" width="26" height="54" transform="translate(17.832)" fill="#892703"/>
+    </g>
+    <g id="Group_29257" data-name="Group 29257" transform="translate(648.227 503)">
+      <text id="MPF_Leadership" data-name="MPF Leadership" transform="translate(36.773 59)" fill="#43425d" font-size="11" font-family="SourceSansPro-Semibold, Source Sans Pro" font-weight="600"><tspan x="-37.422" y="0">MPF Leadership</tspan></text>
+      <rect id="Rectangle_16334-2" data-name="Rectangle 16334" width="26" height="44" transform="translate(23.773)" fill="#3eb71b"/>
+    </g>
+    <g id="Group_29258" data-name="Group 29258" transform="translate(737.227 518)">
+      <text id="Reopened" transform="translate(23.773 44)" fill="#43425d" font-size="11" font-family="SourceSansPro-Semibold, Source Sans Pro" font-weight="600"><tspan x="-23.914" y="0">Reopened</tspan></text>
+      <rect id="Rectangle_16334-3" data-name="Rectangle 16334" width="26" height="29" transform="translate(10.773)" fill="#b854bc"/>
+    </g>
+    <text id="Inquiries" transform="translate(296 436.5) rotate(-90)" fill="#43425d" font-size="12" font-family="SourceSansPro-Semibold, Source Sans Pro" font-weight="600" opacity="0.764"><tspan x="0" y="0">Inquiries</tspan></text>
+  </g>
+</svg>

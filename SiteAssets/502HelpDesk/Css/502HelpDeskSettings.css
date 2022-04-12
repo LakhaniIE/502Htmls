@@ -1,0 +1,111 @@
+/***************************************/
+/*RhyBus Overlap Settings css*/
+/***************************************/
+.divaddpopup{margin: 10px 0 0 0;}
+.divpopupfooter ul li a{text-decoration: none;}
+.divpopupfooter > ul > li{margin-left: 5px; list-style: none; display: inline-block;}
+.divpopupfooter ul li .anchorcancelbtn span[class^="icon-close"]{font-weight: 600;}
+.divpopupfooter{justify-content: space-between; align-items: center;}
+.divpopupfooter ul{margin: 10px 0px 10px auto;}
+.divnavcontainer ul ul li a.active{background-color: #ffec9b;}
+.divnavcontainer{padding: 10px 0px 10px 0px;}
+.divnavcontainer .ligenerallink:last-child{margin: 0px;}
+.divnavcontainer .limainitem > a, .divnavcontainer .liseconditem > a{margin: 0px 0px 0px 15px; width: 90%; font-family: 'sourcesansprosemibold';}
+.divnavcontainer .ligenerallink a{padding: 3px 15px;}
+.divaccordiancard::after{content: '\e92e' !important; font-size: 14px;}
+.divcardadddocument h3{font-family: "latomedium";}
+.divsitefeedbacknav { position: relative;top: -7px;}
+.divnavcontainer .limainitem > a::before, .divnavcontainer .liseconditem > a::before { content: "\e93d";font-family: 'icomoon' !important;
+    position: absolute;font-size: 12px; font-weight: normal;left: 0;top: 4px;}
+.divnavcontainer ul ul li a{padding: 0px 8px 0 28px;}
+.divcontentarea .divitem a{word-break: break-word;}
+.divcontentarea .divitem{word-break: break-word;}
+.icon-Update:before {font-size: 13px;font-weight: 600;position: relative;top: 1px;}
+.icon-folder:before{color: #ebba16;}
+.anchorsearchbtn{text-decoration: none !important;}
+.anchorsearchbtn span.icon-searchleft::before{font-size: 11px; position: relative; right: 5px;}
+.divcontentareapopup .divcontentinfo span[class^="icon"]{color: #0e2982; padding-right: 3px;}
+/***************************************/
+/*Help desk table*/
+/***************************************/
+.SettingsSystemHelpdesk .userrolesgrid table tbody span .buttoncancel {color: #333; font-size:13px;border: 1px solid #dcdcdc; padding: 4px 7px;box-shadow: 0 2px 0.1875pc rgba(0,0,0,.06); border-radius: 3px; background: #fff; margin:0 0 0 5px;}
+.SettingsSystemHelpdesk .userrolesgrid table tbody span .buttoncancel i {margin-right: 5px; font-size: 11px;color: gray;}
+.SettingsSystemHelpdesk .userrolesgrid, .settingsusermgmt .userrolesgrid table { width:100%; float:left; position:relative; margin:10px 0 0 0; padding-bottom: 40px}
+.SettingsSystemHelpdesk .userrolesgrid table { margin-top:0px; width: 100%;}
+.SettingsSystemHelpdesk .userrolesgrid table thead th {background:#f4f4f4; padding: 5px 10px; color:#000; font-family: 'sourcesansprosemibold'; font-size:13px; border:1px solid #707070;}
+.SettingsSystemHelpdesk .userrolesgrid table tbody td { padding: 5px 10px; border:1px solid #707070; font-family: 'sourcesansproregular'; color:#000;}
+.SettingsSystemHelpdesk .userrolesgrid table tbody td input { width:100%;}
+.SettingsSystemHelpdesk .userrolesgrid table tbody tr:not(.display-none):nth-child(2n+2) > td { background-color:transparent;}
+.SettingsSystemHelpdesk .userrolesgrid table tbody td:nth-child(3) { text-align:left; padding:8px 10px;max-width: 350px;}
+.SettingsSystemHelpdesk .userrolesgrid table tbody td:nth-child(3) span { position:relative;}
+.SettingsSystemHelpdesk .userrolesgrid table tbody td:nth-child(3) span .editbtn {box-shadow: 0 2px 0.1875pc rgba(0,0,0,.06); border-radius:3px; background:#fff; text-transform:uppercase; font-family: 'sourcesansprosemibold'; font-size:13px; color:#333; border: 1px solid #dcdcdc; padding:4px 10px;}
+.SettingsSystemHelpdesk .userrolesgrid table tbody td:nth-child(3) span .editbtn:before { content: "\e91a"; font-family: 'icomoon' !important; color:#333; padding:0 3px 0 0; font-size:11px;}
+.SettingsSystemHelpdesk .userrolesgrid table tbody td:nth-child(4) { padding:8px 10px; white-space:nowrap;}
+.SettingsSystemHelpdesk .userrolesgrid table tbody td:nth-child(4) span { position:relative;}
+.SettingsSystemHelpdesk .userrolesgrid table tbody td:nth-child(4) span .editbtn {box-shadow: 0 2px 0.1875pc rgba(0,0,0,.06); white-space:nowrap; border-radius:3px; background:#fff; text-transform:uppercase; font-family: 'sourcesansprosemibold'; font-size:13px; color:#333; border: 1px solid #dcdcdc; padding:4px 10px;}
+.SettingsSystemHelpdesk .userrolesgrid table tbody td:nth-child(4) span .editbtn:before { content: "\e91a"; font-family: 'icomoon' !important; color:#333; padding:0 3px 0 0; font-size:11px;}
+.SettingsSystemHelpdesk .userrolesgrid table tbody span .buttonsave {color: #333; font-size:13px;border: 1px solid #dcdcdc; padding: 4px 7px;box-shadow: 0 2px 0.1875pc rgba(0,0,0,.06); border-radius: 3px; background: #fff;}
+.SettingsSystemHelpdesk .userrolesgrid table tbody span .buttonsave i {margin-right: 5px; font-size: 12px;color: gray;}
+
+
+/***************************************/
+/*User groups*/
+/***************************************/
+.ulUsergroupsactionitems{margin: 0 0 0 auto;}
+.ulUsergroupsactionitems li{list-style-type: none; display: inline-block; margin-right: 10px;}
+.ulUsergroupsactionitems .userfilter{padding: 0px 10px 0px 0px; border-right: 1px dashed #fff;}
+.ulUsergroupsactionitems .userfilter label{color: #fff; font-family: "sourcesansprosemibold", sans-serif; font-size: 14px;}
+.ulUsergroupsactionitems .userfilter select{background-color: #fff;}
+.ulUsergroupsactionitems .divsearchcontrol label{color: #fff; font-family: "sourcesansprosemibold", sans-serif; font-size: 14px;}
+.ulUsergroupsactionitems .divsearchcontrol input{background-color: #fff; min-height: 30px; padding: 3px 25px 3px 10px!important; font-size: 14px; font-family: 'sourcesansproregular'; width: 300px;}
+.ulUsergroupsactionitems .divsearchcontrol .anchorsearchbtn{background-color: #1F9AC7; padding: 5px 10px; color: #fff; font-family: "sourcesansprosemibold", sans-serif; font-size: 14px; position: relative; top: 2px;}
+.ulUsergroupsactionitems .divsearchcontrol .anchorsearchbtn i[class^="icon-Search-Icon"]{padding-right: 5px; position: relative; top: 2px;}
+.divtopsection{margin: 15px 0px 10px 0px;}
+.divtopsection a{color: #0F7C18; text-decoration: none; font-family: "sourcesansprosemibold", sans-serif; font-size: 14px; position: relative;} 
+.divtopsection a span[class^="icon-AddRemove"]{padding-right: 5px; }
+.divaddremovepopup{width: 415px; background-color: #fff;box-shadow: 0 3px 3px 0px #dedede;  z-index: 2;  border-top: 3px solid #0F7C18;  padding: 12px 15px;position: absolute;top: 27px;  left: 0;display: none;border-bottom-right-radius: 4px;border-bottom-left-radius: 4px;}
+.divaddremovepopup::before {content: ''; position: absolute;  z-index: 1;top: -10px; left: 11x; border-bottom: 8px solid #0F7C18; border-left: 8px solid transparent;border-right: 8px solid transparent;}
+.divsearch{margin:10px 0px 10px 0px; position: relative; display: inline-block;}
+.divsearch label{color: #000; font-family: "sourcesansprosemibold", sans-serif; font-size: 14px; display: block;}
+ .divsearch input{background-color: #fff; min-height: 30px; padding: 3px 25px 3px 10px!important; font-size: 14px; font-family: 'sourcesansproregular'; width: 300px; border: 1px solid #a6a6a6;}
+ .divsearch .anchorsearchbtn{background-color: #1F9AC7; padding: 5px 10px; color: #fff; font-family: "sourcesansprosemibold", sans-serif; font-size: 14px; position: relative; top: 2px;}
+.divsearch .anchorsearchbtn i[class^="icon-searchright"]{padding-right: 5px; position: relative; top: 2px;}
+span.spananchorclosebtn { position: absolute; right: 0px;}
+span.spananchorclosebtn a span[class^="icon-close"]{font-size: 13px; color: #000; font-weight: 600; position: relative; top: -2px;}
+.divchecklist {margin: 10px 0px 0px 0px; width: 100%; position: relative; display: inline-block;}
+.divchecklist label{color: #333333; font-family: 'sourcesansproregular'; font-size: 13px; margin: 0px 10px 0px 0px; }
+.divchecklist label input[type="checkbox"]{position: relative;  right: 5px; margin: 0px; top: 2px;}
+.divpopupbtns > ul > li.CancelBtn a.anchorRemoveUserbtn{background-color: #903131;}
+.divpopupbtns{margin: 0px;}
+
+/***************************************/
+/*Pass code*/
+/***************************************/
+ul.ulUsergroupsactionitems.ulactionitems li { border-left: none; margin-right: 0px;}
+.divtopsection h2{text-transform: uppercase; font-size: 15px; font-family: "sourcesansprosemibold", sans-serif; margin: 0px;}
+.divpasscodeactionitems{margin-left: auto;}
+.divformgroup.divpasscodesearch { margin-right: 10px; border-right: 1px dashed #dbdbdb; margin-bottom: 0px;}
+.divformgroup.divpasscodesearch input { width: 350px;position: relative;}
+.divformgroup.divpasscodesearch a{position: absolute; top: 2px; right: 13px;}
+.divtopsection a.anchoraddbtn, .divtopsection a.anchorSavebtn, .divtopsection a.anchorCancelbtn{background-color: #0A8489; padding: 5px 10px; color: #fff; font-family: "sourcesansprosemibold", sans-serif; font-size: 14px; margin-left: 10px; text-decoration: none; text-transform: uppercase;}
+.divtopsection a.anchorSavebtn{background-color: #257906;}
+.divtopsection a.anchorCancelbtn{background-color: #793706;}
+.divtopsection a.anchoraddbtn span[class^="icon-pencil"]{padding-right: 5px; position: relative; top: 2px;}
+.divpasscodetable{width: 100%; margin: 0 auto; position: relative; display: inline-block; overflow-y: scroll; height: 400px;}
+.divpasscodetable table { margin-top:0px; width: 100%; border-left: 1px solid #ececec; border-right: 1px solid #ececec;}
+.divpasscodetable table thead th {background:#44527C; padding: 5px 10px; color:#fff; font-family: 'sourcesansprosemibold'; font-size:13px; }
+.divpasscodetable table tbody td { padding: 5px 10px; font-family: 'sourcesansproregular'; color:#000; border-bottom: 1px solid #ececec;} 
+.divpasscodetable table tbody td input[type="checkbox"]{width: auto;}
+.divpasscodetable table tbody td input { width:100%;}
+.divpasscodetable .scrollbar{overflow: hidden;overflow-y: auto;}
+.divpasscodetable .scrollbar::-webkit-scrollbar {width: 6px;}
+.divpasscodetable .scrollbar::-webkit-scrollbar-track {background: #ececec;}
+.divpasscodetable .scrollbar::-webkit-scrollbar-thumb {background: #40576C;border-radius: 2px;}
+.divpasscodetable .scrollbar:-webkit-scrollbar-thumb:hover {background: #00529B;}
+.divImport {  position: absolute;top: -30px; right: 0px; margin-bottom: 10px;}
+.divImport .anchorImportFromExcelbtn{border: 1px solid #3BA204;font-size: 14px;padding: 5px 10px; font-family: "sourcesansprosemibold", sans-serif;text-transform: uppercase; text-align: center; color: #3BA204;text-decoration: none;}
+.divImport .anchorImportFromExcelbtn span[class^="icon-"] {
+    font-size: 11px;
+    padding-right: 5px;
+}
+.divImport .anchorImportFromExcelbtn:hover ,.divImport .anchorImportFromExcelbtn:visited{background-color: #3BA204; color: #fff;}

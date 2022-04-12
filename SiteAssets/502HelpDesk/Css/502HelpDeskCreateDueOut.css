@@ -1,0 +1,52 @@
+﻿/*Mpf Create Due Out Form*/
+
+
+.divformcontainer{box-shadow:0px 0px 5px rgb(0 0 0 / 9%);}
+.divformheader, .divformfooter{width: 100%;background-color: #003f91; position: relative;display: flex;padding: 5px; justify-content: space-between; border-radius:6px 6px 0px 0px; min-height:40px;  }
+.divformfooter{border-radius:0px 0px 6px 6px;}
+.divformbody{padding:10px 15px; border:none; }
+.divformheader .anchorInsbtn{font-family: 'latoregular', sans-serif;font-size: 13px;height: 27px; border-radius: 4px;color: #fff; padding: 3px 10px 3px 10px; position: relative;background-color: #2f8cde;  border: 1px solid #b2d9fc;text-decoration: none;}
+.divformheader .anchorInsbtn i[class^="icon-"]{ position: relative; font-size: 8px; top: 0px;left: 3px;font-weight: 600;}
+.divformheader .anchorInsbtn.opened i[class^="icon-"]:before{ transform: rotate(180deg); position: relative; top: -2px;display: inline-block;}
+span.icon-info{left: 0px;padding-left: 0px;
+    margin-right: 0px;}
+/***************************************/
+/*Invalid */
+/***************************************/
+
+.divInvalidmsg{width: 100%;height: 40px;border-radius: 4px;background: #fffafa;border: 1px solid #e5aaaa; margin-bottom:10px; padding:5px 10px; position:relative; }
+.divInvalidmsg h2{margin:0px; color:#000; font-size:14px; font-family:'latoregular'; line-height:30px; font-weight: normal;}
+.divInvalidmsg h2 a{color:#0A62A2;}
+.divInvalidmsg h2 span[class^="icon-"]{font-size: 15px; color: #AD0000; padding-right: 5px; position: relative; top: 2px;}
+.spaniconInvalid{width: 15px; height: 15px; background-color: #AD0000; border-radius: 100%; display: inline-block; text-align: center; margin-right: 10px; }
+.spaniconInvalid p{color: #fff; font-size: 12px; padding: 0px; margin: 0px; line-height: 17px; font-weight: bold;}
+/***************************************/
+/*Section Heading*/
+/***************************************/
+
+.divsectionheading{width: 100%;position: relative; border-bottom: 1px solid #DDDEE0;display: inline-block; padding-bottom: 5px; margin-bottom:10px;}
+.divsectionheading h2 {color: #00529B;font-size: 14px;font-family: 'latomedium'; margin: 0px;text-transform: uppercase; font-weight: normal;}
+
+
+.divflexcontainer{display: flex;display: -ms-flexbox;display: -webkit-flex;flex-wrap: wrap;width: 100%; padding:10px 0 0 0;}
+.divflexcontainer .divflexitem{padding:0 10px 0 0; max-width:25%; min-width:25%;}
+span.icon-info{margin-right:0px; padding-left:0px; left:0px}
+
+.divorgflexcontainer .divflexitem{padding:0 10px 0 0; max-width:16.25%; min-width:16.25%;}
+.divorgflexcontainer .divflexitem:nth-child(1){max-width:16%; min-width:13%;}
+.anchorsearchicon{line-height:27px; color:#cecece;}
+.divorgflexcontainer .divflexitem:last-child{padding-right:0px;}
+.divorgflexcontainer .divflexitem:nth-child(2){max-width:19%; min-width:18%;}
+.divorgflexcontainer .divflexitem:last-child .info-tooltip span {right: -9px; left: inherit;}
+.divorgflexcontainer .divflexitem:last-child .info-tooltip span:before{right: 8px; left: unset;}
+
+.divdueoutfeilds {width: 100%;position: relative; margin:0px 8px 0px 8px;}
+
+
+
+
+@media (min-width: 1366px){
+.divformgroup label {
+    max-width: inherit !important;
+}
+}

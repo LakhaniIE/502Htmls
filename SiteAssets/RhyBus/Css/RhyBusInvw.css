@@ -1,0 +1,86 @@
+@charset "utf-8";
+.divinnerheader {width: 100%; display: flex; border-bottom: 1px dashed #ddd; justify-content: space-between; padding: 0 0 10px 0; align-items: flex-end; margin: 0 0 10px 0;}
+.divinnerheader h3 {font-size: 13px; text-transform: uppercase; color: #333; margin: 0; font-family: 'latobold', sans-serif;}
+.divinnerheader h3 span[class^="icon-"] {padding-right: 3px;}
+.divheaderelements { display: flex; margin: 4px 0 0 0;}
+.divheaderelements .divforminline select {min-width: 80px; font-family: 'sourcesansproregular'; font-size: 13px; color: #575757; border: 1px solid #d7dae2; border-radius: 3px; box-shadow: 0 2px 3px rgba(0,0,0,0.06); padding: 3px 5px;}
+.divheaderelements .divsearchcontrol { position: relative; margin: 0 10px 0 0;}
+.divheaderelements .divsearchcontrol input {padding: 4px 25px 4px 5px; border: 1px solid #d7dae2;border-radius: 3px;
+    box-shadow: 0 2px 3px rgb(0 0 0 / 6%);}
+.divheaderelements .divsearchcontrol a { text-decoration: none; position: absolute; -webkit-transform: rotate(360deg); -moz-transform: rotate(360deg); transform: rotate(360deg); font-size: 12px; color: #575757; right: 7px; top: 5px;}
+.divheaderelements .anchorbackbtn {background-color: #334860; font-size: 13px; position: relative; color: #fff; max-height: 25px; padding: 4px 10px 4px 20px; text-decoration: none;}
+.divheaderelements .anchorbackbtn span[class^="icon-"] { font-size: 11px; padding-right: 3px; position: absolute; left: 4px; top: 7px; -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); transform: rotate(180deg);}
+.divheaderelements .anchorbackbtn span[class^="icon-"]::before {color: #fff;}
+/*****************************************/
+/*Body Content*/
+/*****************************************/
+.divinnerrightcontainer > ul, .divinnerrightcontainer > ul > article> li { width: 100%; position: relative; list-style-type: none; margin: 0; padding: 0;}
+.divinnerrightcontainer > ul > article > li { border-bottom: 1px solid #dcdcdc; padding-bottom: 10px; margin-bottom: 10px;}
+.divinnerrightcontainer > ul > article li header {font-size: 14px; font-weight: 600; color: #00529b; margin: 0 0 5px 0;}
+.divinnerrightcontainer ul article li p { font-size: 13px; margin: 0;}
+.divinnerrightcontainer ul article li p img { min-width: auto; max-width: 100%;}
+.divinnerattachments {width:100%; position: relative; display: inline-block; margin: 0;}
+.divinnerattachments a {display: inline-block; margin: 0 5px 5px 0; text-decoration: none; color: #00529b; font-size: 13px;}
+.divinnerattachments a span[class^="icon-"] {padding-right: 3px;}
+.postedinfo {color: #656565; font-size: 13px; margin: 5px 0 0 0;}
+.postedinfo span { border-right: 1px solid #c7c7c7; padding: 0 8px 0 5px; font-family: 'sourcesansproregular'; font-size: 14px;}
+.postedinfo span label {vertical-align: baseline;}
+.postedinfo span:first-child {padding-left: 0px;}
+.postedinfo span:last-child {border-right: 0px;}
+.morecontent span {display: none;}
+.anchormorelink {display: block; margin: 5px 0;}
+.divinnerrightcontainer .anchormorelink { font-weight: 600; font-size: 13px; color: #00529b; text-decoration: none; position: relative;}
+.divinnerrightcontainer .anchormorelink:after { content: "\e902"; font-family: 'icomoon' !important; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); transform: rotate(90deg); font-size: 10px; padding-left: 14px; top: -1px; font-weight: bold; position: absolute; }
+.divinnerrightcontainer .anchormorelink.less:after {-webkit-transform: rotate(270deg); -moz-transform: rotate(270deg); transform: rotate(270deg);}
+.divinnerrightcontainer .anchormorelink.less:after { padding-right: 6px; top: 8px;}
+/*****************************************/
+/*Tags*/
+/*****************************************/
+.divtagspanel, .divtagheader {width: 100%; position: relative; display: inline-block;}
+.divtagspanel {border: 1px solid #d2d2d2; background-color: #fff; margin: 0 0 10px 0;}
+.divtagheader {background-color: #0c4a81; padding: 10px; display: flex;}
+.divtagheader p {color: #fff; font-weight: bold; font-size: 14px; margin: 0;}
+.divtagheader .anchorclearlink {margin-left: auto; color: #fff; font-size: 13px;}
+.divtagspanelbody, .divtagspanelbody ul {width: 100%; position: relative; display: inline-block; padding: 5px; margin: 0;}
+.divtagspanelbody ul li {width: auto; list-style-type: none; display: inline-block; margin: 0 5px 5px 0;}
+.divtagspanelbody ul li a { display: inline-block; padding: 5px 10px; border: 1px solid #278bed; border-radius: 20px; text-decoration: none; font-weight: 600; font-size: 12px; color: #013e7d;}
+.divtagspanelbody ul li a:hover {background-color: #278bed; color: #fff;}
+/*****************************************/
+/*Q&A*/
+/*****************************************/
+.divallqatabcontainer {width: 100%; flex-wrap: wrap; min-height: 287px; max-height: 287px;}
+.divallqaheader {width: 100%; display: flex; position: relative; margin: 5px 0 0 0;}
+.divallqatabcontainer .ulnavallqatabs {display: flex;}
+.divallqaheader .ulnavallqatabs, .divallqaheader .ulaskquestionpanel { list-style-type: none;}
+.divallqaheader .ulnavallqatabs li {margin-left: 5px;}
+.divallqaheader .ulnavallqatabs li a { font-size: 13px; display: inline-block; font-weight: 600; color: #333; background-color: #fff; border: 1px solid #cecece; padding: 5px 10px; text-decoration: none;}
+.divallqaheader .ulnavallqatabs li.active a {border-bottom: 3px solid #ffbf00;}
+.divallqaheader .ulnavallqatabs li:first-child {margin-left: 0;}
+.divallqaheader .ulaskquestionpanel {margin-left: auto;}
+.divallqaheader .ulaskquestionpanel li {position: relative;}
+.divallqaheader .ulaskquestionpanel a {background-color: #ffbf00; font-size: 13px; color: #000; text-decoration: none; font-weight: 600; padding: 5px 10px;}
+.divallqaheader .ulaskquestionpanel a span[class^="icon-"] {padding-right: 2px; font-weight: bold;}
+.divallqatabcontent {width: 100%; position: relative; padding: 10px 0 0 0; margin: 10px 0 0 0; border-top: 1px solid #dcdcdc;} 
+.divtabscontainer .divtabcontent > .divtabpane, .divallqatabcontent .divqatabpanel {display: none; width: 100%;}
+.divtabscontainer .divtabcontent > .active, .divallqatabcontent .divqatabpanel.active {display: block;}
+.divinnerrightcontainer li b {font-size: 13px;}
+.divinnerrightcontainer .anchortitle { font-size: 14px; font-weight: 600; color: #00529b; margin: 0 0 5px 0; text-decoration: none; display: inline-block;}
+.divaddanswer {width: 100%; position: relative; margin: 10px 0 0 0;}
+.divaddanswer .anchoraddanswer {  font-size: 13px; font-weight: 600; color: #033c86; text-decoration: none; padding: 2px 8px; height: 23px; background-color: #fff; border: 1px solid #cecece; border-radius: 25px;}
+.divaddanswer .anchoraddanswer span[class^="icon-"] { font-weight: 600;}
+.divaddanswer .divcustompopup {left: 0;}
+/*****************************************/
+/*Q&A Detailed View*/
+/*****************************************/
+.divheaderelements .anchorviewallqa {font-size: 13px; font-weight: 600; color: #00529b; text-decoration: underline; margin: 2px 10px 0 0;}
+.qadetailedview ul li { border-bottom: 0; padding-bottom: 0;}
+.divcontentheader {display: flex; flex-wrap: wrap;}
+.qadetailedview ul li .anchortitle { max-width: 80%;}
+.ulqadetailedbtns {margin-left: auto; list-style-type: none; display: flex; margin-bottom: 10px;}
+.ulqadetailedbtns li {position: relative;}
+.ulqadetailedbtns li:first-child {margin-right: 5px;}
+.ulqadetailedbtns li a {font-size: 12px; font-weight: 600; padding: 5px 10px; border-radius: 4px; text-decoration: none;}
+.ulqadetailedbtns li a span[class^="icon-"] {padding-right: 3px;}
+.ulqadetailedbtns li .anchorpromotekb {background-color: #287fcb; border: 1px solid #256daf; color: #fff;}
+.ulqadetailedbtns li .anchoredit { background-color: #fff; border: 1px solid #bfbfbf; color: #2b7fcb;}
+.ulqadetailedbtns li .divcustompopup {border-top-color: #287fcb;}

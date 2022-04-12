@@ -1,0 +1,86 @@
+﻿/*Mpf Create Due Out Form*/
+
+
+.divformcontainer{box-shadow:0px 0px 5px rgb(0 0 0 / 9%);}
+.divformheader, .divformfooter{ width: 100%;background-color: #003f91; position: relative;display: flex;padding: 5px; justify-content: space-between; border-radius:6px 6px 0px 0px; min-height:40px;  align-items: center; }
+.divformfooter{border-radius:0px 0px 6px 6px;}
+.divformbody{padding:0px; border:none; }
+.divsections .divsectionHead{margin: 10px 0 0 0;}
+.divformheader .anchorInsbtn{font-family: 'latoregular', sans-serif;font-size: 13px;height: 27px; border-radius: 4px;color: #fff; padding: 3px 10px 3px 10px; position: relative;background-color: #2f8cde;  border: 1px solid #b2d9fc;text-decoration: none;}
+.divformheader .anchorInsbtn i[class^="icon-"]{ position: relative; font-size: 8px; top: 0px;left: 3px;font-weight: 600;}
+.divformheader .anchorInsbtn.opened i[class^="icon-"]:before{transform: rotate(180deg); position: relative; top: -2px;display: inline-block;}
+.divsections .divsectionHead h2 { padding: 5px 10px 0px 0px; margin: 0px 0px 15px 0px; color: #000; text-transform: uppercase;}
+span.icon-info{left: 0px;padding-left: 0px;
+    margin-right: 0px;}
+
+    
+.divsections .divsection:last-child{border-left: 1px solid #ddd; padding-right: 20px;}
+.divsectionDetails.divformelements{border-right: none;}
+
+/**************************************/
+/*OAC and OBAN Fields*/
+/**************************************/
+.divflexrow {display: -webkit-box;display: -ms-flexbox;display: flex;-ms-flex-wrap: nowrap;flex-wrap:nowrap;}
+.divflexcontrol {width: 100%; padding-right: 10px;}
+.divflexrow div[class^="divflexcontrol"]:last-child { padding-right: 0px; padding-left: 10px;}
+.divsubcategory {padding-right: 0px;}
+.divoacfield { padding-left: 8px;}
+
+/***************************************/
+/*Form Accordians*/
+/***************************************/
+.divaccordioncontrols {border-left: 1px solid #ddd;}
+.divaccordioncontrols, .divaccordioncontrols > li {list-style-type: none; width: 100%; background-color: #fafafa;}
+.divaccordioncontrols > li > a {width: 100%; display: flex; padding: 10px 10px; position: relative; font-family: 'latobold', sans-serif; font-size: 14px; color: #333; text-decoration: none; text-transform: uppercase; border-bottom: 1px solid #ddd;}
+.divaccordioncontrols > li > a span { position: absolute; right: 15px; top: 13px; -ms-transform: rotate(90deg); transform: rotate(90deg); font-weight: bold;}
+.divaccordioncontrols > li > a[aria-expanded="true"] {background-color: #fff; color: #1f57af;}
+.divaccordioncontrols > li > a[aria-expanded="true"] span {-ms-transform: rotate(-90deg); transform: rotate(-90deg);}
+.divaccordioncontrols .divaccordianplaceholder { width: 100%; padding: 10px; display: none; height: 563px; overflow: auto;}
+.divaccordioncontrols li:nth-child(1) .divaccordianplaceholder {display: block; border-bottom: 1px solid #ddd;}
+.divaccordianplaceholder ul { list-style-type: none; }
+.divaccordianplaceholder ul li, .divaccordianplaceholder ul li a {font-family: 'latomedium', sans-serif; color: #333; font-size: 13px; padding-bottom: 10px;}
+.divaccordianplaceholder ul li::before {content: "\e93d"; font-family: 'icomoon' !important; font-weight: bold; font-size: 11px; position: absolute; left: 3px; top: 5px;}
+.divaccordianplaceholder ul li { padding-left: 18px; position: relative; margin: 0 0 5px 0;}
+.divaccordianplaceholder ul li a {text-decoration: none; color: #1f57af;}
+.divaccordianplaceholder ul li p {font-family: 'sourcesansproregular'; font-size: 13px;}
+.divformkbcontent ul li::before { display: none;}
+.divformkbcontent ul > li {padding-left: 0px; border-bottom: 1px solid #e2e2e2;}
+.divformkbcontent ul li p {font-size: 12px; line-height: 1.4; margin: 0px; padding: 5px 0px 5px 0px;}
+.divkbattachments ul li {list-style-type: none; display: inline-block; padding-bottom: 0; border-bottom: 0;}
+.divkbattachments ul li a {font-size: 12px;}
+.divkbattachments ul li a span { padding-right: 3px;}
+.divformkbcontent ul > li:last-child{border-bottom: none;}
+.divpostedinfo {color: #858585; padding-bottom: 5px;}
+.divpostedinfo span:first-child {border-right: 1px solid #cccccc; padding-right: 5px; margin-right: 5px;}
+.noresults {width: 48%; margin: 0 auto; text-align: center; padding: 25% 0;}
+.noresults .icon-paper { font-size: 60px; color: #bdc2cc;}
+.noresults p {color: #8b96a7; font-family: 'sourcesansproregular', sans-serif; font-size: 14px;}
+.divkbsearch {width: 100%; position: relative; margin-bottom: 10px;}
+.divkbsearch input {width: 100%; padding: 8px 25px 8px 8px; border: 1px solid #e2e2e2;}
+.divkbsearch a {position: absolute; right: 8px; top: 9px; text-decoration: none; color: #333;}
+.divkbsearch a span::before {font-weight: bold; font-size: 14px;}
+.divkbsearch a:hover {text-decoration: none;}
+.divformfooter .divformactionbtns {margin-left: auto;}
+.divattachmentcontrol { align-self: baseline; width: 100%; padding: 5px 0px 0px 15px;}
+@media (min-width: 576px) {
+    .divinquirydetails {padding: 10px 15px 0 15px;}
+}
+@media (min-width: 1200px) {
+    .divinquirydetails {padding: 10px 0 0 0;}
+}
+@media (min-width: 320px) and (max-width: 828px) {
+    .divformactionbtns {margin: 10px auto 0 auto;}
+    .divcreateinq {border-left: none; margin-bottom: 10px;}
+}
+@media (min-width: 320px) and (max-width: 1152px) {
+    .divaccordioncontrols .divaccordianplaceholder { min-height: 563px; height: auto; overflow: none;}
+}
+
+@media (min-width: 1366px) {
+    .divformgroup label {max-width: none;}
+    .divinqurydescription .note-editor.note-frame .note-editing-area .note-editable {min-height: 153px;}
+}
+@media (min-width: 1920px) {
+    .divformgroup label {max-width: none;}
+    .divinqurydescription .note-editor.note-frame .note-editing-area .note-editable { min-height: 116px; }
+}
