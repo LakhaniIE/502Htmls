@@ -1,0 +1,32 @@
+@media (max-width: 2497px) {
+    .divcustomercard{
+
+        flex: 1 1 24%;
+    }
+    
+}
+
+@media (max-width: 1223px) {
+    .divcustomercard{
+
+        flex: 1 1 40%;
+        margin-left: 0px !important;
+    }
+
+    .divcustomercard:nth-child(odd){
+        margin-right: 12px;
+    }
+    
+}
+
+@media (max-width: 605px) {
+    .divcustomercard{
+
+        flex: 1 1 100%;
+        margin-left: 0px !important;
+    }
+
+    .divcustomercard:nth-child(odd){
+        margin-right: 0px;
+    }
+}
