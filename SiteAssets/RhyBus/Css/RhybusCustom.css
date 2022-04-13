@@ -58,6 +58,15 @@ body{background-color: #fff;}
     flex-direction: column;
 }
 
+.divheadergroup,
+.divselectgroup,
+.divsearchgroup{
+    display: flex;
+}
+
+.divheadergroup{
+    padding-bottom: 13px;
+}
 .searchbar{
     box-shadow: none;
     border: none !important;

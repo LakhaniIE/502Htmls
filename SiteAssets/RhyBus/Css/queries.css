@@ -156,4 +156,43 @@
     
 }
 
+@media (max-width: 707px) {
+    .divselectgroup{
+        align-self: flex-start;
+        padding-bottom: 16px;
+    }
+}
+
+@media (max-width: 494px) {
+    .divheader{flex-direction: column;}
+
+    .divheader label,
+    .divheader select{
+        align-self: start;
+        margin-bottom: 13px;;
+    }
+    
+}
+
+/* Q and A */
+
+
+@media (max-width: 707px) {
+    .divheader{
+        flex-direction: column;
+    }
+    .divheadergroup{
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+@media (max-width: 556px) {
+    .divheadergroup{
+        flex-direction: column;
+    }
+    .divselectgroup{
+        padding-bottom: 13px;;
+    }  
+}
 

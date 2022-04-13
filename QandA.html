@@ -14,6 +14,7 @@
     <link href="siteAssets/RhyBus/Css/RhyBusHome.css" rel="stylesheet" type="text/css"/>
     <link href="SiteAssets/RhyBus/Css/RhyBusAnncmnt.css" rel="stylesheet" type="text/css" />
     <link href="SiteAssets/RhyBus/Css/RhyBusCalndrCustomer.css" rel="stylesheet" type="text/css" />
+    <link href="SiteAssets/RhyBus/Css/queries.css" rel="stylesheet" type="text/css" />
     <link href="SiteAssets/502HelpDesk/Css/502HelpDeskHome.css" rel="stylesheet" type="text/css" />
     <link href="SiteAssets/502HelpDesk/Css/502HelpDeskCustomer.css" rel="stylesheet" type="text/css" />
     <link href="SiteAssets/RhyBus/Icons/Style.css" rel="stylesheet" type="text/css" />
@@ -363,17 +364,24 @@
     <section class="divcontainer boxsizing">
         <div class="divheadercontainer dashed">
             <div class="divheader">
-                <h1 class="nounderline"><span class="icon-addcomment"></span>Q &amp; A<span>04</span></h1> 
-                <label for="SelectDropdownCategory">Category</label>
-                <select name="Section" id="SelectDropdownCategory" aria-label="Section">
-                    <option value="All">All</option>  
-                </select>
-                <div class="searchform">
-                    <input type="search" class="searchbar" placeholder="search">
-                    <button class="icon-searchright"></button>
+                <h1 class="nounderline"><span class="icon-addcomment"></span>Q &amp; A<span>04</span></h1>
+                <div class="divheadergroup">
+                    <div class="divselectgroup">
+                        <label for="SelectDropdownCategory">Category</label>
+                        <select name="Section" id="SelectDropdownCategory" aria-label="Section">
+                            <option value="All">All</option>  
+                        </select>
+                    </div> 
+                    <div class="divsearchgroup">
+                        <div class="searchform">
+                            <input type="search" class="searchbar" placeholder="search">
+                            <button class="icon-searchright"></button>
+                        </div>
+                        <a href="javascript:void(0)" title="Clear All" class="anchorclearall nowrap">
+                            Clear All
+                        </a>
+                    </div>
                 </div>
-                <a href="javascript:void(0)" title="Clear All" class="anchorclearall nowrap">
-                    Clear All</a>
             </div>
         </div>
         <div class="divfullwidthcontainer">
