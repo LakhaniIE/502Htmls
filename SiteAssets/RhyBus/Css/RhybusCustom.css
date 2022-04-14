@@ -179,7 +179,11 @@ body{background-color: #fff;}
 
 .divfullwidthcontainer .divqacard{
     padding: 20px 0;
+}
+
+.divfullwidthcontainer .divqacard:not(:last-child){
     border-bottom: 1px solid #E1E1E1;
+
 }
 
 .divqacard h3{
@@ -209,7 +213,7 @@ body{background-color: #fff;}
 .divfullwidthcontainer div .light {
     font-family: 'sourcesansproregular',sans-serif;
     font-size: 13px;
-    color: #65656585;
+    color: #65656595;
 }
 
 .divfullwidthcontainer div h4{
