@@ -89,6 +89,10 @@ body{background-color: #fff;}
     background: none;
     border: none;
 }
+
+.divcustomermaincontainer:last-of-type{
+    margin-bottom: 60px;
+}
 .divcustomercard{
     display: flex;
     flex: 1 1 24.6%;
@@ -172,6 +176,11 @@ body{background-color: #fff;}
     padding-right: 10px;
 }
 
+/* .divlistcol:last-child{
+   margin-bottom:60px;
+} */
+
+
 .nowrap{
     white-space: nowrap;
     margin-left: 12px;
@@ -198,6 +207,11 @@ body{background-color: #fff;}
 .divqacard h4{
     padding: 15px 0;
 }
+
+.divqacard:last-child{
+    margin-bottom: 60px;
+}
+
 .divfullwidthcontainer div h3{
     font-family: 'latomedium',sans-serif;
     font-size: 14px;

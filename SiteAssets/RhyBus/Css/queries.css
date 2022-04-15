@@ -21,9 +21,7 @@
     }
 
     .divcustomercard:nth-child(odd){ margin-right: 0px;}
-    .divcustomermaincontainer:last-of-type{
-        margin-bottom: 60px;
-    }
+
 }
 
 
@@ -145,12 +143,6 @@
 
 
 /* Q and A */
-
-@media (max-width: 1174px) {
-  .divqacard:last-child{
-      margin-bottom: 60px;
-  }
-}
 
 @media (max-width: 707px) {
     .divheader{
