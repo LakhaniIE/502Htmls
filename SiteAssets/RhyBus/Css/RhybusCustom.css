@@ -1,4 +1,12 @@
-body{background-color: #fff;}
+ .bodywhite{background-color: #fff;}
+
+#divlistviewtabs{
+    width: 100%;
+}
+
+.twocols div[class^="divannouncementcontainer"]:last-child {
+    padding-left: 0px !important;
+}
 
 .divheadercontainer{
     border-bottom: 2px solid #f7f7f7;
@@ -176,9 +184,6 @@ body{background-color: #fff;}
     padding-right: 10px;
 }
 
-/* .divlistcol:last-child{
-   margin-bottom:60px;
-} */
 
 
 .nowrap{

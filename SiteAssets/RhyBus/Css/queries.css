@@ -1,3 +1,245 @@
+/* Home Media Queries */ 
+
+@media (max-width:1820px){
+    .divcontainer{
+        width: 95%;
+    }
+}
+
+@media (max-width:1400px){
+    .divkpicard .spankpicount{
+        padding-left: 12px;
+    }
+}
+
+@media (max-width:1341px){
+    .divflexcolumn{
+        flex-direction: column;
+    }
+    .divleftcontainer{
+        width: 100% !important;
+    }
+
+    .divrightcontainer {
+        padding-left: 0px !important;
+        width: 100% !important;
+    }
+
+    .divarticlecontainer{
+        min-height: 100% !important;
+        max-height: 100% !important;
+        margin-bottom: 10px!important;
+    }
+}
+
+
+@media (max-width:777px){
+  
+    .divdashboardcards {
+        flex-wrap: wrap;
+        
+    }
+
+    .placeholder{
+        flex: 1 0 33% !important;
+    }
+
+    .placeholder:nth-child(3){
+        padding-right: 0px;
+    }
+    .divborderleft{
+       display: none;
+    }
+    
+}
+
+@media (max-width:686px){
+    .divtopheader .divcontainer .divheader{
+        flex-direction: column;
+    }
+  
+   .divtablegrid{
+       height: 100% !important;
+   }
+
+    .divheaderrightside {
+        margin-left: 0px !important;
+        align-self: flex-end !important;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .divheaderleftside {
+       align-self: stretch !important;
+    }
+    .divuserrole{
+        left: 0px;
+        border-left: none;
+    }
+
+    .divuserrole a:nth-child(2){
+        margin-right: 0px;
+    }
+
+    .divuserdetails ul li:first-child {
+        margin-right: 0px;
+    }
+        
+}
+
+@media (max-width:536px){
+  
+    .divtablegrid{
+        overflow: scroll !important;
+    }
+     
+ }
+
+
+@media (max-width:515px){
+  
+    .divcardheader{
+        flex-direction: column;
+    }
+
+    .divcardheader ul{
+        margin-left: 0px !important;
+        padding-left: 0px !important;
+        padding: 12px 0px;
+    }
+    .divforminline{
+        margin-left: 0px;
+    }
+
+    .divfilters .divforminline:nth-child(2) label{
+        padding-left: 10px !important;
+    }
+ }
+
+ @media (max-width:509px){
+    .divheaderleftside{justify-content: center !important;}
+    .divheaderrightside{align-self: center !important;}
+ }
+
+ @media (max-width:488px){
+    .divarticleitem:last-of-type{
+        padding-bottom: 45px !important;
+    }
+    
+}
+
+ @media (max-width:481px){
+    .divhomeheader{
+        flex-direction: column;
+        align-content: flex-start !important;
+    }
+
+    .divhomeheader h1{align-self: flex-start !important;}
+
+    .divannouncementcontainer .divmaincards .divheader .search{
+        display: flex;
+        flex-direction: column;
+    }
+    .Knowledgefilter{
+        margin-bottom: 12px;
+        margin-right: 0px !important;
+    }
+    .divannouncementcontainer .divmaincards .divheader  h2{align-self: flex-end;}
+    
+}
+
+ @media (max-width:476px){
+  
+    .placeholder{
+        flex: 1 0 36% !important;
+    }
+
+    .placeholder:nth-child(3){
+        padding-right: 10px;
+    }
+
+    .placeholder:nth-child(2),
+    .placeholder:nth-child(4){
+        padding-right: 0px;
+    }
+    
+}
+
+@media (max-width:380px){
+    .divnavmenus{
+        flex-wrap: nowrap;
+    }
+    .divnavright{
+        flex: 1 1 100%;
+        display: flex;
+        justify-content: flex-end !important;
+    }
+    
+}
+
+@media (max-width:350px){
+    .divfilters .divforminline:nth-child(2) label{
+        padding-left: 0px !important;
+    }
+    
+}
+
+
+@media (max-width:335px){
+    .divannouncementcontainer .divmaincards .divheader .search input{
+        width: 84% !important;
+    }
+
+    .divannouncementcontainer .divmaincards .divheader .search {
+        align-items: flex-end;
+    }
+    
+}
+
+
+
+@media (max-width:340px){
+  
+    .placeholder{
+        flex: 1 0 100% !important;
+        padding-left: 0px !important;
+        padding-right: 0px!important;
+    }
+
+    .divheaderleftside{
+        align-items: center !important;
+    }
+    .divheader img{
+        max-width: 98% !important;
+    }
+
+    .divannouncementcontainer .divmaincards .divheader .search{
+        align-self: flex-end;
+        justify-self: flex-end;
+    }
+
+}
+
+@media (max-width:320px){
+  
+    .divcardheader ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    .divcardheader ul li:nth-child(1){
+        border-right: none;
+        padding-right: 0px ;
+    }
+
+    .divcardheader ul li:nth-child(2){
+        margin: 15px 0;
+        padding-left: 0px;
+    }
+
+}
+
+
 /* Point of Contact Media Queries */
 @media (max-width: 2497px) {
     .divcustomercard{flex: 1 1 24%;}
@@ -145,7 +387,7 @@
 /* Q and A */
 
 @media (max-width: 707px) {
-    .divheader{
+    .divheadercontainer .divheader{
         flex-direction: column;
     }
     .divheadergroup{
@@ -160,6 +402,12 @@
     }
     .divselectgroup{
         padding-bottom: 13px;;
+    }  
+}
+
+@media (max-width: 366px) {
+    .divsearchgroup .searchform{
+        width: 81% !important;
     }  
 }
 
