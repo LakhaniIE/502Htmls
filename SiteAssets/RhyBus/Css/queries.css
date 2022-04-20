@@ -1,5 +1,12 @@
 /* Home Media Queries */ 
 
+@media (max-width:1972px){
+    
+    .divdashboardcards .placeholder:nth-child(4) .divkpicard .spankpicount{
+        margin-left: 10px;
+    }
+}
+
 @media (max-width:1820px){
     .divcontainer{
         width: 95%;
