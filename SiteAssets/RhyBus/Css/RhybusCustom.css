@@ -4,6 +4,11 @@
     width: 100%;
 }
 
+.divnavleft .menu-btn:checked ~ .menu{
+    z-index: 100;
+    top: 0;
+}
+
 .twocols div[class^="divannouncementcontainer"]:last-child {
     padding-left: 0px !important;
 }
